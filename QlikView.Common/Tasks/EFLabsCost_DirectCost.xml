@@ -1,0 +1,2280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ReportConfig>
+  <Tasks>
+    <Task Name="EFLabsCost_DirectCost" Description="EFLabsCost_DirectCost">
+      <OutputFolder>D:\ReportExport\EFLabsCost_DirectCost</OutputFolder>
+      <SendInSingleMail>False</SendInSingleMail>
+      <MergeInSingleExcel>True</MergeInSingleExcel>
+      <Reports>
+        <Report>EFLabsCost_DirectCost_WritingSmartHome</Report>
+        <Report>EFLabsCost_DirectCost_WritingSmartSch</Report>
+        <Report>EFLabsCost_DirectCost_WritingSochi</Report>
+        <Report>EFLabsCost_DirectCost_WritingE1</Report>
+        <Report>EFLabsCost_DirectCost_WritingILS</Report>
+        <Report>EFLabsCost_DirectCost_WritingMini</Report>
+        <Report>EFLabsCost_DirectCost_WritingB2S</Report>
+        <Report>EFLabsCost_DirectCost_WritingB2B</Report>
+        <Report>EFLabsCost_DirectCost_WritingFreetown</Report>
+        <Report>EFLabsCost_DirectCost_WritingOthers</Report>
+        <Report>EFLabsCost_DirectCost_WritingGroupon</Report>
+        <Report>EFLabsCost_DirectCost_WritingB2CAMXUOL</Report>
+        <Report>EFLabsCost_DirectCost_WritingB2COS</Report>
+        <Report>EFLabsCost_DirectCost_WritingB2CCS</Report>
+        <Report>EFLabsCost_DirectCost_WritingB2CTS</Report>
+        <Report>EFLabsCost_DirectCost_EFTVDropoffSmartHome</Report>
+        <Report>EFLabsCost_DirectCost_EFTVDropoffSmartSch</Report>
+        <Report>EFLabsCost_DirectCost_EFTVDropoffSochi</Report>
+        <Report>EFLabsCost_DirectCost_EFTVDropoffE1</Report>
+        <Report>EFLabsCost_DirectCost_EFTVDropoffILS</Report>
+        <Report>EFLabsCost_DirectCost_EFTVDropoffMini</Report>
+        <Report>EFLabsCost_DirectCost_EFTVDropoffB2S</Report>
+        <Report>EFLabsCost_DirectCost_EFTVDropoffB2B</Report>
+        <Report>EFLabsCost_DirectCost_EFTVDropoffFreetown</Report>
+        <Report>EFLabsCost_DirectCost_EFTVDropoffOthers</Report>
+        <Report>EFLabsCost_DirectCost_EFTVDropoffGroupon</Report>
+        <Report>EFLabsCost_DirectCost_EFTVDropoffB2CAMXUOL</Report>
+        <Report>EFLabsCost_DirectCost_EFTVDropoffB2COS</Report>
+        <Report>EFLabsCost_DirectCost_EFTVDropoffB2CCS</Report>
+        <Report>EFLabsCost_DirectCost_EFTVDropoffB2CTS</Report>
+        <Report>EFLabsCost_DirectCost_EFTVSmartHome</Report>
+        <Report>EFLabsCost_DirectCost_EFTVSmartSch</Report>
+        <Report>EFLabsCost_DirectCost_EFTVSochi</Report>
+        <Report>EFLabsCost_DirectCost_EFTVE1</Report>
+        <Report>EFLabsCost_DirectCost_EFTVILS</Report>
+        <Report>EFLabsCost_DirectCost_EFTVMini</Report>
+        <Report>EFLabsCost_DirectCost_EFTVB2S</Report>
+        <Report>EFLabsCost_DirectCost_EFTVB2B</Report>
+        <Report>EFLabsCost_DirectCost_EFTVFreetown</Report>
+        <Report>EFLabsCost_DirectCost_EFTVOthers</Report>
+        <Report>EFLabsCost_DirectCost_EFTVGroupon</Report>
+        <Report>EFLabsCost_DirectCost_EFTVB2CAMXUOL</Report>
+        <Report>EFLabsCost_DirectCost_EFTVB2COS</Report>
+        <Report>EFLabsCost_DirectCost_EFTVB2CCS</Report>
+        <Report>EFLabsCost_DirectCost_EFTVB2CTS</Report>
+        <Report>EFLabsCost_DirectCost_PLDropoffSmartHome</Report>
+        <Report>EFLabsCost_DirectCost_PLDropoffSmartSch</Report>
+        <Report>EFLabsCost_DirectCost_PLDropoffSochi</Report>
+        <Report>EFLabsCost_DirectCost_PLDropoffE1</Report>
+        <Report>EFLabsCost_DirectCost_PLDropoffILS</Report>
+        <Report>EFLabsCost_DirectCost_PLDropoffMini</Report>
+        <Report>EFLabsCost_DirectCost_PLDropoffB2S</Report>
+        <Report>EFLabsCost_DirectCost_PLDropoffB2B</Report>
+        <Report>EFLabsCost_DirectCost_PLDropoffFreetown</Report>
+        <Report>EFLabsCost_DirectCost_PLDropoffOthers</Report>
+        <Report>EFLabsCost_DirectCost_PLDropoffGroupon</Report>
+        <Report>EFLabsCost_DirectCost_PLDropoffB2CAMXUOL</Report>
+        <Report>EFLabsCost_DirectCost_PLDropoffB2COS</Report>
+        <Report>EFLabsCost_DirectCost_PLDropoffB2CCS</Report>
+        <Report>EFLabsCost_DirectCost_PLDropoffB2CTS</Report>
+        <Report>EFLabsCost_DirectCost_PLLateCancelSmartHome</Report>
+        <Report>EFLabsCost_DirectCost_PLLateCancelSmartSch</Report>
+        <Report>EFLabsCost_DirectCost_PLLateCancelSochi</Report>
+        <Report>EFLabsCost_DirectCost_PLLateCancelE1</Report>
+        <Report>EFLabsCost_DirectCost_PLLateCancelILS</Report>
+        <Report>EFLabsCost_DirectCost_PLLateCancelMini</Report>
+        <Report>EFLabsCost_DirectCost_PLLateCancelB2S</Report>
+        <Report>EFLabsCost_DirectCost_PLLateCancelB2B</Report>
+        <Report>EFLabsCost_DirectCost_PLLateCancelFreetown</Report>
+        <Report>EFLabsCost_DirectCost_PLLateCancelOthers</Report>
+        <Report>EFLabsCost_DirectCost_PLLateCancelGroupon</Report>
+        <Report>EFLabsCost_DirectCost_PLLateCancelB2CAMXUOL</Report>
+        <Report>EFLabsCost_DirectCost_PLLateCancelB2COS</Report>
+        <Report>EFLabsCost_DirectCost_PLLateCancelB2CCS</Report>
+        <Report>EFLabsCost_DirectCost_PLLateCancelB2CTS</Report>
+        <Report>EFLabsCost_DirectCost_PLSmartHome</Report>
+        <Report>EFLabsCost_DirectCost_PLSmartSch</Report>
+        <Report>EFLabsCost_DirectCost_PLSochi</Report>
+        <Report>EFLabsCost_DirectCost_PLE1</Report>
+        <Report>EFLabsCost_DirectCost_PLILS</Report>
+        <Report>EFLabsCost_DirectCost_PLMini</Report>
+        <Report>EFLabsCost_DirectCost_PLB2S</Report>
+        <Report>EFLabsCost_DirectCost_PLB2B</Report>
+        <Report>EFLabsCost_DirectCost_PLFreetown</Report>
+        <Report>EFLabsCost_DirectCost_PLOthers</Report>
+        <Report>EFLabsCost_DirectCost_PLGroupon</Report>
+        <Report>EFLabsCost_DirectCost_PLB2CAMXUOL</Report>
+        <Report>EFLabsCost_DirectCost_PLB2COS</Report>
+        <Report>EFLabsCost_DirectCost_PLB2CCS</Report>
+        <Report>EFLabsCost_DirectCost_PLB2CTS</Report>
+        <Report>EFLabsCost_DirectCost_GLSmartHome</Report>
+        <Report>EFLabsCost_DirectCost_GLSmartSch</Report>
+        <Report>EFLabsCost_DirectCost_GLSochi</Report>
+        <Report>EFLabsCost_DirectCost_GLE1</Report>
+        <Report>EFLabsCost_DirectCost_GLILS</Report>
+        <Report>EFLabsCost_DirectCost_GLMini</Report>
+        <Report>EFLabsCost_DirectCost_GLB2S</Report>
+        <Report>EFLabsCost_DirectCost_GLB2B</Report>
+        <Report>EFLabsCost_DirectCost_GLFreetown</Report>
+        <Report>EFLabsCost_DirectCost_GLOthers</Report>
+        <Report>EFLabsCost_DirectCost_GLGroupon</Report>
+        <Report>EFLabsCost_DirectCost_GLB2CAMXUOL</Report>
+        <Report>EFLabsCost_DirectCost_GLB2COS</Report>
+        <Report>EFLabsCost_DirectCost_GLB2CCS</Report>
+        <Report>EFLabsCost_DirectCost_GLB2CTS</Report>
+      </Reports>
+      <Recipients>
+        <Recipient>Robert.Qiu</Recipient>
+      </Recipients>
+      <RecipientGroup>
+      </RecipientGroup>
+      <Message>
+        <From>QlikViewAdmin@ef.com</From>
+        <CC>
+        </CC>
+        <BCC>
+        </BCC>
+        <Subject>EFLabs DirectCost  Report [@Date]</Subject>
+        <Body><![CDATA[Hi,
+<br>
+
+Pls find the  EFLabs DirectCost  Report from the attachment!
+<br>
+Thanks,]]></Body>
+      </Message>
+    </Task>
+  </Tasks>
+  <Reports>
+    <Report Name="EFLabsCost_DirectCost_WritingSmartHome" Description="SmartHome Writing">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_WritingSmartHome.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH871</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_WritingSmartHome</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_WritingSmartSch" Description="SmartSch Writing">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_WritingSmartSch.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH871</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_WritingSmartSch</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_WritingSochi" Description="Sochi Writing">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_WritingSochi.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH871</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_WritingSochi</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_WritingE1" Description="E1 Writing">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_WritingE1.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH871</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_WritingE1</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_WritingILS" Description="ILS Writing">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_WritingILS.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH871</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_WritingILS</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_WritingMini" Description="Mini Writing">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_WritingMini.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH871</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_WritingMini</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_WritingB2S" Description="B2S Writing">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_WritingB2S.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH871</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_WritingB2S</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_WritingB2B" Description="B2B Writing">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_WritingB2B.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH871</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_WritingB2B</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_WritingFreetown" Description="Freetown Writing">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_WritingFreetown.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH871</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_WritingFreetown</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_WritingOthers" Description="Other Writing">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_WritingOthers.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH871</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_WritingOthers</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_WritingGroupon" Description="Groupon Writing">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_WritingGroupon.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH871</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_WritingGroupon</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_WritingB2CAMXUOL" Description="B2CAMXUOL Writing">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_WritingB2CAMXUOL.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH871</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_WritingB2CAMXUOL</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_WritingB2COS" Description="OS Writing">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_WritingB2COS.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH871</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_WritingB2COS</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_WritingB2CCS" Description="Center Sales Writing">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_WritingB2CCS.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH871</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_WritingB2CCS</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_WritingB2CTS" Description="TS Writing">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_WritingB2CTS.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH871</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_WritingB2CTS</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_EFTVDropoffSmartHome" Description="SmartHome EFTV Drop off">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_EFTVDropoffSmartHome.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH874</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_EFTVDropoffSmartHome</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_EFTVDropoffSmartSch" Description="SmartSch EFTV Drop off">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_EFTVDropoffSmartSch.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH874</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_EFTVDropoffSmartSch</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_EFTVDropoffSochi" Description="Sochi EFTV Drop off">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_EFTVDropoffSochi.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH874</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_EFTVDropoffSochi</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_EFTVDropoffE1" Description="E1 EFTV Drop off">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_EFTVDropoffE1.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH874</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_EFTVDropoffE1</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_EFTVDropoffILS" Description="ILS EFTV Drop off">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_EFTVDropoffILS.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH874</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_EFTVDropoffILS</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_EFTVDropoffMini" Description="Mini EFTV Drop off">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_EFTVDropoffMini.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH874</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_EFTVDropoffMini</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_EFTVDropoffB2S" Description="B2S EFTV Drop off">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_EFTVDropoffB2S.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH874</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_EFTVDropoffB2S</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_EFTVDropoffB2B" Description="B2B EFTV Drop off">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_EFTVDropoffB2B.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH874</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_EFTVDropoffB2B</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_EFTVDropoffFreetown" Description="Freetown EFTV Drop off">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_EFTVDropoffFreetown.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH874</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_EFTVDropoffFreetown</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_EFTVDropoffOthers" Description="Other EFTV Drop off">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_EFTVDropoffOthers.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH874</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_EFTVDropoffOthers</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_EFTVDropoffGroupon" Description="Groupon EFTV Drop off">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_EFTVDropoffGroupon.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH874</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_EFTVDropoffGroupon</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_EFTVDropoffB2CAMXUOL" Description="B2CAMXUOL EFTV Drop off">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_EFTVDropoffB2CAMXUOL.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH874</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_EFTVDropoffB2CAMXUOL</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_EFTVDropoffB2COS" Description="OS EFTV Drop off">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_EFTVDropoffB2COS.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH874</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_EFTVDropoffB2COS</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_EFTVDropoffB2CCS" Description="Center Sales EFTV Drop off">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_EFTVDropoffB2CCS.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH874</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_EFTVDropoffB2CCS</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_EFTVDropoffB2CTS" Description="TS EFTV Drop off">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_EFTVDropoffB2CTS.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH874</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_EFTVDropoffB2CTS</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_EFTVSmartHome" Description="SmartHome EFTV">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_EFTVSmartHome.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH858</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_EFTVSmartHome</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_EFTVSmartSch" Description="SmartSch EFTV">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_EFTVSmartSch.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH858</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_EFTVSmartSch</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_EFTVSochi" Description="Sochi EFTV">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_EFTVSochi.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH858</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_EFTVSochi</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_EFTVE1" Description="E1 EFTV">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_EFTVE1.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH858</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_EFTVE1</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_EFTVILS" Description="ILS EFTV">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_EFTVILS.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH858</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_EFTVILS</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_EFTVMini" Description="Mini EFTV">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_EFTVMini.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH858</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_EFTVMini</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_EFTVB2S" Description="B2S EFTV">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_EFTVB2S.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH858</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_EFTVB2S</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_EFTVB2B" Description="B2B EFTV">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_EFTVB2B.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH858</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_EFTVB2B</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_EFTVFreetown" Description="Freetown EFTV">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_EFTVFreetown.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH858</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_EFTVFreetown</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_EFTVOthers" Description="Other EFTV">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_EFTVOthers.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH858</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_EFTVOthers</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_EFTVGroupon" Description="Groupon EFTV">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_EFTVGroupon.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH858</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_EFTVGroupon</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_EFTVB2CAMXUOL" Description="B2CAMXUOL EFTV">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_EFTVB2CAMXUOL.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH858</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_EFTVB2CAMXUOL</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_EFTVB2COS" Description="OS EFTV">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_EFTVB2COS.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH858</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_EFTVB2COS</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_EFTVB2CCS" Description="Center Sales EFTV">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_EFTVB2CCS.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH858</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_EFTVB2CCS</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_EFTVB2CTS" Description="TS EFTV">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_EFTVB2CTS.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH858</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_EFTVB2CTS</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLDropoffSmartHome" Description="SmartHome PL Drop off">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLDropoffSmartHome.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH873</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLDropoffSmartHome</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLDropoffSmartSch" Description="SmartSch PL Drop off">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLDropoffSmartSch.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH873</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLDropoffSmartSch</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLDropoffSochi" Description="Sochi PL Drop off">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLDropoffSochi.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH873</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLDropoffSochi</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLDropoffE1" Description="E1 PL Drop off">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLDropoffE1.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH873</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLDropoffE1</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLDropoffILS" Description="ILS PL Drop off">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLDropoffILS.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH873</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLDropoffILS</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLDropoffMini" Description="Mini PL Drop off">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLDropoffMini.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH873</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLDropoffMini</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLDropoffB2S" Description="B2S PL Drop off">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLDropoffB2S.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH873</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLDropoffB2S</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLDropoffB2B" Description="B2B PL Drop off">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLDropoffB2B.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH873</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLDropoffB2B</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLDropoffFreetown" Description="Freetown PL Drop off">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLDropoffFreetown.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH873</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLDropoffFreetown</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLDropoffOthers" Description="Other PL Drop off">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLDropoffOthers.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH873</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLDropoffOthers</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLDropoffGroupon" Description="Groupon PL Drop off">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLDropoffGroupon.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH873</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLDropoffGroupon</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLDropoffB2CAMXUOL" Description="B2CAMXUOL PL Drop off">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLDropoffB2CAMXUOL.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH873</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLDropoffB2CAMXUOL</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLDropoffB2COS" Description="OS PL Drop off">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLDropoffB2COS.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH873</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLDropoffB2COS</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLDropoffB2CCS" Description="Center Sales PL Drop off">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLDropoffB2CCS.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH873</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLDropoffB2CCS</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLDropoffB2CTS" Description="TS PL Drop off">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLDropoffB2CTS.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH873</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLDropoffB2CTS</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLSmartHome" Description="SmartHome PL">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLSmartHome.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH849</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLSmartHome</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLSmartSch" Description="SmartSch PL">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLSmartSch.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH849</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLSmartSch</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLSochi" Description="Sochi PL">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLSochi.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH849</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLSochi</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLE1" Description="E1 PL">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLE1.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH849</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLE1</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLILS" Description="ILS PL">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLILS.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH849</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLILS</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLMini" Description="Mini PL">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLMini.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH849</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLMini</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLB2S" Description="B2S PL">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLB2S.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH849</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLB2S</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLB2B" Description="B2B PL">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLB2B.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH849</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLB2B</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLFreetown" Description="Freetown PL">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLFreetown.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH849</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLFreetown</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLOthers" Description="Other PL">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLOthers.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH849</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLOthers</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLGroupon" Description="Groupon PL">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLGroupon.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH849</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLGroupon</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLB2CAMXUOL" Description="B2CAMXUOL PL">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLB2CAMXUOL.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH849</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLB2CAMXUOL</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLB2COS" Description="OS PL">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLB2COS.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH849</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLB2COS</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLB2CCS" Description="Center Sales PL">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLB2CCS.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH849</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLB2CCS</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLB2CTS" Description="TS PL">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLB2CTS.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH849</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLB2CTS</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_GLSmartHome" Description="SmartHome GL">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_GLSmartHome.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH848</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_GLSmartHome</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_GLSmartSch" Description="SmartSch GL">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_GLSmartSch.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH848</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_GLSmartSch</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_GLSochi" Description="Sochi GL">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_GLSochi.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH848</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_GLSochi</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_GLE1" Description="E1 GL">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_GLE1.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH848</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_GLE1</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_GLILS" Description="ILS GL">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_GLILS.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH848</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_GLILS</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_GLMini" Description="Mini GL">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_GLMini.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH848</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_GLMini</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_GLB2S" Description="B2S GL">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_GLB2S.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH848</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_GLB2S</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_GLB2B" Description="B2B GL">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_GLB2B.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH848</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_GLB2B</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_GLFreetown" Description="Freetown GL">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_GLFreetown.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH848</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_GLFreetown</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_GLOthers" Description="Other GL">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_GLOthers.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH848</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_GLOthers</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_GLGroupon" Description="Groupon GL">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_GLGroupon.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH848</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_GLGroupon</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_GLB2CAMXUOL" Description="B2CAMXUOL GL">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_GLB2CAMXUOL.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH848</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_GLB2CAMXUOL</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_GLB2COS" Description="OS GL">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_GLB2COS.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH848</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_GLB2COS</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_GLB2CCS" Description="Center Sales GL">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_GLB2CCS.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH848</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_GLB2CCS</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_GLB2CTS" Description="TS GL">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_GLB2CTS.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH848</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_GLB2CTS</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLLateCancelSmartHome" Description="SmartHome PL Late Cancel">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLLateCancelSmartHome.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH905</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLLateCancelSmartHome</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLLateCancelSmartSch" Description="SmartSch PL Late Cancel">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLLateCancelSmartSch.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH905</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLLateCancelSmartSch</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLLateCancelSochi" Description="Sochi PL Late Cancel">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLLateCancelSochi.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH905</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLLateCancelSochi</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLLateCancelE1" Description="E1 PL Late Cancel">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLLateCancelE1.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH905</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLLateCancelE1</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLLateCancelILS" Description="ILS PL Late Cancel">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLLateCancelILS.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH905</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLLateCancelILS</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLLateCancelMini" Description="Mini PL Late Cancel">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLLateCancelMini.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH905</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLLateCancelMini</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLLateCancelB2S" Description="B2S PL Late Cancel">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLLateCancelB2S.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH905</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLLateCancelB2S</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLLateCancelB2B" Description="B2B PL Late Cancel">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLLateCancelB2B.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH905</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLLateCancelB2B</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLLateCancelFreetown" Description="Freetown PL Late Cancel">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLLateCancelFreetown.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH905</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLLateCancelFreetown</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLLateCancelOthers" Description="Other PL Late Cancel">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLLateCancelOthers.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH905</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLLateCancelOthers</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLLateCancelGroupon" Description="Groupon PL Late Cancel">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLLateCancelGroupon.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH905</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLLateCancelGroupon</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLLateCancelB2CAMXUOL" Description="B2CAMXUOL PL Late Cancel">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLLateCancelB2CAMXUOL.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH905</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLLateCancelB2CAMXUOL</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLLateCancelB2COS" Description="OS PL Late Cancel">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLLateCancelB2COS.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH905</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLLateCancelB2COS</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLLateCancelB2CCS" Description="Center Sales PL Late Cancel">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLLateCancelB2CCS.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH905</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLLateCancelB2CCS</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLLateCancelB2CTS" Description="TS PL Late Cancel">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLLateCancelB2CTS.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH905</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLLateCancelB2CTS</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+  </Reports>
+  <Filters>
+    <Filter Name="EFLabsCost_DirectCost_WritingSmartHome" Description="SmartHome Writing">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">SmartHome</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_WritingSmartSch" Description="SmartSch Writing">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">SmartSchool</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_WritingSochi" Description="Sochi Writing">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Sochi</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_WritingE1" Description="E1 Writing">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">COEF</Value>
+          <Value Number="1E+300" IsNumeric="False">Owned</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_WritingILS" Description="ILS Writing">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Ilab</Value>
+          <Value Number="1E+300" IsNumeric="False">MYEF</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_WritingMini" Description="Mini Writing">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">MiniSchool</Value>
+          <Value Number="1E+300" IsNumeric="False">MiniHome</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_WritingB2S" Description="B2S Writing">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">B2S</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_WritingB2B" Description="B2B Writing">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">CLLSSelfStudy</Value>
+          <Value Number="1E+300" IsNumeric="False">CLLSPremium</Value>
+          <Value Number="1E+300" IsNumeric="False">CLLSPrivate</Value>
+          <Value Number="1E+300" IsNumeric="False">Ola_Tourista</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_WritingFreetown" Description="Freetown Writing">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">FreeTown</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_WritingOthers" Description="Other Writing">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">B2COthers</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_WritingGroupon" Description="Groupon Writing">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Groupon</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_WritingB2CAMXUOL" Description="B2CAMXUOL Writing">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">B2CAMXUOL</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_WritingB2COS" Description="OS Writing">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Online</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_WritingB2CCS" Description="Center Sales Writing">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">CenterSales</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_WritingB2CTS" Description="TS Writing">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">TeleSales</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_EFTVDropoffSmartHome" Description="SmartHome EFTV Drop off">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">SmartHome</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_EFTVDropoffSmartSch" Description="SmartSch EFTV Drop off">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">SmartSchool</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_EFTVDropoffSochi" Description="Sochi EFTV Drop off">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Sochi</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_EFTVDropoffE1" Description="E1 EFTV Drop off">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">COEF</Value>
+          <Value Number="1E+300" IsNumeric="False">Owned</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_EFTVDropoffILS" Description="ILS EFTV Drop off">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Ilab</Value>
+          <Value Number="1E+300" IsNumeric="False">MYEF</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_EFTVDropoffMini" Description="Mini EFTV Drop off">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">MiniSchool</Value>
+          <Value Number="1E+300" IsNumeric="False">MiniHome</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_EFTVDropoffB2S" Description="B2S EFTV Drop off">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">B2S</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_EFTVDropoffB2B" Description="B2B EFTV Drop off">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">CLLSSelfStudy</Value>
+          <Value Number="1E+300" IsNumeric="False">CLLSPremium</Value>
+          <Value Number="1E+300" IsNumeric="False">CLLSPrivate</Value>
+          <Value Number="1E+300" IsNumeric="False">Ola_Tourista</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_EFTVDropoffFreetown" Description="Freetown EFTV Drop off">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">FreeTown</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_EFTVDropoffOthers" Description="Other EFTV Drop off">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">B2COthers</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_EFTVDropoffGroupon" Description="Groupon EFTV Drop off">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Groupon</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_EFTVDropoffB2CAMXUOL" Description="B2CAMXUOL EFTV Drop off">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">B2CAMXUOL</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_EFTVDropoffB2COS" Description="OS EFTV Drop off">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Online</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_EFTVDropoffB2CCS" Description="Center Sales EFTV Drop off">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">CenterSales</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_EFTVDropoffB2CTS" Description="TS EFTV Drop off">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">TeleSales</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_EFTVSmartHome" Description="SmartHome EFTV">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">SmartHome</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_EFTVSmartSch" Description="SmartSch EFTV">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">SmartSchool</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_EFTVSochi" Description="Sochi EFTV">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Sochi</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_EFTVE1" Description="E1 EFTV">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">COEF</Value>
+          <Value Number="1E+300" IsNumeric="False">Owned</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_EFTVILS" Description="ILS EFTV">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Ilab</Value>
+          <Value Number="1E+300" IsNumeric="False">MYEF</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_EFTVMini" Description="Mini EFTV">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">MiniSchool</Value>
+          <Value Number="1E+300" IsNumeric="False">MiniHome</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_EFTVB2S" Description="B2S EFTV">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">B2S</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_EFTVB2B" Description="B2B EFTV">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">CLLSSelfStudy</Value>
+          <Value Number="1E+300" IsNumeric="False">CLLSPremium</Value>
+          <Value Number="1E+300" IsNumeric="False">CLLSPrivate</Value>
+          <Value Number="1E+300" IsNumeric="False">Ola_Tourista</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_EFTVFreetown" Description="Freetown EFTV">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">FreeTown</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_EFTVOthers" Description="Other EFTV">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">B2COthers</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_EFTVGroupon" Description="Groupon EFTV">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Groupon</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_EFTVB2CAMXUOL" Description="B2CAMXUOL EFTV">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">B2CAMXUOL</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_EFTVB2COS" Description="OS EFTV">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Online</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_EFTVB2CCS" Description="Center Sales EFTV">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">CenterSales</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_EFTVB2CTS" Description="TS EFTV">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">TeleSales</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLDropoffSmartHome" Description="SmartHome PL Drop off">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">SmartHome</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLDropoffSmartSch" Description="SmartSch PL Drop off">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">SmartSchool</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLDropoffSochi" Description="Sochi PL Drop off">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Sochi</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLDropoffE1" Description="E1 PL Drop off">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">COEF</Value>
+          <Value Number="1E+300" IsNumeric="False">Owned</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLDropoffILS" Description="ILS PL Drop off">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Ilab</Value>
+          <Value Number="1E+300" IsNumeric="False">MYEF</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLDropoffMini" Description="Mini PL Drop off">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">MiniSchool</Value>
+          <Value Number="1E+300" IsNumeric="False">MiniHome</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLDropoffB2S" Description="B2S PL Drop off">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">B2S</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLDropoffB2B" Description="B2B PL Drop off">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">CLLSSelfStudy</Value>
+          <Value Number="1E+300" IsNumeric="False">CLLSPremium</Value>
+          <Value Number="1E+300" IsNumeric="False">CLLSPrivate</Value>
+          <Value Number="1E+300" IsNumeric="False">Ola_Tourista</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLDropoffFreetown" Description="Freetown PL Drop off">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">FreeTown</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLDropoffOthers" Description="Other PL Drop off">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">B2COthers</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLDropoffGroupon" Description="Groupon PL Drop off">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Groupon</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLDropoffB2CAMXUOL" Description="B2CAMXUOL PL Drop off">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">B2CAMXUOL</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLDropoffB2COS" Description="OS PL Drop off">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Online</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLDropoffB2CCS" Description="Center Sales PL Drop off">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">CenterSales</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLDropoffB2CTS" Description="TS PL Drop off">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">TeleSales</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLSmartHome" Description="SmartHome PL">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">SmartHome</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLSmartSch" Description="SmartSch PL">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">SmartSchool</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLSochi" Description="Sochi PL">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Sochi</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLE1" Description="E1 PL">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">COEF</Value>
+          <Value Number="1E+300" IsNumeric="False">Owned</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLILS" Description="ILS PL">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Ilab</Value>
+          <Value Number="1E+300" IsNumeric="False">MYEF</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLMini" Description="Mini PL">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">MiniSchool</Value>
+          <Value Number="1E+300" IsNumeric="False">MiniHome</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLB2S" Description="B2S PL">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">B2S</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLB2B" Description="B2B PL">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">CLLSSelfStudy</Value>
+          <Value Number="1E+300" IsNumeric="False">CLLSPremium</Value>
+          <Value Number="1E+300" IsNumeric="False">CLLSPrivate</Value>
+          <Value Number="1E+300" IsNumeric="False">Ola_Tourista</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLFreetown" Description="Freetown PL">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">FreeTown</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLOthers" Description="Other PL">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">B2COthers</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLGroupon" Description="Groupon PL">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Groupon</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLB2CAMXUOL" Description="B2CAMXUOL PL">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">B2CAMXUOL</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLB2COS" Description="OS PL">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Online</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLB2CCS" Description="Center Sales PL">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">CenterSales</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLB2CTS" Description="TS PL">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">TeleSales</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_GLSmartHome" Description="SmartHome GL">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">SmartHome</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_GLSmartSch" Description="SmartSch GL">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">SmartSchool</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_GLSochi" Description="Sochi GL">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Sochi</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_GLE1" Description="E1 GL">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">COEF</Value>
+          <Value Number="1E+300" IsNumeric="False">Owned</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_GLILS" Description="ILS GL">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Ilab</Value>
+          <Value Number="1E+300" IsNumeric="False">MYEF</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_GLMini" Description="Mini GL">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">MiniSchool</Value>
+          <Value Number="1E+300" IsNumeric="False">MiniHome</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_GLB2S" Description="B2S GL">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">B2S</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_GLB2B" Description="B2B GL">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">CLLSSelfStudy</Value>
+          <Value Number="1E+300" IsNumeric="False">CLLSPremium</Value>
+          <Value Number="1E+300" IsNumeric="False">CLLSPrivate</Value>
+          <Value Number="1E+300" IsNumeric="False">Ola_Tourista</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_GLFreetown" Description="Freetown GL">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">FreeTown</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_GLOthers" Description="Other GL">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">B2COthers</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_GLGroupon" Description="Groupon GL">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Groupon</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_GLB2CAMXUOL" Description="B2CAMXUOL GL">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">B2CAMXUOL</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_GLB2COS" Description="OS GL">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Online</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_GLB2CCS" Description="Center Sales GL">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">CenterSales</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_GLB2CTS" Description="TS GL">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">TeleSales</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLLateCancelSmartHome" Description="SmartHome PL Late Cancel">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">SmartHome</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLLateCancelSmartSch" Description="SmartSch PL Late Cancel">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">SmartSchool</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLLateCancelSochi" Description="Sochi PL Late Cancel">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Sochi</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLLateCancelE1" Description="E1 PL Late Cancel">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">COEF</Value>
+          <Value Number="1E+300" IsNumeric="False">Owned</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLLateCancelILS" Description="ILS PL Late Cancel">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Ilabs</Value>
+          <Value Number="1E+300" IsNumeric="False">MYEF</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLLateCancelMini" Description="Mini PL Late Cancel">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">MiniHome</Value>
+          <Value Number="1E+300" IsNumeric="False">MiniSchool</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLLateCancelB2S" Description="B2S PL Late Cancel">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">B2S</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLLateCancelB2B" Description="B2B PL Late Cancel">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">CLLS</Value>
+          <Value Number="1E+300" IsNumeric="False">Ola_Tourista</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLLateCancelFreetown" Description="Freetown PL Late Cancel">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">FreeTown</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLLateCancelOthers" Description="Other PL Late Cancel">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">B2COthers</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLLateCancelGroupon" Description="Groupon PL Late Cancel">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Groupon</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLLateCancelB2CAMXUOL" Description="B2CAMXUOL PL Late Cancel">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">B2CAMXUOL</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLLateCancelB2COS" Description="OS PL Late Cancel">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Online</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLLateCancelB2CCS" Description="Center Sales PL Late Cancel">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">CenterSales</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLLateCancelB2CTS" Description="TS PL Late Cancel">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">TeleSales</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+  </Filters>
+</ReportConfig>

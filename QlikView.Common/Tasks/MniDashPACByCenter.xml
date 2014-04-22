@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ReportConfig>
+  <Tasks>
+    <Task Name="MniDashPACByCenter" Description="MniDashPACByCenter">
+      <OutputFolder>D:\ReportExport\MniDashPACByCenter</OutputFolder>
+      <SendInSingleMail>True</SendInSingleMail>
+      <MergeInSingleExcel>True</MergeInSingleExcel>
+      <Reports>
+        <Report>MniDashPACByCenter_PACByMonth</Report>
+        <Report>MniDashPACByCenter_OnlineT3</Report>
+        <Report>MniDashPACByCenter_OnlineT2</Report>
+        <Report>MniDashPACByCenter_OnlineT1</Report>
+        <Report>MniDashPACByCenter_OnlineTotal</Report>
+        <Report>MniDashPACByCenter_ALL</Report>
+      </Reports>
+      <Recipients>
+        <Recipient>Anita.Hy.Li</Recipient>
+        <Recipient>xiaoming.cui</Recipient>
+      </Recipients>
+      <RecipientGroup>
+      </RecipientGroup>
+      <Message>
+        <From>QlikViewAdmin@ef.com</From>
+        <CC>Jimmy.LZ@EF.com;Fancy.Wu@EF.com;Joyce.Fang@EF.com;jack.Chenda@EF.com</CC>
+        <BCC>
+        </BCC>
+        <Subject>MniDashPACByCenter  Report [@Date]</Subject>
+        <Body><![CDATA[Hi,
+<br>
+
+Pls find the  MniDashPACByCenter  Report from the attachment!
+<br>
+<br>
+Thanks,]]></Body>
+      </Message>
+    </Task>
+  </Tasks>
+  <Reports>
+    <Report Name="MniDashPACByCenter_ALL" Description="ALL">
+      <Connection>MiniDashPAC</Connection>
+      <OutputFileName>MniDashPACByCenter_ALL.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH04</QlikViewExportObjectId>
+      <Filter>MniDashPACByCenter_All</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="MniDashPACByCenter_OnlineTotal" Description="Online Total">
+      <Connection>MiniDashPAC</Connection>
+      <OutputFileName>MniDashPACByCenter_OnlineTotal.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH07</QlikViewExportObjectId>
+      <Filter>MniDashPACByCenter_OnlineTotal</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="MniDashPACByCenter_OnlineT1" Description="Online T1">
+      <Connection>MiniDashPAC</Connection>
+      <OutputFileName>MniDashPACByCenter_OnlineT1.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH07</QlikViewExportObjectId>
+      <Filter>MniDashPACByCenter_OnlineT1</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="MniDashPACByCenter_OnlineT2" Description="Online T2">
+      <Connection>MiniDashPAC</Connection>
+      <OutputFileName>MniDashPACByCenter_OnlineT2.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH07</QlikViewExportObjectId>
+      <Filter>MniDashPACByCenter_OnlineT2</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="MniDashPACByCenter_OnlineT3" Description="Online T3">
+      <Connection>MiniDashPAC</Connection>
+      <OutputFileName>MniDashPACByCenter_OnlineT3.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH07</QlikViewExportObjectId>
+      <Filter>MniDashPACByCenter_OnlineT3</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="MniDashPACByCenter_PACByMonth" Description="PAC By Month">
+      <Connection>MiniDashPAC</Connection>
+      <OutputFileName>MniDashPACByCenter_PACByMonth.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH08</QlikViewExportObjectId>
+      <Filter>MniDashPACByCenter_PACByMonth</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+  </Reports>
+  <Filters>
+    <Filter Name="MniDashPACByCenter_OnlineTotal" Description="MniDashPACByCenter_OnlineTotal">
+      <Connection>MiniDashPAC</Connection>
+      <Fields>
+        <Field Name="Source" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Online</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="MniDashPACByCenter_OnlineT1" Description="MniDashPACByCenter_OnlineT1">
+      <Connection>MiniDashPAC</Connection>
+      <Fields>
+        <Field Name="Source" Description="" Expression="" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Tier 1</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="MniDashPACByCenter_OnlineT2" Description="MniDashPACByCenter_OnlineT2">
+      <Connection>MiniDashPAC</Connection>
+      <Fields>
+        <Field Name="Source" Description="" Expression="" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Tier 2</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="MniDashPACByCenter_OnlineT3" Description="MniDashPACByCenter_OnlineT3">
+      <Connection>MiniDashPAC</Connection>
+      <Fields>
+        <Field Name="Source" Description="" Expression="" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Tier 3</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="MniDashPACByCenter_All" Description="MniDashPACByCenter_All">
+      <Connection>MiniDashPAC</Connection>
+      <Fields>
+        <Field Name="Source" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Referral</Value>
+          <Value Number="1E+300" IsNumeric="False">Offline</Value>
+          <Value Number="1E+300" IsNumeric="False">Online</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="MniDashPACByCenter_PACByMonth" Description="MniDashPACByCenter_PACByMonth">
+      <Connection>MiniDashPAC</Connection>
+      <Fields>
+        <Field Name="Source" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Referral</Value>
+          <Value Number="1E+300" IsNumeric="False">Offline</Value>
+          <Value Number="1E+300" IsNumeric="False">Online</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+  </Filters>
+</ReportConfig>

@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F4C8E800-E063-4372-A5CA-DD8E84864EE4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QlikView.Configuration</RootNamespace>
+    <AssemblyName>QlikViewConfiguration</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\_output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommandArgs.cs" />
+    <Compile Include="Views\FilterSelectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FilterSelectionForm.Designer.cs">
+      <DependentUpon>FilterSelectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\ISingleFieldSelection.cs" />
+    <Compile Include="Views\DocumentSelectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DocumentSelectionForm.Designer.cs">
+      <DependentUpon>DocumentSelectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ExcelReportView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ExcelReportView.Designer.cs">
+      <DependentUpon>ExcelReportView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ObjectIdSelectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ObjectIdSelectionForm.Designer.cs">
+      <DependentUpon>ObjectIdSelectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\GroupView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\GroupView.Designer.cs">
+      <DependentUpon>GroupView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TaskView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\TaskView.Designer.cs">
+      <DependentUpon>TaskView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FieldSelectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FieldSelectionForm.Designer.cs">
+      <DependentUpon>FieldSelectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\IFieldSelection.cs" />
+    <Compile Include="Views\FilterView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FilterView.Designer.cs">
+      <DependentUpon>FilterView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ConnectionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ConnectionView.Designer.cs">
+      <DependentUpon>ConnectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralPresenter.cs" />
+    <Compile Include="Interfaces\IBasePresenter.cs" />
+    <Compile Include="Interfaces\IMainView.cs" />
+    <Compile Include="Interfaces\IBaseView.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\RecipientView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\RecipientView.Designer.cs">
+      <DependentUpon>RecipientView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\VariableSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\VariableSettingForm.Designer.cs">
+      <DependentUpon>VariableSettingForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Views\FilterSelectionForm.resx">
+      <DependentUpon>FilterSelectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DocumentSelectionForm.resx">
+      <DependentUpon>DocumentSelectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ExcelReportView.resx">
+      <DependentUpon>ExcelReportView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ObjectIdSelectionForm.resx">
+      <DependentUpon>ObjectIdSelectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\GroupView.resx">
+      <DependentUpon>GroupView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TaskView.resx">
+      <DependentUpon>TaskView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FieldSelectionForm.resx">
+      <DependentUpon>FieldSelectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FilterView.resx">
+      <DependentUpon>FilterView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ConnectionView.resx">
+      <DependentUpon>ConnectionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Views\RecipientView.resx">
+      <DependentUpon>RecipientView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\VariableSettingForm.resx">
+      <DependentUpon>VariableSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QilikView.Connector\QlikView.Connector.csproj">
+      <Project>{5291C8EF-F7F9-4707-A198-6F45FECFA78A}</Project>
+      <Name>QlikView.Connector</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QlikView.Common\QlikView.Common.csproj">
+      <Project>{B36BF32F-164C-41E5-85A4-547D4E734AA3}</Project>
+      <Name>QlikView.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

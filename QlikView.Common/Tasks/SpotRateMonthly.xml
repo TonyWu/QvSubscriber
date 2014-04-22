@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ReportConfig>
+  <Tasks>
+    <Task Name="SpotRateMonthly" Description="Monthly Sport Rate">
+      <OutputFolder>D:\ReportExport\SpotRateMonthly</OutputFolder>
+      <SendInSingleMail>True</SendInSingleMail>
+      <MergeInSingleExcel>True</MergeInSingleExcel>
+      <Reports>
+        <Report>SpotRate_Monthly</Report>
+      </Reports>
+      <Recipients>
+        <Recipient>Andread Kullberg</Recipient>
+        <Recipient>KyungJin Park</Recipient>
+        <Recipient>Francisco Elizondo</Recipient>
+        <Recipient>Andre Marques</Recipient>
+        <Recipient>Jona.Fujiwara</Recipient>
+        <Recipient>andy.alexander</Recipient>
+      </Recipients>
+      <RecipientGroup>
+      </RecipientGroup>
+      <Message>
+        <From>QlikViewAdmin@ef.com</From>
+        <CC>Vipul.Bhargava@EF.com;QlikViewAdmin@ef.com</CC>
+        <BCC>
+        </BCC>
+        <Subject>Monthly Spot Rate Report</Subject>
+        <Body><![CDATA[Dear All,
+<br>
+<br>
+
+The attached includes the average spot rate on the last month of some currencies, please have a look at it.<br>
+Please feel free to let us know if you want much more currency spot rate.
+
+<br>
+<br>
+Thanks.]]></Body>
+      </Message>
+    </Task>
+  </Tasks>
+  <Reports>
+    <Report Name="SpotRate_Monthly" Description="Monthly SportRate">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>SportRate_Monthly.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH163</QlikViewExportObjectId>
+      <Filter>SpotRate_Monthly</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+  </Reports>
+  <Filters>
+    <Filter Name="SpotRate_Monthly" Description="Monthly Spot Rate">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+      </Variables>
+    </Filter>
+  </Filters>
+</ReportConfig>

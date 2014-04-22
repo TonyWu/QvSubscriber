@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ReportConfig>
+  <Tasks>
+    <Task Name="CCDailyFunnel_Summary_HK" Description="CCDailyFunnel_Summary_HK">
+      <OutputFolder>D:\ReportExport\CCDailyFunnel_Region</OutputFolder>
+      <SendInSingleMail>True</SendInSingleMail>
+      <MergeInSingleExcel>False</MergeInSingleExcel>
+      <Reports>
+        <Report>CCDailyFunnel_Summary_FSZUM</Report>
+        <Report>CCDailyFunnel_Summary_DGNCH</Report>
+      </Reports>
+      <Recipients>
+        <Recipient>sheldon.leung</Recipient>
+      </Recipients>
+      <RecipientGroup>
+      </RecipientGroup>
+      <Message>
+        <From>QlikViewAdmin@ef.com</From>
+        <CC>SalesReport_HK@ef.com</CC>
+        <BCC>
+        </BCC>
+        <Subject>CC's Daily Funnel Report (HK) [@Date]</Subject>
+        <Body><![CDATA[@Template
+<h3>CC's Daily Funnel Report Date:@Date</h3> <br>
+<span lang=EN-US style='color:#1F497D;font-weight:bold'>Center Target Achievement - By CC (FS ZUM) </span>
+{CCDailyFunnel_Summary_FSZUM}
+<br>
+<br>
+<span lang=EN-US style='color:#1F497D;font-weight:bold'>Center Target Achievement - By CC (DG NCH)</span>
+{CCDailyFunnel_Summary_DGNCH}
+]]></Body>
+      </Message>
+    </Task>
+  </Tasks>
+  <Reports>
+    <Report Name="CCDailyFunnel_Summary_FSZUM" Description="CCDailyFunnel_Summary_FSZUM">
+      <Connection>FunnelCNMini_New</Connection>
+      <OutputFileName>CCDailyFunnel_Summary_FSZUM.jpg</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH19</QlikViewExportObjectId>
+      <Filter>CCDailyFunnel_Summary_FSZUM</Filter>
+      <ReportType>2</ReportType>
+    </Report>
+    <Report Name="CCDailyFunnel_Summary_DGNCH" Description="CCDailyFunnel_Summary_DGNCH">
+      <Connection>FunnelCNMini_New</Connection>
+      <OutputFileName>CCDailyFunnel_Summary_DGNCH.jpg</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH19</QlikViewExportObjectId>
+      <Filter>CCDailyFunnel_Summary_DGNCH</Filter>
+      <ReportType>2</ReportType>
+    </Report>
+  </Reports>
+  <Filters>
+    <Filter Name="CCDailyFunnel_Summary_FSZUM" Description="CCDailyFunnel_Summary_FSZUM">
+      <Connection>FunnelCNMini_New</Connection>
+      <Fields>
+        <Field Name="TheYear" Description="" Expression="YearOfTheDayCurrent" />
+        <Field Name="MonthOfYear" Description="" Expression="MonthOfTheDayCurrent" />
+        <Field Name="CityType" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Center</Value>
+        </Field>
+        <Field Name="CN_City__c" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">FS ZUM</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="Today">
+        </Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="CCDailyFunnel_Summary_DGNCH" Description="CCDailyFunnel_Summary_DGNCH">
+      <Connection>FunnelCNMini_New</Connection>
+      <Fields>
+        <Field Name="TheYear" Description="" Expression="YearOfTheDayCurrent" />
+        <Field Name="MonthOfYear" Description="" Expression="MonthOfTheDayCurrent" />
+        <Field Name="CityType" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Center</Value>
+        </Field>
+        <Field Name="CN_City__c" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">DG NCH</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="Today">
+        </Variable>
+      </Variables>
+    </Filter>
+  </Filters>
+</ReportConfig>

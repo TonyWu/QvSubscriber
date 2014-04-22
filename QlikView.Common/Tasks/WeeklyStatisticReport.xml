@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ReportConfig>
+  <Tasks>
+    <Task Name="WeeklyStatisticReport" Description="Weekly Statistic Report">
+      <OutputFolder>D:\ReportExport\FunnelRevenue</OutputFolder>
+      <SendInSingleMail>True</SendInSingleMail>
+      <MergeInSingleExcel>True</MergeInSingleExcel>
+      <Reports>
+        <Report>FunnelRevenue_Total_USD</Report>
+        <Report>FunnelRevenue_TS_USD</Report>
+        <Report>FunnelRevenue_Online_USD</Report>
+        <Report>FunnelRevenue_Total_Local</Report>
+        <Report>FunnelRevenue_TS_Local</Report>
+        <Report>FunnelRevenue_Online_Local</Report>
+        <Report>FunnelRevenue_KFRRevenue_NotSet</Report>
+        <Report>FunnelRevenue_KFRRevenue_CH157</Report>
+        <Report>FunnelRevenue_KFRRevenue_CH159</Report>
+      </Reports>
+      <Recipients>
+        <Recipient>Natalie</Recipient>
+        <Recipient>kristina.howes</Recipient>
+      </Recipients>
+      <RecipientGroup>
+      </RecipientGroup>
+      <Message>
+        <From>QlikViewAdmin@ef.com</From>
+        <CC>QlikViewAdmin@ef.com</CC>
+        <BCC>Eric.Azumi@ef.com</BCC>
+        <Subject>Weekly Statistic Report</Subject>
+        <Body><![CDATA[Hi all,
+<br/>
+The atteched is the Weekly Statistic Report!
+<br/>
+<br/>
+Please feel free to contact QlikViewAdmin@EF.com if you have any problem on this report.]]></Body>
+      </Message>
+    </Task>
+  </Tasks>
+  <Reports>
+    <Report Name="FunnelRevenue_Total_USD" Description="USD">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelRevenue_Total_USD.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH81</QlikViewExportObjectId>
+      <Filter>FunnelRevenue_Week</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelRevenue_TS_USD" Description="USD">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelRevenue_TS_USD.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH82</QlikViewExportObjectId>
+      <Filter>FunnelRevenue_Week</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelRevenue_Online_USD" Description="USD">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelRevenue_Online_USD.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH83</QlikViewExportObjectId>
+      <Filter>FunnelRevenue_Week</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelRevenue_Total_Local" Description="Local">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelRevenue_Total_Local.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH88</QlikViewExportObjectId>
+      <Filter>FunnelRevenue_Week</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelRevenue_TS_Local" Description="Local">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelRevenue_TS_Local.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH89</QlikViewExportObjectId>
+      <Filter>FunnelRevenue_Week</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelRevenue_Online_Local" Description="Local">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelRevenue_Online_Local.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH90</QlikViewExportObjectId>
+      <Filter>FunnelRevenue_Week</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelRevenue_KFRRevenue_NotSet" Description="KFR Revenue">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelRevenue_KFRRevenue_NotSet.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH156</QlikViewExportObjectId>
+      <Filter>FunnelRevenue_Week</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelRevenue_KFRRevenue_CH157" Description="KFRRevenueCH157">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelRevenue_KFRRevenue_CH157.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH157</QlikViewExportObjectId>
+      <Filter>FunnelRevenue_Week</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelRevenue_KFRRevenue_CH159" Description="KFRRevenueCH159">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelRevenue_KFRRevenue_CH159.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH159</QlikViewExportObjectId>
+      <Filter>FunnelRevenue_Week</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+  </Reports>
+  <Filters>
+    <Filter Name="FunnelRevenue_Week" Description="FunnelRevenue_Week">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">13-14</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+      </Variables>
+    </Filter>
+  </Filters>
+</ReportConfig>

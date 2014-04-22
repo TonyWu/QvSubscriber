@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ReportConfig>
+  <Tasks>
+    <Task Name="ChinaSalesFunnelDash" Description="ChinaSalesFunnelDash">
+      <OutputFolder>D:\ReportExport\ChinaSalesFunnelDash</OutputFolder>
+      <SendInSingleMail>True</SendInSingleMail>
+      <MergeInSingleExcel>True</MergeInSingleExcel>
+      <Reports>
+        <Report>ChinaSalesFunnelDash_Summary_TargetImage</Report>
+        <Report>ChinaSalesFunnelDash_Summary_Target</Report>
+      </Reports>
+      <Recipients>
+        <Recipient>Sam Cheung</Recipient>
+      </Recipients>
+      <RecipientGroup>
+      </RecipientGroup>
+      <Message>
+        <From>QlikViewAdmin@ef.com</From>
+        <CC>Annabelle.Vultee@EF.com;Tracy.Li@EF.com;david.hu@EF.com;Irene.Zhangry@EF.com;Jimmy.LZ@EF.com;jane.jiang@EF.com;Shirley.WangRong@EF.com;Angela.Xu@EF.com;Marc.Hollander@EF.com;Johan.Wilhelmsson@EF.com;Gareth.Magowan@EF.com;xiaofei.tang@ef.com;EFEC_CSO@EF.com;EFEC_NSO@ef.com;EFEC_RGM@ef.com;EFEC_Report@ef.com</CC>
+        <BCC>Eric.Azumi@ef.com</BCC>
+        <Subject>China Sales Funnel Dash [@Date]</Subject>
+        <Body><![CDATA[@Template
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40">
+<body>
+<div><h4>China Sales Funnel Dash [@Date]</h4></div>
+<br>
+<div>{ChinaSalesFunnelDash_Summary_TargetImage}</div>
+<br>
+<div></div>
+</body>
+</html>]]></Body>
+      </Message>
+    </Task>
+  </Tasks>
+  <Reports>
+    <Report Name="ChinaSalesFunnelDash_Summary_TargetImage" Description="ChinaSalesFunnelDash_Summary_TargetImage">
+      <Connection>FunnelCNMini_New</Connection>
+      <OutputFileName>Summy_TargetImage.jpg</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH13</QlikViewExportObjectId>
+      <Filter>ChinaSalesFunnelDash_Summary</Filter>
+      <ReportType>2</ReportType>
+    </Report>
+    <Report Name="ChinaSalesFunnelDash_Summary_Target" Description="ChinaSalesFunnelDash_Summary_Target">
+      <Connection>FunnelCNMini_New</Connection>
+      <OutputFileName>Summy_Target.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH82</QlikViewExportObjectId>
+      <Filter>ChinaSalesFunnelDash_Summary</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+  </Reports>
+  <Filters>
+    <Filter Name="ChinaSalesFunnelDash_Summary" Description="ChinaSalesFunnelDash_Summary">
+      <Connection>FunnelCNMini_New</Connection>
+      <Fields>
+        <Field Name="TheYear" Description="" Expression="YearOfTheDayCurrent" />
+        <Field Name="MonthOfYear" Description="" Expression="MonthOfTheDayCurrent" />
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="Today">
+        </Variable>
+      </Variables>
+    </Filter>
+  </Filters>
+</ReportConfig>

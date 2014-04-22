@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ReportConfig>
+  <Tasks>
+    <Task Name="CCDailyFunnel_ByCenter_SHBBB" Description="CCDailyFunnel_ByCenter_SHBBB">
+      <OutputFolder>D:\ReportExport\CCDailyFunnelByCenter</OutputFolder>
+      <SendInSingleMail>True</SendInSingleMail>
+      <MergeInSingleExcel>False</MergeInSingleExcel>
+      <Reports>
+        <Report>CCDailyFunnel_ByCenter_SHBBB</Report>
+      </Reports>
+      <Recipients>
+        <Recipient>ECSH_BBB_Sales</Recipient>
+      </Recipients>
+      <RecipientGroup>
+      </RecipientGroup>
+      <Message>
+        <From>QlikViewAdmin@ef.com</From>
+        <CC>
+        </CC>
+        <BCC>
+        </BCC>
+        <Subject>CC's Daily Funnel Report (SH BBB) [@Date]</Subject>
+        <Body><![CDATA[@Template
+<h3>CC's Daily Funnel Report Date:@Date</h3> <br>
+<span lang=EN-US style='color:#1F497D;font-weight:bold'>Center Target Achievement - By CC (SH BBB) </span>
+<br>
+{CCDailyFunnel_ByCenter_SHBBB}]]></Body>
+      </Message>
+    </Task>
+  </Tasks>
+  <Reports>
+    <Report Name="CCDailyFunnel_ByCenter_SHBBB" Description="CCDailyFunnel_ByCenter_SHBBB">
+      <Connection>FunnelCNMini_New</Connection>
+      <OutputFileName>CCDailyFunnel_ByCenter_SHBBB.jpg</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH19</QlikViewExportObjectId>
+      <Filter>CCDailyFunnel_ByCenter_SHBBB</Filter>
+      <ReportType>2</ReportType>
+    </Report>
+  </Reports>
+  <Filters>
+    <Filter Name="CCDailyFunnel_ByCenter_SHBBB" Description="CCDailyFunnel_ByCenter_SHBBB">
+      <Connection>FunnelCNMini_New</Connection>
+      <Fields>
+        <Field Name="TheYear" Description="" Expression="YearOfTheDayCurrent" />
+        <Field Name="MonthOfYear" Description="" Expression="MonthOfTheDayCurrent" />
+        <Field Name="CN_City__c" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">SH BBB</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="Today">
+        </Variable>
+      </Variables>
+    </Filter>
+  </Filters>
+</ReportConfig>

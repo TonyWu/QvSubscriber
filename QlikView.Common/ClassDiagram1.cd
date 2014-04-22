@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="QlikView.Common.QVConfigLog" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Log\QVConfigLog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QlikView.Common.QVLogBase" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAQAAAAAAAAAAAAgAQAQAAAAAIEAAAAA=</HashCode>
+      <FileName>Log\QVLogBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="QlikView.Common.QVScheduleRunLog" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Log\QVScheduleRunLog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QlikView.Common.QlikViewReport">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAggAEAAQAAAAQBABAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Model\QlikViewReport.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="QlikView.Common.Filter">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAEEAAAAAAQAAAAAAAAAAAQAAAAAgAA=</HashCode>
+      <FileName>Model\Filter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="QlikView.Common.Recipient">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAgAAAAAAAAAAQAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Recipient.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="QlikView.Common.RecipientGroup">
+    <Position X="9" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAEAAAAAAQAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Model\RecipientGroup.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="QlikView.Common.ReportConnection">
+    <Position X="7" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAgAQCEAAAAAAQAAAAAQAACAgAAAAABAAA=</HashCode>
+      <FileName>Model\ReportConnection.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="QlikView.Common.ReportSchedulerDefinition">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAQAAAAAAAAAAAAIAAAAAAI=</HashCode>
+      <FileName>Model\ReportSchedulerDefinition.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="QlikView.Common.ReportTask">
+    <Position X="5.25" Y="4" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>IAAAAEgAAAAgAAAAAAAAAAQQAEAAAAAAAgAAABAAAAI=</HashCode>
+      <FileName>Model\ReportTask.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="QlikView.Common.ReportConfigManagerFactory&lt;T&gt;" Collapsed="true">
+    <Position X="3" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAABAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Configuration\ReportConfigManagerFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QlikView.Common.ReportConfigManagerBase&lt;T&gt;">
+    <Position X="0.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAABAAQAAAAAAAABAwAAAECAEAAgAAAAABAA=</HashCode>
+      <FileName>Configuration\ReportConfigManagerBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QlikView.Common.QvReportManager">
+    <Position X="2.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAABAAAAAEAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Configuration\QvReportManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

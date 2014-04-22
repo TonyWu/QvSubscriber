@@ -1,0 +1,138 @@
+﻿<ribbon:RibbonWindow x:Class="QlikView.Configuration.WpfClient.MainWindow"
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:ribbon="clr-namespace:Microsoft.Windows.Controls.Ribbon;assembly=RibbonControlsLibrary"
+		Title="Qv Subscription Tool"
+		x:Name="RibbonWindow"
+		xmlns:odc="clr-namespace:Odyssey.Controls;assembly=Odyssey"
+		xmlns:loc="clr-namespace:QlikView.Configuration.WpfClient.Views"
+		Width="900" Height="700" Loaded="RibbonWindow_Loaded"
+					 Icon="Images\setting_3.ico">
+	<ribbon:RibbonWindow.Resources>
+		<Style x:Key="VerticalSeparatorStyle" 
+	   TargetType="{x:Type Separator}"
+	   BasedOn="{StaticResource {x:Type Separator}}">
+			<Setter Property="Margin" Value="6,0,6,0"/>
+			<Setter Property="LayoutTransform">
+				<Setter.Value>
+					<TransformGroup>
+						<TransformGroup.Children>
+							<TransformCollection>
+								<RotateTransform Angle="90"/>
+							</TransformCollection>
+						</TransformGroup.Children>
+					</TransformGroup>
+				</Setter.Value>
+			</Setter>
+		</Style>
+
+		<Style x:Key="ReportListBoxStyle" TargetType="{x:Type ListBox}">
+			<Setter Property="BorderThickness" Value="0"/>
+			<Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto"/>
+			<EventSetter Event="SelectionChanged" Handler="ListBox_SelectionChanged"/>
+		</Style>
+
+	</ribbon:RibbonWindow.Resources>
+
+	<DockPanel>
+		<ribbon:Ribbon x:Name="Ribbon" DockPanel.Dock="Top">
+			<ribbon:Ribbon.ApplicationMenu>
+				<ribbon:RibbonApplicationMenu SmallImageSource="Images\setting_3.ico">
+					<ribbon:RibbonApplicationMenuItem Header="Smtp Settings"
+													  x:Name="MenuItemSmtpSettings"
+													  ImageSource="Images\smtp_server.png"
+													  Click="MenuItemSmtpSettings_Click"/>
+					<ribbon:RibbonApplicationMenuItem Header="Exit"
+													  x:Name="MenuItemExit"
+													  ImageSource="Images\LargeIcon.png"
+													  Click="MenuItemExit_Click"/>
+				</ribbon:RibbonApplicationMenu>
+			</ribbon:Ribbon.ApplicationMenu>
+			<ribbon:RibbonTab x:Name="HomeTab" 
+							  Header="Home">
+				<ribbon:RibbonGroup x:Name="Group1" 
+									Header="Action">
+					<ribbon:RibbonButton x:Name="New"
+										 LargeImageSource="Images\blue_new.png"
+										 Label="New" Click="New_Click" />
+					<ribbon:RibbonButton x:Name="Delete"
+										 LargeImageSource="Images\deletered.png"
+										 Label="Delete" 
+										 Command="{Binding ReportItemDeleteCommand}"
+										 CommandParameter="{Binding ReportItem}"
+										 IsEnabled="{Binding IsDeleteEnabled}"/>
+					<ribbon:RibbonButton x:Name="Run"
+										 LargeImageSource="Images\run_test.png"
+										 Label="Run" 
+										 Command="{Binding RunTaskCommand}"
+										 CommandParameter="{Binding ReportItem}"
+										 IsEnabled="{Binding IsRunEnabled}"/>
+
+
+				</ribbon:RibbonGroup>
+
+			</ribbon:RibbonTab>
+		</ribbon:Ribbon>
+		<StatusBar DockPanel.Dock="Bottom" Height="25" Background="{StaticResource OutlookButtonBackground}" BorderThickness="1" BorderBrush="Gray">
+			<Label Name="lblMessage" Foreground="Red" />
+		</StatusBar>
+		<Grid>
+			<DockPanel >
+				<DockPanel DockPanel.Dock="Left">
+                    <TextBox Name="txtSearch" Margin="2" DockPanel.Dock="Top" Text="Search..."  TextChanged="txtSearch_TextChanged" GotFocus="txtSearch_GotFocus" LostFocus="txtSearch_LostFocus"/>
+					<odc:OutlookBar DockPanel.Dock="Bottom" Header="Outlook Bar" MaxNumberOfButtons="6" x:Name="bar" MaxWidth="300"
+					IsCloseButtonVisible="False" SelectedSectionIndex="0"
+					Margin="4,4,0,4" Grid.Row="0" Width="200" IsButtonSplitterVisible="True" IsOverflowVisible="True"
+					IsPopupVisible="False" ShowSideButtons="True" ShowButtons="True"
+					SelectedSectionChanged="bar_SelectedSectionChanged">
+						<odc:OutlookBar.Sections>
+							<odc:OutlookSection Header="Tasks" Image="/images/tasks.png">
+								<odc:OutlookSection.Content>
+									<ListBox Tag="Task" ItemsSource="{Binding Path=Tasks}" Style="{DynamicResource ReportListBoxStyle}">
+									</ListBox>
+								</odc:OutlookSection.Content>
+							</odc:OutlookSection>
+							<odc:OutlookSection Header="Reports" Image="/images/reports.png" >
+								<odc:OutlookSection.Content>
+									<ListBox Tag="Report" ItemsSource="{Binding Path=Reports}" Style="{DynamicResource ReportListBoxStyle}">
+									</ListBox>
+								</odc:OutlookSection.Content>
+							</odc:OutlookSection>
+							<odc:OutlookSection Header="Filters" Image="/images/Filter.png" >
+								<odc:OutlookSection.Content>
+									<ListBox Tag="Filter" ItemsSource="{Binding Path=Filters}" Style="{DynamicResource ReportListBoxStyle}">
+									</ListBox>
+								</odc:OutlookSection.Content>
+							</odc:OutlookSection>
+							<odc:OutlookSection Header="Groups" Image="/images/Groups.png" >
+								<odc:OutlookSection.Content>
+									<ListBox Tag="Group" ItemsSource="{Binding Path=Groups}" Style="{DynamicResource ReportListBoxStyle}">
+									</ListBox>
+								</odc:OutlookSection.Content>
+							</odc:OutlookSection>
+							<odc:OutlookSection Header="Recipients" Image="/images/user_group_new.png" >
+								<odc:OutlookSection.Content>
+									<ListBox Tag="Recipient" ItemsSource="{Binding Path=Recipients}" Style="{DynamicResource ReportListBoxStyle}">
+									</ListBox>
+								</odc:OutlookSection.Content>
+							</odc:OutlookSection>
+							<odc:OutlookSection Header="Connections" Image="/images/connections.png" >
+								<odc:OutlookSection.Content>
+									<ListBox Tag="Connection" ItemsSource="{Binding Path=Connections}" Style="{DynamicResource ReportListBoxStyle}">
+									</ListBox>
+								</odc:OutlookSection.Content>
+							</odc:OutlookSection>
+						</odc:OutlookBar.Sections>
+					</odc:OutlookBar>
+				</DockPanel>
+								  
+				<Border DockPanel.Dock="Right"
+					BorderBrush="{DynamicResource {ComponentResourceKey odc:Skins, RibbonBorderBrush}}"
+					TextBlock.Foreground="{DynamicResource {ComponentResourceKey odc:Skins, WindowForegroundBrush}}" BorderThickness="1"
+					Margin="0,4,4,4">
+					<ContentPresenter Name="ViewContainer" ></ContentPresenter>
+				</Border>
+			</DockPanel>
+		</Grid>        
+	</DockPanel>
+</ribbon:RibbonWindow>

@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ReportConfig>
+  <Tasks>
+    <Task Name="EFECMKTDash" Description="EFECMKTDash">
+      <OutputFolder>D:\ReportExport\EFECMKTDash</OutputFolder>
+      <SendInSingleMail>True</SendInSingleMail>
+      <MergeInSingleExcel>True</MergeInSingleExcel>
+      <Reports>
+        <Report>EFECMKTDash_AvsTByCityByTier</Report>
+        <Report>EFECMKTDash_AvsTByPACByTier</Report>
+        <Report>EFECMKTDash_AvsTByCenterByLeadSource</Report>
+        <Report>EFECMKTDash_Cost</Report>
+        <Report>EFECMKTDash_EtagDashByDaily</Report>
+        <Report>EFECMKTDash_PACDashByWeekly</Report>
+        <Report>EFECMKTDash_PACDashByDaily</Report>
+      </Reports>
+      <Recipients>
+        <Recipient>Annabelle.Vultee</Recipient>
+        <Recipient>Anita.Hy.Li</Recipient>
+        <Recipient>Coco.du</Recipient>
+        <Recipient>Rysh.Hsu</Recipient>
+        <Recipient>EFEC_OnlineMarketing</Recipient>
+        <Recipient>EFEC_CRM</Recipient>
+      </Recipients>
+      <RecipientGroup>
+      </RecipientGroup>
+      <Message>
+        <From>QlikViewAdmin@ef.com</From>
+        <CC>
+        </CC>
+        <BCC>
+        </BCC>
+        <Subject>EFEC marketing dash – as of [@Date]</Subject>
+        <Body><![CDATA[Hi,
+<br>
+
+Pls find the  EFECMKTDash  Report from the attachment!
+<br>
+<br>
+Thanks,]]></Body>
+      </Message>
+    </Task>
+  </Tasks>
+  <Reports>
+    <Report Name="EFECMKTDash_AvsTByCityByTier" Description="A vs T By City By Tier">
+      <Connection>EFECMKTDash</Connection>
+      <OutputFileName>EFECMKTDash_AvsTByCityByTier.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH07</QlikViewExportObjectId>
+      <Filter>EFECMKTDash_MTD</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFECMKTDash_AvsTByPACByTier" Description="A vs T By PAC Group By Tier">
+      <Connection>EFECMKTDash</Connection>
+      <OutputFileName>EFECMKTDash_AvsTByPACByTier.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH05</QlikViewExportObjectId>
+      <Filter>EFECMKTDash_MTD</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFECMKTDash_AvsTByCenterByLeadSource" Description="A vs T By Center By LeadSource">
+      <Connection>EFECMKTDash</Connection>
+      <OutputFileName>EFECMKTDash_AvsTByCenterByLeadSource.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH04</QlikViewExportObjectId>
+      <Filter>EFECMKTDash_MTD</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFECMKTDash_Cost" Description="Cost">
+      <Connection>EFECMKTDash</Connection>
+      <OutputFileName>EFECMKTDash_Cost.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH03</QlikViewExportObjectId>
+      <Filter>EFECMKTDash_YTD</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFECMKTDash_EtagDashByDaily" Description="Etag Dash By Daily">
+      <Connection>EFECMKTDash</Connection>
+      <OutputFileName>EFECMKTDash_EtagDashByDaily.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH08</QlikViewExportObjectId>
+      <Filter>EFECMKTDash_MTD</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFECMKTDash_PACDashByWeekly" Description="PAC Dash By Weekly">
+      <Connection>EFECMKTDash</Connection>
+      <OutputFileName>EFECMKTDash_PACDashByWeekly.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH06</QlikViewExportObjectId>
+      <Filter>EFECMKTDash_MTD</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFECMKTDash_PACDashByDaily" Description="PAC Dash By Daily">
+      <Connection>EFECMKTDash</Connection>
+      <OutputFileName>EFECMKTDash_PACDashByDaily.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH01</QlikViewExportObjectId>
+      <Filter>EFECMKTDash_MTD</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+  </Reports>
+  <Filters>
+    <Filter Name="EFECMKTDash_MTD" Description="EFECMKTDash_MTD">
+      <Connection>EFECMKTDash</Connection>
+      <Fields>
+        <Field Name="YearMonth" Description="" Expression="CurrentYearMonthNumeric" />
+        <Field Name="Dimension" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">YearMonth</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFECMKTDash_YTD" Description="EFECMKTDash_YTD">
+      <Connection>EFECMKTDash</Connection>
+      <Fields>
+        <Field Name="YearMonth" Description="" Expression="CurrentFiscalYearMonthEx" />
+        <Field Name="Dimension" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">YearMonth</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+  </Filters>
+</ReportConfig>

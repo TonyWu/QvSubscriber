@@ -1,0 +1,746 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ReportConfig>
+  <Tasks>
+    <Task Name="FunnelCNMini" Description="FunnelCNMini">
+      <OutputFolder>D:\ReportExport\FunnelCNMini</OutputFolder>
+      <SendInSingleMail>True</SendInSingleMail>
+      <MergeInSingleExcel>True</MergeInSingleExcel>
+      <Reports>
+        <Report>FunnelCNMini_DetailNormalWeekly_FS</Report>
+        <Report>FunnelCNMini_DetailSpecialWeekly_FS</Report>
+        <Report>FunnelCNMini_DetailDaily_FS</Report>
+        <Report>FunnelCNMini_TSNormalWeekly_FS</Report>
+        <Report>FunnelCNMini_TSDaily_FS</Report>
+        <Report>FunnelCNMini_DetailNormalWeekly_CD</Report>
+        <Report>FunnelCNMini_DetailSpecialWeekly_CD</Report>
+        <Report>FunnelCNMini_DetailDaily_CD</Report>
+        <Report>FunnelCNMini_TSNormalWeekly_CD</Report>
+        <Report>FunnelCNMini_TSDaily_CD</Report>
+        <Report>FunnelCNMini_DetailNormalWeekly_DG</Report>
+        <Report>FunnelCNMini_DetailSpecialWeekly_DG</Report>
+        <Report>FunnelCNMini_DetailDaily_DG</Report>
+        <Report>FunnelCNMini_TSNormalWeekly_DG</Report>
+        <Report>FunnelCNMini_TSDaily_DG</Report>
+        <Report>FunnelCNMini_DetailNormalWeekly_NB</Report>
+        <Report>FunnelCNMini_DetailSpecialWeekly_NB</Report>
+        <Report>FunnelCNMini_DetailDaily_NB</Report>
+        <Report>FunnelCNMini_TSNormalWeekly_NB</Report>
+        <Report>FunnelCNMini_TSDaily_NB</Report>
+        <Report>FunnelCNMini_DetailNormalWeekly_NJ1</Report>
+        <Report>FunnelCNMini_DetailSpecialWeekly_NJ1</Report>
+        <Report>FunnelCNMini_DetailDaily_NJ1</Report>
+        <Report>FunnelCNMini_TSNormalWeekly_NJ1</Report>
+        <Report>FunnelCNMini_TSDaily_NJ1</Report>
+        <Report>FunnelCNMini_DetailNormalWeekly_NJ2</Report>
+        <Report>FunnelCNMini_DetailSpecialWeekly_NJ2</Report>
+        <Report>FunnelCNMini_DetailDaily_NJ2</Report>
+        <Report>FunnelCNMini_DetailNormalWeekly_WH</Report>
+        <Report>FunnelCNMini_DetailSpecialWeekly_WH</Report>
+        <Report>FunnelCNMini_DetailDaily_WH</Report>
+        <Report>FunnelCNMini_TSNormalWeekly_WH</Report>
+        <Report>FunnelCNMini_TSDaily_WH</Report>
+        <Report>FunnelCNMini_DetailNormalWeekly_WX</Report>
+        <Report>FunnelCNMini_DetailSpecialWeekly_WX</Report>
+        <Report>FunnelCNMini_DetailDaily_WX</Report>
+        <Report>FunnelCNMini_TSNormalWeekly_WX</Report>
+        <Report>FunnelCNMini_TSDaily_WX</Report>
+        <Report>FunnelCNMini_DetailNormalWeekly_CQ</Report>
+        <Report>FunnelCNMini_DetailSpecialWeekly_CQ</Report>
+        <Report>FunnelCNMini_DetailDaily_CQ</Report>
+        <Report>FunnelCNMini_Summary_Monthly</Report>
+        <Report>FunnelCNMini_Summary_Daily</Report>
+        <Report>FunnelCNMini_Summary_Target</Report>
+        <Report>FunnelCNMini_Summary_TargetB2B</Report>
+        <Report>FunnelCNMini_Summary_TargetImage</Report>
+        <Report>FunnelCNMini_Summary_RevenueByPAC</Report>
+      </Reports>
+      <Recipients>
+        <Recipient>Sam Cheung</Recipient>
+      </Recipients>
+      <RecipientGroup>
+      </RecipientGroup>
+      <Message>
+        <From>QlikViewAdmin@ef.com</From>
+        <CC>Annabelle.Vultee@ef.com;Nicholas.Teng@EF.com;david.hu@EF.com;David.Min@EF.com;Hope.Ma@EF.com;Anita.Hy.Li@EF.com;Jacky.Du@EF.com;Joy.Xin@EF.com;Nichol.Yan@EF.com;Irene.Zhangry@EF.com;Reiko.kwok@englishtown.com;xiaoming.cui@EF.com;Jimmy.LZ@EF.com;Philip.Chen@EF.com;Shirley.WangRong@EF.com;Joyce.Fang@EF.com;Tony.Fan@EF.com;Susan.Gao@EF.com;Jerry.Wu@EF.com;Pansy.Cai@EF.com;Lei.Zang@EF.com;Fancy.Wu@EF.com;Yvette.Chang@EF.com;Starcks.Sha@ef.com;jane.jiang@ef.com;Michael.Zhangyin@EF.com;Michael.Gao@EF.com;Sarah.Zou@EF.com;Lucy.Lv@EF.com;sheldon.leung@EF.com;momo.qian@ef.com;David.Dai@EF.com;Tony.Wu@EF.com</CC>
+        <Subject>CN Mini Funnel Report [@Date]</Subject>
+        <Body><![CDATA[@Template
+<h3>CN Mini Funnel Report Date:@Date</h3> <br>
+<span lang=EN-US style='color:#1F497D;font-weight:bold'>Mini (include MiniTS, exclude B2B) Target Achievement </span>
+<br>
+{FunnelCNMini_Summary_TargetImage}]]></Body>
+      </Message>
+    </Task>
+  </Tasks>
+  <Reports>
+    <Report Name="FunnelCNMini_DetailNormalWeekly_FS" Description="FS">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>MiniCenterNormalWeekly_FS.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH01</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_MiniCenter_FS</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_DetailSpecialWeekly_FS" Description="FS">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>MiniCenterSPWeekly_FS.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH07</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_MiniCenter_FS</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_DetailDaily_FS" Description="FS">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>MiniCenterDaily_FS.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH03</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_MiniCenter_FS</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_TSNormalWeekly_FS" Description="FS">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>MiniTSNormalWeekly_FS.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH01</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_MiniTS_FS</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_TSDaily_FS" Description="FS">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>MiniTSDaily_FS.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH03</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_MiniTS_FS</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_DetailNormalWeekly_CD" Description="CD">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>MiniCenterNormalWeekly_CD.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH01</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_MiniCenter_CD</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_DetailSpecialWeekly_CD" Description="CD">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>MiniCenterSPWeekly_CD.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH07</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_MiniCenter_CD</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_DetailDaily_CD" Description="CD">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>MiniCenterDaily_CD.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH03</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_MiniCenter_CD</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_TSNormalWeekly_CD" Description="CD">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>MiniTSNormalWeekly_CD.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH01</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_MiniTS_CD</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_TSDaily_CD" Description="CD">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>MiniTSDaily_CD.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH03</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_MiniTS_CD</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_DetailNormalWeekly_DG" Description="DG">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>MiniCenterNormalWeekly_DG.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH01</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_MiniCenter_DG</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_DetailSpecialWeekly_DG" Description="DG">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>MiniCenterSPWeekly_DG.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH07</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_MiniCenter_DG</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_DetailDaily_DG" Description="DG">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>MiniCenterDaily_DG.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH03</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_MiniCenter_DG</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_TSNormalWeekly_DG" Description="DG">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>MiniTSNormalWeekly_DG.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH01</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_MiniTS_DG</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_TSDaily_DG" Description="DG">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>MiniTSDaily_DG.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH03</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_MiniTS_DG</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_DetailNormalWeekly_NB" Description="NB">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>MiniCenterNormalWeekly_NB.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH01</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_MiniCenter_NB</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_DetailSpecialWeekly_NB" Description="NB">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>MiniCenterSPWeekly_NB.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH07</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_MiniCenter_NB</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_DetailDaily_NB" Description="NB">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>MiniCenterDaily_NB.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH03</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_MiniCenter_NB</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_TSNormalWeekly_NB" Description="NB">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>MiniTSNormalWeekly_NB.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH01</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_MiniTS_NB</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_TSDaily_NB" Description="NB">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>MiniTSDaily_NB.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH03</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_MiniTS_NB</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_DetailNormalWeekly_NJ1" Description="NJ1">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>MiniCenterNormalWeekly_NJ1.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH01</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_MiniCenter_NJ1</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_DetailSpecialWeekly_NJ1" Description="NJ1">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>MiniCenterSPWeekly_NJ1.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH07</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_MiniCenter_NJ1</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_DetailDaily_NJ1" Description="NJ1">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>MiniCenterDaily_NJ1.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH03</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_MiniCenter_NJ1</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_TSNormalWeekly_NJ1" Description="NJ1">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>MiniTSNormalWeekly_NJ1.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH01</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_MiniTS_NJ1</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_TSDaily_NJ1" Description="NJ1">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>MiniTSDaily_NJ1.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH03</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_MiniTS_NJ1</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_DetailNormalWeekly_NJ2" Description="NJ2">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>MiniCenterNormalWeekly_NJ2.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH01</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_MiniCenter_NJ2</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_DetailSpecialWeekly_NJ2" Description="NJ2">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>MiniCenterSPWeekly_NJ2.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH07</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_MiniCenter_NJ2</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_DetailDaily_NJ2" Description="NJ2">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>MiniCenterDaily_NJ2.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH03</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_MiniCenter_NJ2</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_DetailNormalWeekly_WH" Description="WH">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>MiniCenterNormalWeekly_WH.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH01</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_MiniCenter_WH</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_DetailSpecialWeekly_WH" Description="WH">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>MiniCenterSPWeekly_WH.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH07</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_MiniCenter_WH</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_DetailDaily_WH" Description="WH">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>MiniCenterDaily_WH.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH03</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_MiniCenter_WH</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_TSNormalWeekly_WH" Description="WH">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>MiniTSNormalWeekly_WH.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH01</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_MiniTS_WH</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_TSDaily_WH" Description="WH">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>MiniTSDaily_WH.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH03</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_MiniTS_WH</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_DetailNormalWeekly_WX" Description="WX">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>MiniCenterNormalWeekly_WX.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH01</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_MiniCenter_WX</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_DetailSpecialWeekly_WX" Description="WX">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>MiniCenterSPWeekly_WX.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH07</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_MiniCenter_WX</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_DetailDaily_WX" Description="WX">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>MiniCenterDaily_WX.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH03</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_MiniCenter_WX</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_TSNormalWeekly_WX" Description="WX">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>MiniTSNormalWeekly_WX.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH01</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_MiniTS_WX</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_TSDaily_WX" Description="WX">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>MiniTSDaily_WX.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH03</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_MiniTS_WX</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_DetailNormalWeekly_CQ" Description="CQ">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>MiniCenterNormalWeekly_CQ.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH01</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_MiniCenter_CQ</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_DetailSpecialWeekly_CQ" Description="CQ">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>MiniCenterSPWeekly_CQ.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH07</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_MiniCenter_CQ</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_DetailDaily_CQ" Description="CQ">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>MiniCenterDaily_CQ.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH03</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_MiniCenter_CQ</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_Summary_Monthly" Description="FunnelCNMini_Summary_Monthly">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>Summy_Monthly.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH08</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_Summary</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_Summary_Daily" Description="FunnelCNMini_Summary_Daily">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>Summy_Daily.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH04</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_Summary_Daily</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_Summary_Target" Description="FunnelCNMini_Summary_Daily">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>Summy_Target.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH14</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_Summary</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_Summary_TargetB2B" Description="FunnelCNMini_Summary_TargetB2B">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>Summy_TargetB2B.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH25</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_Summary</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_Summary_TargetImage" Description="FunnelCNMini_Summary_TargetImage">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>Summy_TargetImage.jpg</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>True</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH13</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_Summary</Filter>
+      <ReportType>2</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_Summary_RevenueByPAC" Description="FunnelCNMini_Summary_RevenueByPAC">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>Summary_RevenueByPAC.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH16</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_Summary</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+  </Reports>
+  <Filters>
+    <Filter Name="FunnelCNMini_MiniCenter_FS" Description="FunnelCNMini_MiniCenter_FS">
+      <Connection>FunnelCNMini</Connection>
+      <Fields>
+        <Field Name="YearMonth" Description="" Expression="CurrentFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Mini Center</Value>
+        </Field>
+        <Field Name="CityName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">FS</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelCNMini_MiniTS_FS" Description="FunnelCNMini_MiniTS_FS">
+      <Connection>FunnelCNMini</Connection>
+      <Fields>
+        <Field Name="YearMonth" Description="" Expression="CurrentFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Mini TS</Value>
+        </Field>
+        <Field Name="CityName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">FS</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelCNMini_MiniCenter_CD" Description="FunnelCNMini_MiniCenter_CD">
+      <Connection>FunnelCNMini</Connection>
+      <Fields>
+        <Field Name="YearMonth" Description="" Expression="CurrentFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Mini Center</Value>
+        </Field>
+        <Field Name="CityName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">CD</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelCNMini_MiniTS_CD" Description="FunnelCNMini_MiniTS_CD">
+      <Connection>FunnelCNMini</Connection>
+      <Fields>
+        <Field Name="YearMonth" Description="" Expression="CurrentFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Mini TS</Value>
+        </Field>
+        <Field Name="CityName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">CD</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelCNMini_MiniCenter_DG" Description="FunnelCNMini_MiniCenter_DG">
+      <Connection>FunnelCNMini</Connection>
+      <Fields>
+        <Field Name="YearMonth" Description="" Expression="CurrentFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Mini Center</Value>
+        </Field>
+        <Field Name="CityName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">DG</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelCNMini_MiniTS_DG" Description="FunnelCNMini_MiniTS_DG">
+      <Connection>FunnelCNMini</Connection>
+      <Fields>
+        <Field Name="YearMonth" Description="" Expression="CurrentFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Mini TS</Value>
+        </Field>
+        <Field Name="CityName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">DG</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelCNMini_MiniCenter_NB" Description="FunnelCNMini_MiniCenter_NB">
+      <Connection>FunnelCNMini</Connection>
+      <Fields>
+        <Field Name="YearMonth" Description="" Expression="CurrentFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Mini Center</Value>
+        </Field>
+        <Field Name="CityName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">NB</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelCNMini_MiniTS_NB" Description="FunnelCNMini_MiniTS_NB">
+      <Connection>FunnelCNMini</Connection>
+      <Fields>
+        <Field Name="YearMonth" Description="" Expression="CurrentFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Mini TS</Value>
+        </Field>
+        <Field Name="CityName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">NB</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelCNMini_MiniCenter_NJ1" Description="FunnelCNMini_MiniCenter_NJ1">
+      <Connection>FunnelCNMini</Connection>
+      <Fields>
+        <Field Name="YearMonth" Description="" Expression="CurrentFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Mini Center</Value>
+        </Field>
+        <Field Name="CityName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">NJ1</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelCNMini_MiniTS_NJ1" Description="FunnelCNMini_MiniTS_NJ1">
+      <Connection>FunnelCNMini</Connection>
+      <Fields>
+        <Field Name="YearMonth" Description="" Expression="CurrentFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Mini TS</Value>
+        </Field>
+        <Field Name="CityName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">NJ1</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelCNMini_MiniCenter_NJ2" Description="FunnelCNMini_MiniCenter_NJ2">
+      <Connection>FunnelCNMini</Connection>
+      <Fields>
+        <Field Name="YearMonth" Description="" Expression="CurrentFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Mini Center</Value>
+        </Field>
+        <Field Name="CityName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">NJ2</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelCNMini_MiniCenter_WH" Description="FunnelCNMini_MiniCenter_WH">
+      <Connection>FunnelCNMini</Connection>
+      <Fields>
+        <Field Name="YearMonth" Description="" Expression="CurrentFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Mini Center</Value>
+        </Field>
+        <Field Name="CityName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">WH</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelCNMini_MiniTS_WH" Description="FunnelCNMini_MiniTS_WH">
+      <Connection>FunnelCNMini</Connection>
+      <Fields>
+        <Field Name="YearMonth" Description="" Expression="CurrentFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Mini TS</Value>
+        </Field>
+        <Field Name="CityName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">WH</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelCNMini_MiniCenter_WX" Description="FunnelCNMini_MiniCenter_WX">
+      <Connection>FunnelCNMini</Connection>
+      <Fields>
+        <Field Name="YearMonth" Description="" Expression="CurrentFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Mini Center</Value>
+        </Field>
+        <Field Name="CityName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">WX</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelCNMini_MiniTS_WX" Description="FunnelCNMini_MiniTS_WX">
+      <Connection>FunnelCNMini</Connection>
+      <Fields>
+        <Field Name="YearMonth" Description="" Expression="CurrentFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Mini TS</Value>
+        </Field>
+        <Field Name="CityName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">WX</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelCNMini_MiniCenter_CQ" Description="FunnelCNMini_MiniCenter_CQ">
+      <Connection>FunnelCNMini</Connection>
+      <Fields>
+        <Field Name="YearMonth" Description="" Expression="CurrentFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Mini Center</Value>
+        </Field>
+        <Field Name="CityName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">CQ</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelCNMini_Summary" Description="FunnelCNMini_Summary">
+      <Connection>FunnelCNMini</Connection>
+      <Fields>
+        <Field Name="TheYear" Description="" Expression="YearOfTheDayCurrent" />
+        <Field Name="MonthOfYear" Description="" Expression="MonthOfTheDayCurrent" />
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="Today">
+        </Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelCNMini_Summary_Daily" Description="FunnelCNMini_Summary_Daily">
+      <Connection>FunnelCNMini</Connection>
+      <Fields>
+        <Field Name="TheYear" Description="" Expression="YearOfTheDayCurrent" />
+        <Field Name="MonthOfYear" Description="" Expression="MonthOfTheDayCurrent" />
+        <Field Name="DayOfMonth" Description="" Expression="DayOfTheDayCurrent" />
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+  </Filters>
+</ReportConfig>

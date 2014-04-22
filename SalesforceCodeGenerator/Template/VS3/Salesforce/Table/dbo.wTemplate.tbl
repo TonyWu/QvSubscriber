@@ -1,0 +1,25 @@
+USE [Salesforce]
+GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[w[Object]](
+	[Id] [varchar](18) NOT NULL,
+	[ColumnsPlaceHolder]
+	[SystemModStamp] [datetime] NULL
+) ON [PRIMARY]
+
+GO
+
+GRANT ALTER ON dbo.w[Object] TO SalesforceUser
+GO
+
+SET ANSI_PADDING OFF
+GO

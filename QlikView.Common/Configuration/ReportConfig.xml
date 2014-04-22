@@ -1,0 +1,4233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ReportConfig>
+  <SmtpServer>
+    <Server>ht.ef.com</Server>
+    <PickupDirectoryLocation>\\10.43.42.153\Pickup</PickupDirectoryLocation>
+    <User>English.Report@ef.com</User>
+    <Password>9:::</Password>
+    <ExceptionMailFrom>QlikViewException@ef.com</ExceptionMailFrom>
+    <ExceptionMailTo>Tony.Wu@ef.com</ExceptionMailTo>
+    <UsePickupDirectoryLocation>False</UsePickupDirectoryLocation>
+  </SmtpServer>
+  <Schedulers>
+  </Schedulers>
+  <Tasks>
+    <Task Name="FunnelByWeek" Description="FunnelByWeek" Include="Tasks/FunnelByWeek.xml" />
+    <Task Name="WeeklyStatisticReport" Description="Weekly Statistic Report" Include="Tasks/WeeklyStatisticReport.xml" />
+    <Task Name="SpotRateMonthly" Description="Monthly Sport Rate" Include="Tasks/SpotRateMonthly.xml" />
+    <Task Name="CCDailyFunnel_Summary_CD" Description="CCDailyFunnel_Summary_CD" Include="Tasks/CCDailyFunnel_Summary_CD.xml" />
+    <Task Name="CCDailyFunnel_Summary_CQ" Description="CCDailyFunnel_Summary_CQ" Include="Tasks/CCDailyFunnel_Summary_CQ.xml" />
+    <Task Name="CCDailyFunnel_Summary_XA" Description="CCDailyFunnel_Summary_XA" Include="Tasks/CCDailyFunnel_Summary_XA.xml" />
+    <Task Name="CCDailyFunnel_Summary_WH" Description="CCDailyFunnel_Summary_WH" Include="Tasks/CCDailyFunnel_Summary_WH.xml" />
+    <Task Name="CCDailyFunnel_Summary_DG" Description="CCDailyFunnel_Summary_DG" Include="Tasks/CCDailyFunnel_Summary_DG.xml" />
+    <Task Name="CCDailyFunnel_Summary_FS" Description="CCDailyFunnel_Summary_FS" Include="Tasks/CCDailyFunnel_Summary_FS.xml" />
+    <Task Name="CCDailyFunnel_Summary_NJ1" Description="CCDailyFunnel_Summary_NJ1" Include="Tasks/CCDailyFunnel_Summary_NJ1.xml" />
+    <Task Name="CCDailyFunnel_Summary_NJ2" Description="CCDailyFunnel_Summary_NJ2" Include="Tasks/CCDailyFunnel_Summary_NJ2.xml" />
+    <Task Name="CCDailyFunnel_Summary_NB" Description="CCDailyFunnel_Summary_NB" Include="Tasks/CCDailyFunnel_Summary_NB.xml" />
+    <Task Name="CCDailyFunnel_Summary_WX" Description="CCDailyFunnel_Summary_WX" Include="Tasks/CCDailyFunnel_Summary_WX.xml" />
+    <Task Name="CCDailyFunnel_Summary_Total" Description="CCDailyFunnel_Summary_Total" Include="Tasks/CCDailyFunnel_Summary_Total.xml" />
+    <Task Name="MniDashPACByCenter" Description="MniDashPACByCenter" Include="Tasks/MniDashPACByCenter.xml" />
+    <Task Name="EFLabsCost_STN" Description="EFLabsCost_STN" Include="Tasks/EFLabsCost_STN.xml" />
+    <Task Name="EFLabsCost_DirectCost" Description="EFLabsCost_DirectCost" Include="Tasks/EFLabsCost_DirectCost.xml" />
+    <Task Name="FunnelCNMiniNew" Description="FunnelCNMiniNew" Include="Tasks/FunnelCNMiniNew.xml" />
+    <Task Name="ChinaSalesFunnelDash" Description="ChinaSalesFunnelDash" Include="Tasks/ChinaSalesFunnelDash.xml" />
+    <Task Name="CCDailyFunnel_Summary_EAST" Description="CCDailyFunnel_Summary_EAST" Include="Tasks/CCDailyFunnel_Summary_EAST.xml" />
+    <Task Name="CCDailyFunnel_Summary_WEST" Description="CCDailyFunnel_Summary_WEST" Include="Tasks/CCDailyFunnel_Summary_WEST.xml" />
+    <Task Name="CCDailyFunnel_Summary_BJ" Description="CCDailyFunnel_Summary_BJ" Include="Tasks/CCDailyFunnel_Summary_BJ.xml" />
+    <Task Name="CCDailyFunnel_Summary_SH" Description="CCDailyFunnel_Summary_SH" Include="Tasks/CCDailyFunnel_Summary_SH.xml" />
+    <Task Name="CCDailyFunnel_Summary_SOUTH" Description="CCDailyFunnel_Summary_SOUTH" Include="Tasks/CCDailyFunnel_Summary_SOUTH.xml" />
+    <Task Name="CCDailyFunnel_Summary_HK" Description="CCDailyFunnel_Summary_HK" Include="Tasks/CCDailyFunnel_Summary_HK.xml" />
+    <Task Name="FunnelChinaFunnelBCC" Description="FunnelChinaFunnelBCC" Include="Tasks/FunnelChinaFunnelBCC.xml" />
+    <Task Name="CCDailyFunnel_ByCenter_CD" Description="CCDailyFunnel_ByCenter_CD" Include="Tasks/CCDailyFunnel_ByCenter_CD.xml" />
+    <Task Name="CCDailyFunnel_ByCenter_CQ" Description="CCDailyFunnel_ByCenter_CQ" Include="Tasks/CCDailyFunnel_ByCenter_CQ.xml" />
+    <Task Name="CCDailyFunnel_ByCenter_XA" Description="CCDailyFunnel_ByCenter_XA" Include="Tasks/CCDailyFunnel_ByCenter_XA.xml" />
+    <Task Name="CCDailyFunnel_ByCenter_WH" Description="CCDailyFunnel_ByCenter_WH" Include="Tasks/CCDailyFunnel_ByCenter_WH.xml" />
+    <Task Name="CCDailyFunnel_ByCenter_DG" Description="CCDailyFunnel_ByCenter_DG" Include="Tasks/CCDailyFunnel_ByCenter_DG.xml" />
+    <Task Name="CCDailyFunnel_ByCenter_FS" Description="CCDailyFunnel_ByCenter_FS" Include="Tasks/CCDailyFunnel_ByCenter_FS.xml" />
+    <Task Name="CCDailyFunnel_ByCenter_NJ1" Description="CCDailyFunnel_ByCenter_NJ1" Include="Tasks/CCDailyFunnel_ByCenter_NJ1.xml" />
+    <Task Name="CCDailyFunnel_ByCenter_NJ2" Description="CCDailyFunnel_ByCenter_NJ2" Include="Tasks/CCDailyFunnel_ByCenter_NJ2.xml" />
+    <Task Name="CCDailyFunnel_ByCenter_NB" Description="CCDailyFunnel_ByCenter_NB" Include="Tasks/CCDailyFunnel_ByCenter_NB.xml" />
+    <Task Name="CCDailyFunnel_ByCenter_WX" Description="CCDailyFunnel_ByCenter_WX" Include="Tasks/CCDailyFunnel_ByCenter_WX.xml" />
+    <Task Name="CCDailyFunnel_ByCenter_HZ" Description="CCDailyFunnel_ByCenter_HZ" Include="Tasks/CCDailyFunnel_ByCenter_HZ.xml" />
+    <Task Name="CCDailyFunnel_ByCenter_BJDFG" Description="CCDailyFunnel_ByCenter_BJDFG" Include="Tasks/CCDailyFunnel_ByCenter_BJDFG.xml" />
+    <Task Name="CCDailyFunnel_ByCenter_BJDWL" Description="CCDailyFunnel_ByCenter_BJDWL" Include="Tasks/CCDailyFunnel_ByCenter_BJDWL.xml" />
+    <Task Name="CCDailyFunnel_ByCenter_BJDZM" Description="CCDailyFunnel_ByCenter_BJDZM" Include="Tasks/CCDailyFunnel_ByCenter_BJDZM.xml" />
+    <Task Name="CCDailyFunnel_ByCenter_BJFXM" Description="CCDailyFunnel_ByCenter_BJFXM" Include="Tasks/CCDailyFunnel_ByCenter_BJFXM.xml" />
+    <Task Name="CCDailyFunnel_ByCenter_BJGM1" Description="CCDailyFunnel_ByCenter_BJGM1" Include="Tasks/CCDailyFunnel_ByCenter_BJGM1.xml" />
+    <Task Name="CCDailyFunnel_ByCenter_BJSYQ" Description="CCDailyFunnel_ByCenter_BJSYQ" Include="Tasks/CCDailyFunnel_ByCenter_BJSYQ.xml" />
+    <Task Name="CCDailyFunnel_ByCenter_BJWDK" Description="CCDailyFunnel_ByCenter_BJWDK" Include="Tasks/CCDailyFunnel_ByCenter_BJWDK.xml" />
+    <Task Name="CCDailyFunnel_ByCenter_BJWSL" Description="CCDailyFunnel_ByCenter_BJWSL" Include="Tasks/CCDailyFunnel_ByCenter_BJWSL.xml" />
+    <Task Name="CCDailyFunnel_ByCenter_BJXZM" Description="CCDailyFunnel_ByCenter_BJXZM" Include="Tasks/CCDailyFunnel_ByCenter_BJXZM.xml" />
+    <Task Name="CCDailyFunnel_ByCenter_BJYYC" Description="CCDailyFunnel_ByCenter_BJYYC" Include="Tasks/CCDailyFunnel_ByCenter_BJYYC.xml" />
+    <Task Name="CCDailyFunnel_ByCenter_BJZGC" Description="CCDailyFunnel_ByCenter_BJZGC" Include="Tasks/CCDailyFunnel_ByCenter_BJZGC.xml" />
+    <Task Name="CCDailyFunnel_ByCenter_GZGYQ" Description="CCDailyFunnel_ByCenter_GZGYQ" Include="Tasks/CCDailyFunnel_ByCenter_GZGYQ.xml" />
+    <Task Name="CCDailyFunnel_ByCenter_GZJNX" Description="CCDailyFunnel_ByCenter_GZJNX" Include="Tasks/CCDailyFunnel_ByCenter_GZJNX.xml" />
+    <Task Name="CCDailyFunnel_ByCenter_GZJTP" Description="CCDailyFunnel_ByCenter_GZJTP" Include="Tasks/CCDailyFunnel_ByCenter_GZJTP.xml" />
+    <Task Name="CCDailyFunnel_ByCenter_GZTHB" Description="CCDailyFunnel_ByCenter_GZTHB" Include="Tasks/CCDailyFunnel_ByCenter_GZTHB.xml" />
+    <Task Name="CCDailyFunnel_ByCenter_GZTJR" Description="CCDailyFunnel_ByCenter_GZTJR" Include="Tasks/CCDailyFunnel_ByCenter_GZTJR.xml" />
+    <Task Name="CCDailyFunnel_ByCenter_GZWLH" Description="CCDailyFunnel_ByCenter_GZWLH" Include="Tasks/CCDailyFunnel_ByCenter_GZWLH.xml" />
+    <Task Name="CCDailyFunnel_ByCenter_SHBBB" Description="CCDailyFunnel_ByCenter_SHBBB" Include="Tasks/CCDailyFunnel_ByCenter_SHBBB.xml" />
+    <Task Name="CCDailyFunnel_ByCenter_SHDNR" Description="CCDailyFunnel_ByCenter_SHDNR" Include="Tasks/CCDailyFunnel_ByCenter_SHDNR.xml" />
+    <Task Name="CCDailyFunnel_ByCenter_SHHQC" Description="CCDailyFunnel_ByCenter_SHHQC" Include="Tasks/CCDailyFunnel_ByCenter_SHHQC.xml" />
+    <Task Name="CCDailyFunnel_ByCenter_SHLJZ" Description="CCDailyFunnel_ByCenter_SHLJZ" Include="Tasks/CCDailyFunnel_ByCenter_SHLJZ.xml" />
+    <Task Name="CCDailyFunnel_ByCenter_SHPSQ" Description="CCDailyFunnel_ByCenter_SHPSQ" Include="Tasks/CCDailyFunnel_ByCenter_SHPSQ.xml" />
+    <Task Name="CCDailyFunnel_ByCenter_SHWJC" Description="CCDailyFunnel_ByCenter_SHWJC" Include="Tasks/CCDailyFunnel_ByCenter_SHWJC.xml" />
+    <Task Name="CCDailyFunnel_ByCenter_SHXJH" Description="CCDailyFunnel_ByCenter_SHXJH" Include="Tasks/CCDailyFunnel_ByCenter_SHXJH.xml" />
+    <Task Name="CCDailyFunnel_ByCenter_SHXZG" Description="CCDailyFunnel_ByCenter_SHXZG" Include="Tasks/CCDailyFunnel_ByCenter_SHXZG.xml" />
+    <Task Name="CCDailyFunnel_ByCenter_SHZSP" Description="CCDailyFunnel_ByCenter_SHZSP" Include="Tasks/CCDailyFunnel_ByCenter_SHZSP.xml" />
+    <Task Name="CCDailyFunnel_ByCenter_SZCHC" Description="CCDailyFunnel_ByCenter_SZCHC" Include="Tasks/CCDailyFunnel_ByCenter_SZCHC.xml" />
+    <Task Name="CCDailyFunnel_ByCenter_SZDWG" Description="CCDailyFunnel_ByCenter_SZDWG" Include="Tasks/CCDailyFunnel_ByCenter_SZDWG.xml" />
+    <Task Name="CCDailyFunnel_ByCenter_SZHQB" Description="CCDailyFunnel_ByCenter_SZHQB" Include="Tasks/CCDailyFunnel_ByCenter_SZHQB.xml" />
+    <Task Name="CCDailyFunnel_ByCenter_SZKJY" Description="CCDailyFunnel_ByCenter_SZKJY" Include="Tasks/CCDailyFunnel_ByCenter_SZKJY.xml" />
+    <Task Name="CCDailyFunnel_ByCenter_SZNSD" Description="CCDailyFunnel_ByCenter_SZNSD" Include="Tasks/CCDailyFunnel_ByCenter_SZNSD.xml" />
+    <Task Name="CCDailyFunnel_ByCenter_TJNJR" Description="CCDailyFunnel_ByCenter_TJNJR" Include="Tasks/CCDailyFunnel_ByCenter_TJNJR.xml" />
+    <Task Name="CCDailyFunnel_ByCenter_HZHBC" Description="CCDailyFunnel_ByCenter_HZHBC" Include="Tasks/CCDailyFunnel_ByCenter_HZHBC.xml" />
+    <Task Name="EFECMKTDash" Description="EFECMKTDash" Include="Tasks/EFECMKTDash.xml" />
+    <Task Name="SH_SalesFunnelDash" Description="SH_SalesFunnelDash" Include="Tasks/SH_SalesFunnelDash.xml" />
+  </Tasks>
+  <Connections>
+    <Connection Name="usb-etbiapp_etag" Description="etag marketing">
+      <IsLocal>False</IsLocal>
+      <ServerName>usb-etbiapp</ServerName>
+      <WebServicePort>
+      </WebServicePort>
+      <WebServiceHost>
+      </WebServiceHost>
+      <QlikViewDocument>b2c/etag_marketing.qvw</QlikViewDocument>
+      <User>
+      </User>
+      <Password>
+      </Password>
+    </Connection>
+    <Connection Name="ETB2CFinance_Connection" Description="ETB2CFinance">
+      <IsLocal>False</IsLocal>
+      <ServerName>usb-etbiapp</ServerName>
+      <WebServicePort>4799</WebServicePort>
+      <WebServiceHost>usb-etbiweb</WebServiceHost>
+      <QlikViewDocument>B2C/ETB2CFinance_Email.qvw</QlikViewDocument>
+      <User>
+      </User>
+      <Password>
+      </Password>
+    </Connection>
+    <Connection Name="FunnelCNMini" Description="Funnel CN Mini">
+      <IsLocal>False</IsLocal>
+      <ServerName>usb-etbiapp</ServerName>
+      <WebServicePort>4799</WebServicePort>
+      <WebServiceHost>usb-etbiweb</WebServiceHost>
+      <QlikViewDocument>Smart\ChinaMiniTSFunnelReport.qvw</QlikViewDocument>
+      <User>
+      </User>
+      <Password>
+      </Password>
+    </Connection>
+    <Connection Name="MiniDashPAC" Description="MiniDashPAC">
+      <IsLocal>False</IsLocal>
+      <ServerName>usb-etbiapp</ServerName>
+      <WebServicePort>4799</WebServicePort>
+      <WebServiceHost>usb-etbiweb</WebServiceHost>
+      <QlikViewDocument>Smart\MiniDashPACByCenter.qvw</QlikViewDocument>
+      <User>
+      </User>
+      <Password>
+      </Password>
+    </Connection>
+    <Connection Name="EFLabsCost" Description="EFLabsCost">
+      <IsLocal>False</IsLocal>
+      <ServerName>usb-etbiapp</ServerName>
+      <WebServicePort>4799</WebServicePort>
+      <WebServiceHost>usb-etbiweb</WebServiceHost>
+      <QlikViewDocument>central/EFLabsCost.qvw</QlikViewDocument>
+      <User>
+      </User>
+      <Password>
+      </Password>
+    </Connection>
+    <Connection Name="FunnelCNMini_New" Description="Funnel CN Mini New">
+      <IsLocal>False</IsLocal>
+      <ServerName>usb-etbiapp</ServerName>
+      <WebServicePort>4799</WebServicePort>
+      <WebServiceHost>usb-etbiweb</WebServiceHost>
+      <QlikViewDocument>Smart\ChinaFunnelReport.qvw</QlikViewDocument>
+      <User>
+      </User>
+      <Password>
+      </Password>
+    </Connection>
+    <Connection Name="EFECMKTDash" Description="EFECMKTDash">
+      <IsLocal>False</IsLocal>
+      <ServerName>usb-etbiapp</ServerName>
+      <WebServicePort>usb-etbiweb</WebServicePort>
+      <WebServiceHost>4799</WebServiceHost>
+      <QlikViewDocument>EFEC\EFECMKTDash.qvw</QlikViewDocument>
+      <User>
+      </User>
+      <Password>
+      </Password>
+    </Connection>
+  </Connections>
+  <Reports>
+    <Report Name="EtagConversion" Description="Etag Conversion">
+      <Connection>usb-etbiapp_etag</Connection>
+      <OutputFileName>Etag.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>True</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH101</QlikViewExportObjectId>
+      <Filter>etag_Filter1</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_ByWeek_HongKong" Description="Hong Kong">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelByWeek_HongKong.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH97</QlikViewExportObjectId>
+      <Filter>FunnelReport_ByWeek_HongKong</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_ByWeek_Thailand" Description="Thailand">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelByWeek_Thailand.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH97</QlikViewExportObjectId>
+      <Filter>FunnelReport_ByWeek_Thailand</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_ByMonth_HongKong" Description="Hong Kong">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelByMonth_HongKong.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH98</QlikViewExportObjectId>
+      <Filter>FunnelReport_HongKong</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_ByMonth_Thailand" Description="Thailand">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelByMonth_Thailand.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH98</QlikViewExportObjectId>
+      <Filter>FunnelReport_Thailand</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDFunnel_HongKong" Description="Hong Kong">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDFunnel_HongKong.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH99</QlikViewExportObjectId>
+      <Filter>FunnelReport_HongKong</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDFunnel_Thailand" Description="Thailand">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDFunnel_Thailand.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH99</QlikViewExportObjectId>
+      <Filter>FunnelReport_Thailand</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR2_HongKong" Description="Hong Kong">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR2_HongKong.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH173</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR2_HongKong</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR2_Thailand" Description="Thailand">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR2_Thailand.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH173</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR2_Thailand</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR1_HongKong" Description="Hong Kong">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR1_HongKong.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH171</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR1_HongKong</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR1_Thailand" Description="Thailand">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR1_Thailand.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH171</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR1_Thailand</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR0_HongKong" Description="Hong Kong">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR0_HongKong.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH100</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR0_HongKong</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR0_Thailand" Description="Thailand">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR0_Thailand.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH100</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR0_Thailand</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDACTVsKFR2_HongKong" Description="Hong Kong">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDACTVsKFR2_HongKong.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH174</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR2_HongKong</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDACTVsKFR2_Thailand" Description="Thailand">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDACTVsKFR2_Thailand.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH174</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR2_Thailand</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDACTVsKFR1_HongKong" Description="Hong Kong">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDACTVsKFR1_HongKong.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH172</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR1_HongKong</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDACTVsKFR1_Thailand" Description="Thailand">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDACTVsKFR1_Thailand.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH172</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR1_Thailand</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDACTVsKFR0_HongKong" Description="Hong Kong">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDACTVsKFR0_HongKong.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH102</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR0_HongKong</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDACTVsKFR0_Thailand" Description="Thailand">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDACTVsKFR0_Thailand.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH102</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR0_Thailand</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_VS1011Week_HongKong" Description="Hong Kong">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelVS1011Week_HongKong.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH109</QlikViewExportObjectId>
+      <Filter>FunnelReport_HongKong</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_VS1011Week_Thailand" Description="Thailand">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelVS1011Week_Thailand.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH109</QlikViewExportObjectId>
+      <Filter>FunnelReport_Thailand</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_VS1011YTD_HongKong" Description="Hong Kong">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelVS1011YTD_HongKong.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH116</QlikViewExportObjectId>
+      <Filter>FunnelReport_HongKong</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_VS1011YTD_Thailand" Description="Thailand">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelVS1011YTD_Thailand.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH116</QlikViewExportObjectId>
+      <Filter>FunnelReport_Thailand</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_1011Week_HongKong" Description="Hong Kong">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>Funnel1011Week_HongKong.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH110</QlikViewExportObjectId>
+      <Filter>FunnelReport_HongKong</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_1011Week_Thailand" Description="Thailand">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>Funnel1011Week_Thailand.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH110</QlikViewExportObjectId>
+      <Filter>FunnelReport_Thailand</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_1011YTD_HongKong" Description="Hong Kong">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>Funnel1011YTD_HongKong.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH115</QlikViewExportObjectId>
+      <Filter>FunnelReport_HongKong</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_1011YTD_Thailand" Description="Thailand">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>Funnel1011YTD_Thailand.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH115</QlikViewExportObjectId>
+      <Filter>FunnelReport_Thailand</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="Funnel_CNTSMini_OnlineFTPRevenues" Description="CNTSMini_OnlineFTPRevenues">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelCNTSMini_OnlineFTPRevenues.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH105</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR2_China</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelMonthly_ByMonth_Thailand" Description="Thailand">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelByMonth_Thailand.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH127</QlikViewExportObjectId>
+      <Filter>FunnelMonthly_Month_Thailand</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelMonthly_ByMonth_Taiwan" Description="Taiwan">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelByMonth_Taiwan.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH127</QlikViewExportObjectId>
+      <Filter>FunnelMonthly_Month_Taiwan</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelMonthly_YTDFunnel_Thailand" Description="Thailand">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDFunnel_Thailand.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH130</QlikViewExportObjectId>
+      <Filter>FunnelMonthly_Thailand</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelMonthly_YTDFunnel_Taiwan" Description="Taiwan">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDFunnel_Taiwan.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH130</QlikViewExportObjectId>
+      <Filter>FunnelMonthly_Taiwan</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelMonthly_YTDKFRx_Thailand" Description="Thailand">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFRx_Thailand.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH129</QlikViewExportObjectId>
+      <Filter>FunnelMonthly_KFR0_Thailand</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelMonthly_YTDKFRx_Taiwan" Description="Taiwan">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFRx_Taiwan.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH129</QlikViewExportObjectId>
+      <Filter>FunnelMonthly_KFR0_Taiwan</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelMonthly_YTDACTVsKFRx_Thailand" Description="Thailand">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDACTVsKFRx_Thailand.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH134</QlikViewExportObjectId>
+      <Filter>FunnelMonthly_KFR0_Thailand</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelMonthly_YTDACTVsKFRx_Taiwan" Description="Taiwan">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDACTVsKFRx_Taiwan.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH134</QlikViewExportObjectId>
+      <Filter>FunnelMonthly_KFR0_Taiwan</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelMonthly_VS1011YTD_Thailand" Description="Thailand">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelVS1011YTD_Thailand.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH135</QlikViewExportObjectId>
+      <Filter>FunnelMonthly_Thailand</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelMonthly_VS1011YTD_Taiwan" Description="Taiwan">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelVS1011YTD_Taiwan.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH135</QlikViewExportObjectId>
+      <Filter>FunnelMonthly_Taiwan</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelMonthly_1011YTD_Thailand" Description="Thailand">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>Funnel1011YTD_Thailand.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH133</QlikViewExportObjectId>
+      <Filter>FunnelMonthly_Thailand</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelMonthly_1011YTD_Taiwan" Description="Taiwan">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>Funnel1011YTD_Taiwan.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH133</QlikViewExportObjectId>
+      <Filter>FunnelMonthly_Taiwan</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelMonthly_Output_ThisMonth_Thailand" Description="Thailand">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>Funnel_Output_ThisMonth_Thailand.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH154</QlikViewExportObjectId>
+      <Filter>FunnelMonthly_Thailand</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelMonthly_Output_1011Month_Thailand" Description="Thailand">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>Funnel_Output_1011Month_Thailand.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH153</QlikViewExportObjectId>
+      <Filter>FunnelMonthly_Thailand</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelMonthly_Output_MonthDiff_Thailand" Description="Thailand">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>Funnel_Output_MonthDiff_Thailand.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH155</QlikViewExportObjectId>
+      <Filter>FunnelMonthly_Thailand</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelMonthly_Output_Actuals_Thailand" Description="Thailand">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>Funnel_Output_Actuals_Thailand.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH147</QlikViewExportObjectId>
+      <Filter>FunnelMonthly_Thailand</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelMonthly_Output_KFRx_Thailand" Description="Thailand">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>Funnel_Output_KFRx_Thailand.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH148</QlikViewExportObjectId>
+      <Filter>FunnelMonthly_Thailand</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelMonthly_Output_Diff_Thailand" Description="Thailand">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>Funnel_Output_Diff_Thailand.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH149</QlikViewExportObjectId>
+      <Filter>FunnelMonthly_Thailand</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelMonthly_Output_PriorYear_Thailand" Description="Thailand">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>Funnel_Output_PriorYear_Thailand.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH150</QlikViewExportObjectId>
+      <Filter>FunnelMonthly_Thailand</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelMonthly_Output_PriorYearDiff_Thailand" Description="Thailand">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>Funnel_Output_PriorYearDiff_Thailand.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH151</QlikViewExportObjectId>
+      <Filter>FunnelMonthly_Thailand</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_TSNormalWeekly_CQ" Description="CQ">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>MiniTSNormalWeekly_CQ.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH01</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_MiniTS_CQ</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_TSDaily_CQ" Description="CQ">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>MiniTSDaily_CQ.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH03</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_MiniTS_CQ</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_DetailNormalWeekly_XA" Description="XA">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>MiniCenterNormalWeekly_XA.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH01</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_MiniCenter_XA</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_DetailSpecialWeekly_XA" Description="XA">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>MiniCenterSPWeekly_XA.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH07</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_MiniCenter_XA</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_DetailDaily_XA" Description="XA">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>MiniCenterDaily_XA.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH03</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_MiniCenter_XA</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_TSNormalWeekly_XA" Description="XA">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>MiniTSNormalWeekly_XA.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH01</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_MiniTS_XA</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_TSDaily_XA" Description="XA">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>MiniTSDaily_XA.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH03</QlikViewExportObjectId>
+      <Filter>FunnelCNMini_MiniTS_XA</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelCNMini_Summary_DailyByEmail" Description="FunnelCNMini_Summary_DailyByEmail">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>Summary_DailyByEmail.jpg</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>True</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH15</QlikViewExportObjectId>
+      <Filter>
+      </Filter>
+      <ReportType>2</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR2_Germany" Description="Germany">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR2_Germany.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH173</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR2_Germany</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR2_France" Description="France">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR2_France.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH173</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR2_France</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR2_China" Description="China">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR2_China.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH121</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR2_China</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR2_Brazil" Description="Brazil">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR2_Brazil.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH173</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR2_Brazil</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR2_Italy" Description="Italy">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR2_Italy.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH173</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR2_Italy</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR2_Japan" Description="Japan">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR2_Japan.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH173</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR2_Japan</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR2_Korea" Description="Korea">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR2_Korea.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH173</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR2_Korea</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR2_Russia" Description="Russia">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR2_Russia.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH173</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR2_Russia</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR2_MEAST" Description="MEAST">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR2_MEAST.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH173</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR2_MEAST</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR2_ROA" Description="ROA">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR2_ROA.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH173</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR2_ROA</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR2_ROLA" Description="ROLA">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR2_ROLA.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH173</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR2_ROLA</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR2_Mexico" Description="Mexico">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR2_Mexico.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH173</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR2_Mexico</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR2_ROE" Description="ROE">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR2_ROE.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH173</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR2_ROE</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR2_ROW" Description="ROW">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR2_ROW.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH173</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR2_ROW</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR2_Spain" Description="Spain">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR2_Spain.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH173</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR2_Spain</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR2_Taiwan" Description="Taiwan">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR2_Taiwan.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH173</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR2_Taiwan</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR2_US" Description="US">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR2_US.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH173</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR2_US</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR2_Europe" Description="Europe">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR2_Europe.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH173</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR2_Europe</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR2_Mexico+US" Description="Mexico+US+ROLA">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR2_MexicoUS.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH173</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR2_Mexico+US</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDACTVsKFR2_Germany" Description="Germany">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDACTVsKFR2_Germany.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH174</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR2_Germany</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDACTVsKFR2_France" Description="France">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDACTVsKFR2_France.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH174</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR2_France</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDACTVsKFR2_China" Description="China">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDACTVsKFR2_China.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH120</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR2_China</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDACTVsKFR2_Brazil" Description="Brazil">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDACTVsKFR2_Brazil.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH174</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR2_Brazil</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDACTVsKFR2_Italy" Description="Italy">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDACTVsKFR2_Italy.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH174</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR2_Italy</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDACTVsKFR2_Japan" Description="Japan">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDACTVsKFR2_Japan.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH174</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR2_Japan</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDACTVsKFR2_Korea" Description="Korea">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDACTVsKFR2_Korea.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH174</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR2_Korea</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDACTVsKFR2_Russia" Description="Russia">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDACTVsKFR2_Russia.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH174</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR2_Russia</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDACTVsKFR2_MEAST" Description="MEAST">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDACTVsKFR2_MEAST.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH174</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR2_MEAST</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDACTVsKFR2_ROA" Description="ROA">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDACTVsKFR2_ROA.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH174</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR2_ROA</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDACTVsKFR2_ROLA" Description="ROLA">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDACTVsKFR2_ROLA.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH174</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR2_ROLA</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDACTVsKFR2_Mexico" Description="Mexico">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDACTVsKFR2_Mexico.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH174</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR2_Mexico</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDACTVsKFR2_ROE" Description="ROE">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDACTVsKFR2_ROE.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH174</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR2_ROE</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDACTVsKFR2_ROW" Description="ROW">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDACTVsKFR2_ROW.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH174</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR2_ROW</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDACTVsKFR2_Spain" Description="Spain">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDACTVsKFR2_Spain.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH174</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR2_Spain</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDACTVsKFR2_Taiwan" Description="Taiwan">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDACTVsKFR2_Taiwan.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH174</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR2_Taiwan</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDACTVsKFR2_US" Description="US">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDACTVsKFR2_US.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH174</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR2_US</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDACTVsKFR2_Europe" Description="Europe">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDACTVsKFR2_Europe.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH174</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR2_Europe</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDACTVsKFR2_Mexico+US" Description="Mexico+US+ROLA">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDACTVsKFR2_MexicoUS.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH174</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR2_Mexico+US</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR3_Germany" Description="Germany">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR3_Germany.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH175</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR3_Germany</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR3_France" Description="France">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR3_France.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH175</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR3_France</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR3_China" Description="China">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR3_China.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH121</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR3_China</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR3_Brazil" Description="Brazil">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR3_Brazil.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH175</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR3_Brazil</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR3_Italy" Description="Italy">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR3_Italy.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH175</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR3_Italy</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR3_Japan" Description="Japan">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR3_Japan.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH175</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR3_Japan</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR3_Korea" Description="Korea">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR3_Korea.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH175</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR3_Korea</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR3_Russia" Description="Russia">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR3_Russia.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH175</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR3_Russia</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR3_MEAST" Description="MEAST">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR3_MEAST.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH175</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR3_MEAST</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR3_ROA" Description="ROA">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR3_ROA.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH175</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR3_ROA</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR3_ROLA" Description="ROLA">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR3_ROLA.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH175</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR3_ROLA</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR3_Mexico" Description="Mexico">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR3_Mexico.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH175</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR3_Mexico</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR3_ROE" Description="ROE">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR3_ROE.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH175</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR3_ROE</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR3_ROW" Description="ROW">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR3_ROW.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH175</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR3_ROW</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR3_Spain" Description="Spain">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR3_Spain.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH175</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR3_Spain</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR3_Taiwan" Description="Taiwan">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR3_Taiwan.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH175</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR3_Taiwan</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR3_US" Description="US">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR3_US.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH175</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR3_US</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR3_Europe" Description="Europe">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR3_Europe.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH175</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR3_Europe</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR3_Mexico+US" Description="Mexico+US+ROLA">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR3_MexicoUS.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH175</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR3_Mexico+US</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDACTVsKFR3_Germany" Description="Germany">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDACTVsKFR3_Germany.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH176</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR3_Germany</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDACTVsKFR3_France" Description="France">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDACTVsKFR3_France.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH176</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR3_France</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDACTVsKFR3_China" Description="China">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDACTVsKFR3_China.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH120</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR3_China</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDACTVsKFR3_Brazil" Description="Brazil">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDACTVsKFR3_Brazil.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH176</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR3_Brazil</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDACTVsKFR3_Italy" Description="Italy">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDACTVsKFR3_Italy.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH176</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR3_Italy</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDACTVsKFR3_Japan" Description="Japan">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDACTVsKFR3_Japan.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH176</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR3_Japan</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDACTVsKFR3_Korea" Description="Korea">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDACTVsKFR3_Korea.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH176</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR3_Korea</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDACTVsKFR3_Russia" Description="Russia">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDACTVsKFR3_Russia.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH176</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR3_Russia</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDACTVsKFR3_MEAST" Description="MEAST">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDACTVsKFR3_MEAST.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH176</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR3_MEAST</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDACTVsKFR3_ROA" Description="ROA">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDACTVsKFR3_ROA.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH176</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR3_ROA</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDACTVsKFR3_ROLA" Description="ROLA">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDACTVsKFR3_ROLA.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH176</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR3_ROLA</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDACTVsKFR3_Mexico" Description="Mexico">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDACTVsKFR3_Mexico.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH176</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR3_Mexico</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDACTVsKFR3_ROE" Description="ROE">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDACTVsKFR3_ROE.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH176</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR3_ROE</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDACTVsKFR3_Spain" Description="Spain">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDACTVsKFR3_Spain.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH176</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR3_Spain</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDACTVsKFR3_Taiwan" Description="Taiwan">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDACTVsKFR3_Taiwan.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH176</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR3_Taiwan</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDACTVsKFR3_US" Description="US">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDACTVsKFR3_US.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH176</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR3_US</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDACTVsKFR3_Europe" Description="Europe">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDACTVsKFR3_Europe.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH176</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR3_Europe</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDACTVsKFR3_Mexico+US" Description="Mexico+US+ROLA">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDACTVsKFR3_MexicoUS.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH176</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR3_Mexico+US</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR1_Germany" Description="Germany">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR1_Germany.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH171</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR1_Germany</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR1_France" Description="France">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR1_France.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH171</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR1_France</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR1_China" Description="China">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR1_China.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH121</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR1_China</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR1_Brazil" Description="Brazil">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR1_Brazil.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH171</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR1_Brazil</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR1_Italy" Description="Italy">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR1_Italy.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH171</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR1_Italy</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR1_Japan" Description="Japan">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR1_Japan.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH171</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR1_Japan</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR1_Korea" Description="Korea">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR1_Korea.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH171</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR1_Korea</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR1_Russia" Description="Russia">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR1_Russia.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH171</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR1_Russia</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR1_MEAST" Description="MEAST">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR1_MEAST.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH171</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR1_MEAST</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR1_ROA" Description="ROA">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR1_ROA.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH171</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR1_ROA</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR1_ROLA" Description="ROLA">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR1_ROLA.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH171</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR1_ROLA</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR1_Mexico" Description="Mexico">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR1_Mexico.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH171</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR1_Mexico</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR1_ROE" Description="ROE">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR1_ROE.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH171</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR1_ROE</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR1_ROW" Description="ROW">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR1_ROW.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH171</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR1_ROW</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR1_Spain" Description="Spain">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR1_Spain.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH171</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR1_Spain</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR1_Taiwan" Description="Taiwan">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR1_Taiwan.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH171</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR1_Taiwan</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR1_US" Description="US">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR1_US.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH171</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR1_US</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR1_Europe" Description="Europe">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR1_Europe.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH171</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR1_Europe</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDKFR1_Mexico+US" Description="Mexico+US+ROLA">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDKFR1_MexicoUS.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH171</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR1_Mexico+US</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelReport_YTDACTVsKFR3_ROW" Description="ROW">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelYTDACTVsKFR3_ROW.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH176</QlikViewExportObjectId>
+      <Filter>FunnelReport_KFR3_ROW</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="CCDailyFunnel_Summary_GZJTP" Description="CCDailyFunnel_Summary_GZJTP">
+      <Connection>FunnelCNMini_New</Connection>
+      <OutputFileName>CCDailyFunnel_Summary_GZJTP.jpg</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH19</QlikViewExportObjectId>
+      <Filter>CCDailyFunnel_Summary_GZJTP</Filter>
+      <ReportType>2</ReportType>
+    </Report>
+  </Reports>
+  <Recipients>
+    <Recipient Name="Tony" Description="Tony Mail">
+      <Email>Tony.Wu@ef.com</Email>
+      <EmailCC>Stanley.yuan@ef.com</EmailCC>
+    </Recipient>
+    <Recipient Name="Stanley" Description="Stanley Mail">
+      <Email>Stanley.yuan@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Isaac" Description="Isaac Li">
+      <Email>Isaac.Li@ef.com</Email>
+      <EmailCC>stanley.yuan@ef.com</EmailCC>
+    </Recipient>
+    <Recipient Name="Natalie" Description="Natalie Choi">
+      <Email>Natalie.Choi@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Vipul" Description="Vipul Bhargava">
+      <Email>Vipul.Bhargava@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Tamas" Description="Tamas Dobos">
+      <Email>Tamas.dobos@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Pansy" Description="Pansy Cai">
+      <Email>Pansy.Cai@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Andread Kullberg" Description="Andread Kullberg">
+      <Email>Andreas.Kullberg@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="KyungJin Park" Description="KyungJin Park">
+      <Email>KyungJin.Park@Englishtown.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Francisco Elizondo" Description="Francisco Elizondo">
+      <Email>Francisco.Elizondo@Englishtown.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Andre Marques" Description="Andre Marques">
+      <Email>Andre.Marques@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="David" Description="David Dai">
+      <Email>David.Dai@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Irene Zhang" Description="Controller for Mini,TS">
+      <Email>Irene.Zhangry@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Tracy Huang" Description="Tracy Huang">
+      <Email>Tracy.Huang@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Sam Cheung" Description="Sam Cheung">
+      <Email>Sam.Cheung@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Jenny Chen" Description="Jenny Chen">
+      <Email>Jenny.Chen@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="EtownCenter_CD1_Sales" Description="EtownCenter_CD1_Sales">
+      <Email>EtownCenter_CD1_Sales@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="EtownCenter_CQ1_Sales" Description="EtownCenter_CQ1_Sales">
+      <Email>EtownCenter_CQ1_Sales@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="EtownCenter_XA1_Sales" Description="EtownCenter_XA1_Sales">
+      <Email>EtownCenter_XA1_Sales@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="EtownCenter_WH1_Sales" Description="EtownCenter_WH1_Sales">
+      <Email>EtownCenter_WH1_Sales@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="EtownCenter_DG1_Sales" Description="EtownCenter_DG1_Sales">
+      <Email>EtownCenter_DG1_Sales@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="EtownCenter_FS1_Sales" Description="EtownCenter_FS1_Sales">
+      <Email>EtownCenter_FS1_Sales@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="EtownCenter_NJ1_Sales" Description="EtownCenter_NJ1_Sales">
+      <Email>EtownCenter_NJ1_Sales@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="EtownCenter_NJ2_Sales" Description="EtownCenter_NJ2_Sales">
+      <Email>EtownCenter_NJ2_Sales@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="EtownCenter_NB1_Sales" Description="EtownCenter_NB1_Sales">
+      <Email>EtownCenter_NB1_Sales@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="EtownCenter_WX1_Sales" Description="EtownCenter_WX1_Sales">
+      <Email>EtownCenter_WX1_Sales@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Smart_HZHLL_Sales" Description="Smart_HZHLL_Sales">
+      <Email>Smart_HZHLL_Sales@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Lucy.lv" Description="Lucy.lv">
+      <Email>Lucy.lv@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Simon.wu" Description="Simon.wu">
+      <Email>Simon.wu@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="celine.wang" Description="celine.wang">
+      <Email>celine.wang@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="cherry.he" Description="cherry.he">
+      <Email>cherry.he@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="may.wong" Description="may.wong">
+      <Email>may.wong@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="eric.lv" Description="eric.lv">
+      <Email>eric.lv@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="crystal.ji" Description="crystal.ji">
+      <Email>crystal.ji@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="elyn.gelin" Description="elyn.gelin">
+      <Email>elyn.gelin@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="robin.wang" Description="robin.wang">
+      <Email>robin.wang@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="David Hu" Description="David.Hu">
+      <Email>David.Hu@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Jet.Lin" Description="Jet Lin">
+      <Email>Jet.Lin@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="lei.zang" Description="lei zang">
+      <Email>lei.zang@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="jack.Chenda" Description="jack Chenda">
+      <Email>jack.Chenda@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Anita.Hy.Li" Description="Anita Li">
+      <Email>Anita.Hy.Li@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="xiaoming.cui" Description="xiaoming cui">
+      <Email>xiaoming.cui@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Jessy.Ge" Description="Jessy Ge">
+      <Email>Jessy.Ge@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Zan.Li" Description="Zan Li">
+      <Email>Zan.Li@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="miki.zhang" Description="miki.zhang">
+      <Email>miki.zhang@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Tracy.Li" Description="Tracy.Lii">
+      <Email>Tracy.Li@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="jane.jiang" Description="jane.jiang">
+      <Email>jane.jiang@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Tony.Fan" Description="Tony.Fan">
+      <Email>tony.fan@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Ayumi" Description="">
+      <Email>Ayumi.Ai@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Sumin" Description="">
+      <Email>Sumin.Jung@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="edward.lang" Description="edward lang">
+      <Email>edward.lang@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Sarah.Zou" Description="Sarah Zou">
+      <Email>Sarah.Zou@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="EtownCenter_XA1" Description="EtownCenter_XA1">
+      <Email>EtownCenter_XA1@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="David.Min" Description="David Min">
+      <Email>David.Min@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Rebecca.Dong" Description="Rebecca.Dong">
+      <Email>Rebecca.Dong@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Lucy.Lv" Description="Lucy.Lv">
+      <Email>Lucy.Lv@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Hope.Ma" Description="Hope.Ma">
+      <Email>Hope.Ma@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="sheldon.leung" Description="sheldon.leung">
+      <Email>sheldon.leung@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="david.hu" Description="david.hu">
+      <Email>david.hu@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="SalesReport_SH" Description="SalesReport_SH">
+      <Email>SalesReport_SH@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="SalesReport_BJ" Description="SalesReport_BJ">
+      <Email>SalesReport_BJ@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="SalesReport_EAST" Description="SalesReport_EAST">
+      <Email>SalesReport_EAST@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="SalesReport_WEST" Description="SalesReport_WEST">
+      <Email>SalesReport_WEST@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="SalesReport_SOUTH" Description="SalesReport_SOUTH">
+      <Email>SalesReport_SOUTH@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="SalesReport_HK" Description="SalesReport_HK">
+      <Email>SalesReport_HK@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Smart_BJDFG_Sales" Description="Smart_BJDFG_Sales">
+      <Email>Smart_BJDFG_Sales@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Smart_BJSYQ_Sales" Description="Smart_BJSYQ_Sales">
+      <Email>Smart_BJSYQ_Sales@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Smart_BJFXM_Sales" Description="Smart_BJFXM_Sales">
+      <Email>Smart_BJFXM_Sales@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Smart_BJXZM_Sales" Description="Smart_BJXZM_Sales">
+      <Email>Smart_BJXZM_Sales@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Smart_BJWSL_Sales" Description="Smart_BJWSL_Sales">
+      <Email>Smart_BJWSL_Sales@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Smart_BJDWL_Sales" Description="Smart_BJDWL_Sales">
+      <Email>Smart_BJDWL_Sales@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Smart_BJDZM_Sales" Description="Smart_BJDZM_Sales">
+      <Email>Smart_BJDZM_Sales@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Smart_BJGMO1_Sales" Description="Smart_BJGMO1_Sales">
+      <Email>Smart_BJGMO1_Sales@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Smart_BJYYC_Sales" Description="Smart_BJYYC_Sales">
+      <Email>Smart_BJYYC_Sales@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Smart_BJZGC_Sales" Description="Smart_BJZGC_Sales">
+      <Email>Smart_BJZGC_Sales@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Smart_BJWDK_Sales" Description="Smart_BJWDK_Sales">
+      <Email>Smart_BJWDK_Sales@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Smart_TJNJR_Sales" Description="Smart_TJNJR_Sales">
+      <Email>Smart_TJNJR_Sales@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Smart_GZGYQ_Sales" Description="Smart_GZGYQ_Sales">
+      <Email>Smart_GZGYQ_Sales@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Smart_SZCHC_Sales" Description="Smart_SZCHC_Sales">
+      <Email>Smart_SZCHC_Sales@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Smart_GZJTP_Sales" Description="Smart_GZJTP_Sales">
+      <Email>Smart_GZJTP_Sales@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Smart_SHHQC_Sales" Description="Smart_SHHQC_Sales">
+      <Email>Smart_SHHQC_Sales@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Smart_GZJNX_Sales" Description="Smart_GZJNX_Sales">
+      <Email>Smart_GZJNX_Sales@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Smart_GZWLH_Sales" Description="Smart_GZWLH_Sales">
+      <Email>Smart_GZWLH_Sales@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Smart_SHXJH_Sales" Description="Smart_SHXJH_Sales">
+      <Email>Smart_SHXJH_Sales@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Smart_SHZSP_Sales" Description="Smart_SHZSP_Sales">
+      <Email>Smart_SHZSP_Sales@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Smart_GZTHB_Sales" Description="Smart_GZTHB_Sales">
+      <Email>Smart_GZTHB_Sales@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Smart_GZTJR_Sales" Description="Smart_GZTJR_Sales">
+      <Email>Smart_GZTJR_Sales@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Smart_SZHQB_Sales" Description="Smart_SZHQB_Sales">
+      <Email>Smart_SZHQB_Sales@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Smart_SZDWG_Sales" Description="Smart_SZDWG_Sales">
+      <Email>Smart_SZDWG_Sales@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Smart_SHXZG_Sales" Description="Smart_SHXZG_Sales">
+      <Email>Smart_SHXZG_Sales@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Smart_SHWJC_Sales" Description="Smart_SHWJC_Sales">
+      <Email>Smart_SHWJC_Sales@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Smart_SZNSD_Sales" Description="Smart_SZNSD_Sales">
+      <Email>Smart_SZNSD_Sales@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Smart_SHDNR_Sales" Description="Smart_SHDNR_Sales">
+      <Email>Smart_SHDNR_Sales@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Smart_SZKJY_Sales" Description="Smart_SZKJY_Sales">
+      <Email>Smart_SZKJY_Sales@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Smart_SHBBB_Sales" Description="Smart_SHBBB_Sales">
+      <Email>Smart_SHBBB_Sales@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Smart_SHLJZ_Sales" Description="Smart_SHLJZ_Sales">
+      <Email>Smart_SHLJZ_Sales@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Smart_SHPSQ_Sales" Description="Smart_SHPSQ_Sales">
+      <Email>Smart_SHPSQ_Sales@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Jane.yu" Description="Jane.yu">
+      <Email>Jane.yu@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="ECEast_NJ_Sales" Description="ECEast_NJ_Sales">
+      <Email>ECEast_NJ_Sales@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="ECEast_WX_Sales" Description="ECEast_WX_Sales">
+      <Email>ECEast_WX_Sales@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="ECEast_NB_Sales" Description="ECEast_NB_Sales">
+      <Email>ECEast_NB_Sales@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="ECWest_CD1_Sales" Description="ECWest_CD1_Sales">
+      <Email>ECWest_CD1_Sales@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="ECWest_WH1_Sales" Description="ECWest_WH1_Sales">
+      <Email>ECWest_WH1_Sales@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="ECWest_CQ1_Sales" Description="ECWest_CQ1_Sales">
+      <Email>ECWest_CQ1_Sales@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="ECWest_XA1_Sales" Description="ECWest_XA1_Sales">
+      <Email>ECWest_XA1_Sales@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="ECEast_HZ1_Sales" Description="ECEast_HZ1_Sales">
+      <Email>ECEast_HZ1_Sales@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="ECNorth_DFG_Sales" Description="ECNorth_DFG_Sales">
+      <Email>ECNorth_DFG_Sales@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="ECNorth_SYQ_Sales" Description="ECNorth_SYQ_Sales">
+      <Email>ECNorth_SYQ_Sales@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="ECNorth_FXM_Sales" Description="ECNorth_FXM_Sales">
+      <Email>ECNorth_FXM_Sales@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="ECNorth_XZM_Sales" Description="ECNorth_XZM_Sales">
+      <Email>ECNorth_XZM_Sales@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="ECNorth_WSL_Sales" Description="ECNorth_WSL_Sales">
+      <Email>ECNorth_WSL_Sales@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="ECNorth_DWL_Sales" Description="ECNorth_DWL_Sales">
+      <Email>ECNorth_DWL_Sales@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="ECNorth_DZM_Sales" Description="ECNorth_DZM_Sales">
+      <Email>ECNorth_DZM_Sales@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="ECNorth_GMO_Sales" Description="ECNorth_GMO_Sales">
+      <Email>ECNorth_GMO_Sales@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="ECNorth_YYC_Sales" Description="ECNorth_YYC_Sales">
+      <Email>ECNorth_YYC_Sales@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="ECNorth_ZGC_Sales" Description="ECNorth_ZGC_Sales">
+      <Email>ECNorth_ZGC_Sales@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="ECNorth_WDK_Sales" Description="ECNorth_WDK_Sales">
+      <Email>ECNorth_WDK_Sales@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="ECNorth_NJR_Sales" Description="ECNorth_NJR_Sales">
+      <Email>ECNorth_NJR_Sales@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="ECSH_LJZ_Sales" Description="ECSH_LJZ_Sales">
+      <Email>ECSH_LJZ_Sales@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="ECSH_WJC_Sales" Description="ECSH_WJC_Sales">
+      <Email>ECSH_WJC_Sales@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="ECSH_XJH_Sales" Description="ECSH_XJH_Sales">
+      <Email>ECSH_XJH_Sales@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="ECSH_DNR_Sales" Description="ECSH_DNR_Sales">
+      <Email>ECSH_DNR_Sales@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="ECSH_BBB_Sales" Description="ECSH_BBB_Sales">
+      <Email>ECSH_BBB_Sales@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="ECSH_PSQ_Sales" Description="ECSH_PSQ_Sales">
+      <Email>ECSH_PSQ_Sales@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="ECSH_XZG_Sales" Description="ECSH_XZG_Sales">
+      <Email>ECSH_XZG_Sales@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="ECSH_ZSP_Sales" Description="ECSH_ZSP_Sales">
+      <Email>ECSH_ZSP_Sales@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="ECSH_HQC_Sales" Description="ECSH_HQC_Sales">
+      <Email>ECSH_HQC_Sales@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="ECSouth_JTP_Sales" Description="ECSouth_JTP_Sales">
+      <Email>ECSouth_JTP_Sales@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="ECSouth_THB_Sales" Description="ECSouth_THB_Sales">
+      <Email>ECSouth_THB_Sales@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="ECSouth_GYQ_Sales" Description="ECSouth_GYQ_Sales">
+      <Email>ECSouth_GYQ_Sales@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="ECSouth_TJR_Sales" Description="ECSouth_TJR_Sales">
+      <Email>ECSouth_TJR_Sales@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="ECSouth_JNX_Sales" Description="ECSouth_JNX_Sales">
+      <Email>ECSouth_JNX_Sales@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="ECSouth_WLH_Sales" Description="ECSouth_WLH_Sales">
+      <Email>ECSouth_WLH_Sales@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="ECSouth_DWG_Sales" Description="ECSouth_DWG_Sales">
+      <Email>ECSouth_DWG_Sales@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="ECSouth_NSD_Sales" Description="ECSouth_NSD_Sales">
+      <Email>ECSouth_NSD_Sales@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="ECSouth_HQB_Sales" Description="ECSouth_HQB_Sales">
+      <Email>ECSouth_HQB_Sales@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="ECSouth_CHC_Sales" Description="ECSouth_CHC_Sales">
+      <Email>ECSouth_CHC_Sales@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="ECSouth_KJY_Sales" Description="ECSouth_KJY_Sales">
+      <Email>ECSouth_KJY_Sales@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="ECEast_HZ2_Sales" Description="ECEast_HZ2_Sales">
+      <Email>ECEast_HZ2_Sales@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Robert.Qiu" Description="Robert.Qiu">
+      <Email>Robert.Qiu@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Ryosuke" Description="Ryosuke.Saito">
+      <Email>Ryosuke.Saito@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="kristina.howes" Description="kristina.howes">
+      <Email>kristina.howes@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Coco.du" Description="Coco Du">
+      <Email>coco.du@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="EFEC_OnlineMarketing" Description="EFEC_OnlineMarketing">
+      <Email>EFEC_OnlineMarketing@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="EFEC_CRM" Description="EFEC_CRM">
+      <Email>EFEC_CRM@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Rysh.Hsu" Description="Rysh.Hsu">
+      <Email>Rysh.Hsu@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Annabelle.Vultee" Description="Annabelle.Vultee">
+      <Email>Annabelle.Vultee@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Jona.Fujiwara" Description="">
+      <Email>Jona.Fujiwara@englishtown.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="andy.alexander" Description="">
+      <Email>andy.alexander@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="Lei.Zang" Description="">
+      <Email>Lei.Zang@EF.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+    <Recipient Name="ECSH_CGM" Description="ECSH_CGM">
+      <Email>ECSH_CGM@ef.com</Email>
+      <EmailCC>
+      </EmailCC>
+    </Recipient>
+  </Recipients>
+  <RecipientGroups>
+    <RecipientGroup Name="BITeam" Description="BI Team">
+      <Recipient>Tony</Recipient>
+      <Recipient>Stanley</Recipient>
+    </RecipientGroup>
+  </RecipientGroups>
+  <Filters>
+    <Filter Name="etag_Filter1" Description="etag filter 1">
+      <Connection>usb-etbiapp_etag</Connection>
+      <Fields>
+        <Field Name="TheYear" Description="" Expression="">
+          <Value Number="2011" IsNumeric="True">2011</Value>
+          <Value Number="2010" IsNumeric="True">2010</Value>
+        </Field>
+        <Field Name="CountryCode" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">as</Value>
+          <Value Number="1E+300" IsNumeric="False">ar</Value>
+          <Value Number="1E+300" IsNumeric="False">ao</Value>
+          <Value Number="1E+300" IsNumeric="False">am</Value>
+          <Value Number="1E+300" IsNumeric="False">al</Value>
+          <Value Number="1E+300" IsNumeric="False">ai</Value>
+          <Value Number="1E+300" IsNumeric="False">ag</Value>
+          <Value Number="1E+300" IsNumeric="False">af</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelReport_ByWeek_HongKong" Description="FunnelReport_ByWeek_HongKong">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Hong Kong</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">11-12</Value>
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelReport_ByWeek_Thailand" Description="FunnelReport_ByWeek_Thailand">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Thailand</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">11-12</Value>
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelReport_HongKong" Description="FunnelReport_HongKong">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Hong Kong</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelReport_Thailand" Description="FunnelReport_Thailand">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Thailand</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelReport_KFR2_HongKong" Description="FunnelReport_KFR2_HongKong">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Hong Kong</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF2</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelReport_KFR2_Thailand" Description="FunnelReport_KFR2_Thailand">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Thailand</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF2</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelReport_KFR1_HongKong" Description="FunnelReport_KFR1_HongKong">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Hong Kong</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF1</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelReport_KFR1_Thailand" Description="FunnelReport_KFR1_Thailand">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Thailand</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF1</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelReport_KFR0_HongKong" Description="FunnelReport_KFR0_HongKong">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Hong Kong</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF0</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelReport_KFR0_Thailand" Description="FunnelReport_KFR0_Thailand">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Thailand</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF0</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_China" Description="FunnelMonthly_China">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">China</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_HongKong" Description="FunnelMonthly_HongKong">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Hong Kong</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_Russia" Description="FunnelMonthly_Russia">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Russia</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_Taiwan" Description="FunnelMonthly_Taiwan">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Taiwan</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_Thailand" Description="FunnelMonthly_Thailand">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Thailand</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_Month_China" Description="FunnelMonthly_Month_China">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">China</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">11-12</Value>
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_Month_HongKong" Description="FunnelMonthly_Month_HongKong">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Hong Kong</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">11-12</Value>
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_Month_Russia" Description="FunnelMonthly_Month_Russia">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Russia</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">11-12</Value>
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_Month_Taiwan" Description="FunnelMonthly_Month_Taiwan">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Taiwan</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">11-12</Value>
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_Month_Thailand" Description="FunnelMonthly_Month_Thailand">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Thailand</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">11-12</Value>
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR0_China" Description="FunnelMonthly_KFR0_China">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">China</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF0</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR0_HongKong" Description="FunnelMonthly_KFR0_HongKong">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Hong Kong</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF0</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR0_Russia" Description="FunnelMonthly_KFR0_Russia">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Russia</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF0</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR0_Taiwan" Description="FunnelMonthly_KFR0_Taiwan">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Taiwan</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF0</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR0_Thailand" Description="FunnelMonthly_KFR0_Thailand">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Thailand</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF0</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR0_Total" Description="FunnelMonthly_KFR0_Total">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Spain</Value>
+          <Value Number="1E+300" IsNumeric="False">MEAST</Value>
+          <Value Number="1E+300" IsNumeric="False">ROE</Value>
+          <Value Number="1E+300" IsNumeric="False">Italy</Value>
+          <Value Number="1E+300" IsNumeric="False">Germany</Value>
+          <Value Number="1E+300" IsNumeric="False">France</Value>
+          <Value Number="1E+300" IsNumeric="False">US</Value>
+          <Value Number="1E+300" IsNumeric="False">Mexico</Value>
+          <Value Number="1E+300" IsNumeric="False">Brazil</Value>
+          <Value Number="1E+300" IsNumeric="False">Korea</Value>
+          <Value Number="1E+300" IsNumeric="False">Japan</Value>
+          <Value Number="1E+300" IsNumeric="False">ROA</Value>
+          <Value Number="1E+300" IsNumeric="False">ROLA</Value>
+          <Value Number="1E+300" IsNumeric="False">Venezuela</Value>
+          <Value Number="1E+300" IsNumeric="False">Peru</Value>
+          <Value Number="1E+300" IsNumeric="False">Colombia</Value>
+          <Value Number="1E+300" IsNumeric="False">Argentina</Value>
+          <Value Number="1E+300" IsNumeric="False">Chile</Value>
+          <Value Number="1E+300" IsNumeric="False">ROW</Value>
+          <Value Number="1E+300" IsNumeric="False">Thailand</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF0</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR1_China" Description="FunnelMonthly_KFR1_China">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">China</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF1</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR1_Brazil" Description="FunnelMonthly_KFR1_Brazil">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Brazil</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF1</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR1_France" Description="FunnelMonthly_KFR1_France">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">France</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF1</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR1_Germany" Description="FunnelMonthly_KFR1_Germany">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Germany</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF1</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR1_HongKong" Description="FunnelMonthly_KFR1_HongKong">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Hong Kong</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF1</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR1_Italy" Description="FunnelMonthly_KFR1_Italy">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Italy</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF1</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR1_Japan" Description="FunnelMonthly_KFR1_Japan">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Japan</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF1</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR1_Korea" Description="FunnelMonthly_KFR1_Korea">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Korea</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF1</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR1_Russia" Description="FunnelMonthly_KFR1_Russia">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Russia</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF1</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR1_MEAST" Description="FunnelMonthly_KFR1_MEAST">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">MEAST</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF1</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR1_Mexico" Description="FunnelMonthly_KFR1_Mexico">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Mexico</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF1</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR1_ROA" Description="FunnelMonthly_KFR1_ROA">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">ROA</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF1</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR1_ROE" Description="FunnelMonthly_KFR1_ROE">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">ROE</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF1</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR1_ROLA" Description="FunnelMonthly_KFR1_ROLA">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Venezuela</Value>
+          <Value Number="1E+300" IsNumeric="False">Peru</Value>
+          <Value Number="1E+300" IsNumeric="False">Colombia</Value>
+          <Value Number="1E+300" IsNumeric="False">Argentina</Value>
+          <Value Number="1E+300" IsNumeric="False">Chile</Value>
+          <Value Number="1E+300" IsNumeric="False">ROLA</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF1</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR1_ROW" Description="FunnelMonthly_KFR1_ROW">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">ROW</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF1</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR1_Spain" Description="FunnelMonthly_KFR1_Spain">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Spain</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF1</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR1_Taiwan" Description="FunnelMonthly_KFR1_Taiwan">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Taiwan</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF1</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR1_Thailand" Description="FunnelMonthly_KFR1_Thailand">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Thailand</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF1</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR1_US" Description="FunnelMonthly_KFR1_US">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">US</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF1</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR1_Europe" Description="FunnelMonthly_KFR1_Europe">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">France</Value>
+          <Value Number="1E+300" IsNumeric="False">Germany</Value>
+          <Value Number="1E+300" IsNumeric="False">Italy</Value>
+          <Value Number="1E+300" IsNumeric="False">MEAST</Value>
+          <Value Number="1E+300" IsNumeric="False">ROE</Value>
+          <Value Number="1E+300" IsNumeric="False">Spain</Value>
+          <Value Number="1E+300" IsNumeric="False">Russia</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF1</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR1_Mexico+US" Description="FunnelMonthly_KFR1_Mexico+US">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Mexico</Value>
+          <Value Number="1E+300" IsNumeric="False">US</Value>
+          <Value Number="1E+300" IsNumeric="False">Venezuela</Value>
+          <Value Number="1E+300" IsNumeric="False">Peru</Value>
+          <Value Number="1E+300" IsNumeric="False">Colombia</Value>
+          <Value Number="1E+300" IsNumeric="False">Argentina</Value>
+          <Value Number="1E+300" IsNumeric="False">Chile</Value>
+          <Value Number="1E+300" IsNumeric="False">ROLA</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF1</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR1_Total" Description="FunnelMonthly_KFR1_Total">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Spain</Value>
+          <Value Number="1E+300" IsNumeric="False">MEAST</Value>
+          <Value Number="1E+300" IsNumeric="False">ROE</Value>
+          <Value Number="1E+300" IsNumeric="False">Italy</Value>
+          <Value Number="1E+300" IsNumeric="False">Germany</Value>
+          <Value Number="1E+300" IsNumeric="False">France</Value>
+          <Value Number="1E+300" IsNumeric="False">US</Value>
+          <Value Number="1E+300" IsNumeric="False">Mexico</Value>
+          <Value Number="1E+300" IsNumeric="False">Brazil</Value>
+          <Value Number="1E+300" IsNumeric="False">Korea</Value>
+          <Value Number="1E+300" IsNumeric="False">Japan</Value>
+          <Value Number="1E+300" IsNumeric="False">ROA</Value>
+          <Value Number="1E+300" IsNumeric="False">ROLA</Value>
+          <Value Number="1E+300" IsNumeric="False">Venezuela</Value>
+          <Value Number="1E+300" IsNumeric="False">Peru</Value>
+          <Value Number="1E+300" IsNumeric="False">Colombia</Value>
+          <Value Number="1E+300" IsNumeric="False">Argentina</Value>
+          <Value Number="1E+300" IsNumeric="False">Chile</Value>
+          <Value Number="1E+300" IsNumeric="False">ROW</Value>
+          <Value Number="1E+300" IsNumeric="False">Thailand</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF1</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR2_China" Description="FunnelMonthly_KFR2_China">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">China</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF2</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR2_Brazil" Description="FunnelMonthly_KFR2_Brazil">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Brazil</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF2</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR2_France" Description="FunnelMonthly_KFR2_France">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">France</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF2</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR2_Germany" Description="FunnelMonthly_KFR2_Germany">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Germany</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF2</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR2_HongKong" Description="FunnelMonthly_KFR2_HongKong">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Hong Kong</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF2</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR2_Italy" Description="FunnelMonthly_KFR2_Italy">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Italy</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF2</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR2_Japan" Description="FunnelMonthly_KFR2_Japan">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Japan</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF2</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR2_Korea" Description="FunnelMonthly_KFR2_Korea">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Korea</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF2</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR2_Russia" Description="FunnelMonthly_KFR2_Russia">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Russia</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF2</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR2_MEAST" Description="FunnelMonthly_KFR2_MEAST">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">MEAST</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF2</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR2_Mexico" Description="FunnelMonthly_KFR2_Mexico">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Mexico</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF2</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR2_ROA" Description="FunnelMonthly_KFR2_ROA">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">ROA</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF2</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR2_ROE" Description="FunnelMonthly_KFR2_ROE">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">ROE</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF2</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR2_ROLA" Description="FunnelMonthly_KFR2_ROLA">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Venezuela</Value>
+          <Value Number="1E+300" IsNumeric="False">Peru</Value>
+          <Value Number="1E+300" IsNumeric="False">Colombia</Value>
+          <Value Number="1E+300" IsNumeric="False">Argentina</Value>
+          <Value Number="1E+300" IsNumeric="False">Chile</Value>
+          <Value Number="1E+300" IsNumeric="False">ROLA</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF2</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR2_ROW" Description="FunnelMonthly_KFR2_ROW">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">ROW</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF2</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR2_Spain" Description="FunnelMonthly_KFR2_Spain">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Spain</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF2</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR2_Taiwan" Description="FunnelMonthly_KFR2_Taiwan">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Taiwan</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF2</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR2_Thailand" Description="FunnelMonthly_KFR2_Thailand">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Thailand</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF2</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR2_US" Description="FunnelMonthly_KFR2_US">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">US</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF2</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR2_Europe" Description="FunnelMonthly_KFR2_Europe">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">France</Value>
+          <Value Number="1E+300" IsNumeric="False">Germany</Value>
+          <Value Number="1E+300" IsNumeric="False">Italy</Value>
+          <Value Number="1E+300" IsNumeric="False">MEAST</Value>
+          <Value Number="1E+300" IsNumeric="False">ROE</Value>
+          <Value Number="1E+300" IsNumeric="False">Spain</Value>
+          <Value Number="1E+300" IsNumeric="False">Russia</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF2</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR2_Mexico+US" Description="FunnelMonthly_KFR2_Mexico+US">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Mexico</Value>
+          <Value Number="1E+300" IsNumeric="False">US</Value>
+          <Value Number="1E+300" IsNumeric="False">Venezuela</Value>
+          <Value Number="1E+300" IsNumeric="False">Peru</Value>
+          <Value Number="1E+300" IsNumeric="False">Colombia</Value>
+          <Value Number="1E+300" IsNumeric="False">Argentina</Value>
+          <Value Number="1E+300" IsNumeric="False">Chile</Value>
+          <Value Number="1E+300" IsNumeric="False">ROLA</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF2</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelMonthly_KFR2_Total" Description="FunnelMonthly_KFR2_Total">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Spain</Value>
+          <Value Number="1E+300" IsNumeric="False">MEAST</Value>
+          <Value Number="1E+300" IsNumeric="False">ROE</Value>
+          <Value Number="1E+300" IsNumeric="False">Italy</Value>
+          <Value Number="1E+300" IsNumeric="False">Germany</Value>
+          <Value Number="1E+300" IsNumeric="False">France</Value>
+          <Value Number="1E+300" IsNumeric="False">US</Value>
+          <Value Number="1E+300" IsNumeric="False">Mexico</Value>
+          <Value Number="1E+300" IsNumeric="False">Brazil</Value>
+          <Value Number="1E+300" IsNumeric="False">Korea</Value>
+          <Value Number="1E+300" IsNumeric="False">Japan</Value>
+          <Value Number="1E+300" IsNumeric="False">ROA</Value>
+          <Value Number="1E+300" IsNumeric="False">ROLA</Value>
+          <Value Number="1E+300" IsNumeric="False">Venezuela</Value>
+          <Value Number="1E+300" IsNumeric="False">Peru</Value>
+          <Value Number="1E+300" IsNumeric="False">Colombia</Value>
+          <Value Number="1E+300" IsNumeric="False">Argentina</Value>
+          <Value Number="1E+300" IsNumeric="False">Chile</Value>
+          <Value Number="1E+300" IsNumeric="False">ROW</Value>
+          <Value Number="1E+300" IsNumeric="False">Thailand</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">12-13</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastMonthendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF2</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelCNMini_MiniTS_CQ" Description="FunnelCNMini_MiniTS_CQ">
+      <Connection>FunnelCNMini</Connection>
+      <Fields>
+        <Field Name="YearMonth" Description="" Expression="CurrentFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Mini TS</Value>
+        </Field>
+        <Field Name="CityName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">CQ</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelCNMini_MiniCenter_XA" Description="FunnelCNMini_MiniCenter_XA">
+      <Connection>FunnelCNMini</Connection>
+      <Fields>
+        <Field Name="YearMonth" Description="" Expression="CurrentFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Mini Center</Value>
+        </Field>
+        <Field Name="CityName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">XA</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelCNMini_MiniTS_XA" Description="FunnelCNMini_MiniTS_XA">
+      <Connection>FunnelCNMini</Connection>
+      <Fields>
+        <Field Name="YearMonth" Description="" Expression="CurrentFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Mini TS</Value>
+        </Field>
+        <Field Name="CityName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">XA</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelReport_KFR2_China" Description="FunnelReport_KFR2_China">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">China</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">13-14</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF2</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelReport_KFR2_Brazil" Description="FunnelReport_KFR2_Brazil">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Brazil</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">13-14</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF2</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelReport_KFR2_France" Description="FunnelReport_KFR2_France">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">France</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">13-14</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF2</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelReport_KFR2_Germany" Description="FunnelReport_KFR2_Germany">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Germany</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">13-14</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF2</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelReport_KFR2_Italy" Description="FunnelReport_KFR2_Italy">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Italy</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">13-14</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF2</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelReport_KFR2_Japan" Description="FunnelReport_KFR2_Japan">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Japan</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">13-14</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF2</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelReport_KFR2_Korea" Description="FunnelReport_KFR2_Korea">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Korea</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">13-14</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF2</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelReport_KFR2_Russia" Description="FunnelReport_KFR2_Russia">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Russia</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">13-14</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF2</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelReport_KFR2_MEAST" Description="FunnelReport_KFR2_MEAST">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">MEAST</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">13-14</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF2</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelReport_KFR2_Mexico" Description="FunnelReport_KFR2_Mexico">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Mexico</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">13-14</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF2</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelReport_KFR2_ROA" Description="FunnelReport_KFR2_ROA">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">ROA</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">13-14</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF2</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelReport_KFR2_ROE" Description="FunnelReport_KFR2_ROE">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">ROE</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">13-14</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF2</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelReport_KFR2_ROLA" Description="FunnelReport_KFR2_ROLA">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">ROLA</Value>
+          <Value Number="1E+300" IsNumeric="False">Chile</Value>
+          <Value Number="1E+300" IsNumeric="False">Argentina</Value>
+          <Value Number="1E+300" IsNumeric="False">Colombia</Value>
+          <Value Number="1E+300" IsNumeric="False">Peru</Value>
+          <Value Number="1E+300" IsNumeric="False">Venezuela</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">13-14</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF2</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelReport_KFR2_ROW" Description="FunnelReport_KFR2_ROW">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">ROW</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">13-14</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF2</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelReport_KFR2_Spain" Description="FunnelReport_KFR2_Spain">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Spain</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">13-14</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF2</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelReport_KFR2_Taiwan" Description="FunnelReport_KFR2_Taiwan">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Taiwan</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">13-14</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF2</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelReport_KFR2_US" Description="FunnelReport_KFR2_US">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">US</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">13-14</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF2</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelReport_KFR2_Europe" Description="FunnelReport_KFR2_Europe">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">France</Value>
+          <Value Number="1E+300" IsNumeric="False">Germany</Value>
+          <Value Number="1E+300" IsNumeric="False">Italy</Value>
+          <Value Number="1E+300" IsNumeric="False">MEAST</Value>
+          <Value Number="1E+300" IsNumeric="False">ROE</Value>
+          <Value Number="1E+300" IsNumeric="False">Spain</Value>
+          <Value Number="1E+300" IsNumeric="False">Russia</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">13-14</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF2</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelReport_KFR2_Mexico+US" Description="FunnelReport_KFR2_Mexico+US">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Mexico</Value>
+          <Value Number="1E+300" IsNumeric="False">US</Value>
+          <Value Number="1E+300" IsNumeric="False">ROLA</Value>
+          <Value Number="1E+300" IsNumeric="False">Chile</Value>
+          <Value Number="1E+300" IsNumeric="False">Argentina</Value>
+          <Value Number="1E+300" IsNumeric="False">Colombia</Value>
+          <Value Number="1E+300" IsNumeric="False">Peru</Value>
+          <Value Number="1E+300" IsNumeric="False">Venezuela</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">13-14</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF2</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelReport_KFR3_China" Description="FunnelReport_KFR3_China">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">China</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">13-14</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF3</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelReport_KFR3_Brazil" Description="FunnelReport_KFR3_Brazil">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Brazil</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">13-14</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF3</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelReport_KFR3_France" Description="FunnelReport_KFR3_France">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">France</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">13-14</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF3</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelReport_KFR3_Germany" Description="FunnelReport_KFR3_Germany">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Germany</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">13-14</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF3</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelReport_KFR3_Italy" Description="FunnelReport_KFR3_Italy">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Italy</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">13-14</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF3</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelReport_KFR3_Japan" Description="FunnelReport_KFR3_Japan">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Japan</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">13-14</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF3</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelReport_KFR3_Korea" Description="FunnelReport_KFR3_Korea">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Korea</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">13-14</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF3</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelReport_KFR3_Russia" Description="FunnelReport_KFR3_Russia">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Russia</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">13-14</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF3</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelReport_KFR3_MEAST" Description="FunnelReport_KFR3_MEAST">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">MEAST</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">13-14</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF3</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelReport_KFR3_Mexico" Description="FunnelReport_KFR3_Mexico">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Mexico</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">13-14</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF3</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelReport_KFR3_ROA" Description="FunnelReport_KFR3_ROA">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">ROA</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">13-14</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF3</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelReport_KFR3_ROE" Description="FunnelReport_KFR3_ROE">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">ROE</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">13-14</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF3</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelReport_KFR3_ROLA" Description="FunnelReport_KFR3_ROLA">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">ROLA</Value>
+          <Value Number="1E+300" IsNumeric="False">Chile</Value>
+          <Value Number="1E+300" IsNumeric="False">Argentina</Value>
+          <Value Number="1E+300" IsNumeric="False">Colombia</Value>
+          <Value Number="1E+300" IsNumeric="False">Peru</Value>
+          <Value Number="1E+300" IsNumeric="False">Venezuela</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">13-14</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF3</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelReport_KFR3_Spain" Description="FunnelReport_KFR3_Spain">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Spain</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">13-14</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF3</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelReport_KFR3_Taiwan" Description="FunnelReport_KFR3_Taiwan">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Taiwan</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">13-14</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF3</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelReport_KFR3_US" Description="FunnelReport_KFR3_US">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">US</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">13-14</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF3</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelReport_KFR3_Europe" Description="FunnelReport_KFR3_Europe">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">France</Value>
+          <Value Number="1E+300" IsNumeric="False">Germany</Value>
+          <Value Number="1E+300" IsNumeric="False">Italy</Value>
+          <Value Number="1E+300" IsNumeric="False">MEAST</Value>
+          <Value Number="1E+300" IsNumeric="False">ROE</Value>
+          <Value Number="1E+300" IsNumeric="False">Spain</Value>
+          <Value Number="1E+300" IsNumeric="False">Russia</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">13-14</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF3</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelReport_KFR3_Mexico+US" Description="FunnelReport_KFR3_Mexico+US">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Mexico</Value>
+          <Value Number="1E+300" IsNumeric="False">US</Value>
+          <Value Number="1E+300" IsNumeric="False">ROLA</Value>
+          <Value Number="1E+300" IsNumeric="False">Chile</Value>
+          <Value Number="1E+300" IsNumeric="False">Argentina</Value>
+          <Value Number="1E+300" IsNumeric="False">Colombia</Value>
+          <Value Number="1E+300" IsNumeric="False">Peru</Value>
+          <Value Number="1E+300" IsNumeric="False">Venezuela</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">13-14</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF3</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="FunnelReport_KFR3_ROW" Description="FunnelReport_KFR3_ROW">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <Fields>
+        <Field Name="RegionFullName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">ROW</Value>
+        </Field>
+        <Field Name="FiscalYearName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">13-14</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="LastWeekendDate">
+        </Variable>
+        <Variable Name="vKFR" Expression="">KF3</Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="CCDailyFunnel_Summary_GZJTP" Description="CCDailyFunnel_Summary_GZJTP">
+      <Connection>FunnelCNMini_New</Connection>
+      <Fields>
+        <Field Name="TheYear" Description="" Expression="YearOfTheDayCurrent" />
+        <Field Name="MonthOfYear" Description="" Expression="MonthOfTheDayCurrent" />
+        <Field Name="CityType" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Center</Value>
+        </Field>
+        <Field Name="CN_City__c" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">GZ JTP</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="Today">
+        </Variable>
+      </Variables>
+    </Filter>
+  </Filters>
+</ReportConfig>

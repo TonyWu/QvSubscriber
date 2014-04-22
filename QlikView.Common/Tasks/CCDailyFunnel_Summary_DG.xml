@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ReportConfig>
+  <Tasks>
+    <Task Name="CCDailyFunnel_Summary_DG" Description="CCDailyFunnel_Summary_DG">
+      <OutputFolder>D:\ReportExport\CCDailyFunnel</OutputFolder>
+      <SendInSingleMail>True</SendInSingleMail>
+      <MergeInSingleExcel>False</MergeInSingleExcel>
+      <Reports>
+        <Report>CCDailyFunnel_Summary_DG</Report>
+      </Reports>
+      <Recipients>
+        <Recipient>edward.lang</Recipient>
+        <Recipient>EtownCenter_DG1_Sales</Recipient>
+        <Recipient>sheldon.leung</Recipient>
+      </Recipients>
+      <RecipientGroup>
+      </RecipientGroup>
+      <Message>
+        <From>QlikViewAdmin@ef.com</From>
+        <CC>nichol.yan@ef.com</CC>
+        <BCC>
+        </BCC>
+        <Subject>CC's Daily Funnel Report [@Date]</Subject>
+        <Body><![CDATA[@Template
+<h3>CC's Daily Funnel Report Date:@Date</h3> <br>
+<span lang=EN-US style='color:#1F497D;font-weight:bold'>Center Target Achievement - By CC </span>
+<br>
+{CCDailyFunnel_Summary_DG}]]></Body>
+      </Message>
+    </Task>
+  </Tasks>
+  <Reports>
+    <Report Name="CCDailyFunnel_Summary_DG" Description="CCDailyFunnel_Summary_DG">
+      <Connection>FunnelCNMini</Connection>
+      <OutputFileName>CCDailyFunnel_Summary_DG.jpg</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH19</QlikViewExportObjectId>
+      <Filter>CCDailyFunnel_Summary_DG</Filter>
+      <ReportType>2</ReportType>
+    </Report>
+  </Reports>
+  <Filters>
+    <Filter Name="CCDailyFunnel_Summary_DG" Description="CCDailyFunnel_Summary_DG">
+      <Connection>FunnelCNMini</Connection>
+      <Fields>
+        <Field Name="TheYear" Description="" Expression="YearOfTheDayCurrent" />
+        <Field Name="MonthOfYear" Description="" Expression="MonthOfTheDayCurrent" />
+        <Field Name="CityName" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">DG</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="Today">
+        </Variable>
+      </Variables>
+    </Filter>
+  </Filters>
+</ReportConfig>

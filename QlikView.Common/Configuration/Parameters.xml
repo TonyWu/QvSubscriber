@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Parameters>
+  <General>
+    <KFR0>True</KFR0>
+    <KFR1>True</KFR1>
+    <KFR2>False</KFR2>
+  </General>
+  <FunnelWeeklyReport>
+    <MonthBegin>B</MonthBegin>
+    <MonthColumns>12</MonthColumns>
+    <MonthEnd>M</MonthEnd>
+    <WeekBegin>N</WeekBegin>
+    <WeekColumns>60</WeekColumns>
+    <WeekEnd>DO</WeekEnd>
+    <YTDFunnel>BO</YTDFunnel>
+    <YTD1011>BP</YTD1011>
+    <VS1011YTD>BQ</VS1011YTD>
+    <YTDKFR2>BR</YTDKFR2>
+    <YTDACTVsKFR2>BS</YTDACTVsKFR2>
+    <YTDKFR1>BT</YTDKFR1>
+    <YTDACTVsKFR1>BU</YTDACTVsKFR1>
+    <YTDKFR0>BV</YTDKFR0>
+    <YTDACTVsKFR0>BW</YTDACTVsKFR0>
+    <FTORow>7</FTORow>
+    <ConvertedToFTPRow>8</ConvertedToFTPRow>
+    <PaidRateRow>10</PaidRateRow>
+    <SpotRate>A3</SpotRate>
+    <KFRRate>A4</KFRRate>
+    <OnlineRow>5</OnlineRow>
+    <OnlineLocalCurrency>A22</OnlineLocalCurrency>
+    <OnlineLocalRow>22</OnlineLocalRow>
+    <TeleSalesRow>24</TeleSalesRow>
+    <TSLocalCurrency>A40</TSLocalCurrency>
+    <TSLocalRow>40</TSLocalRow>
+    <BudgetRate>A45</BudgetRate>
+    <TotalLocalCurrency>A43</TotalLocalCurrency>
+    <TotalLocalRow>43</TotalLocalRow>
+    <SourceRowCount>43</SourceRowCount>
+    <Header_YTDACT_CurrentFisicalYear>YTD ACT 13/14</Header_YTDACT_CurrentFisicalYear>
+    <Header_YTDACT_BeforeFisicalYear>YTD ACT 12/13</Header_YTDACT_BeforeFisicalYear>
+    <Header_YTDVS>VS 12/13 YTD</Header_YTDVS>
+    <Header_YTDKRF3>YTD KFR3 13/14</Header_YTDKRF3>
+    <Header_YTDACTVsKRF3>YTD ACT vs KFR3</Header_YTDACTVsKRF3>
+    <Header_YTDKRF2>YTD KFR2 13/14</Header_YTDKRF2>
+    <Header_YTDACTVsKRF2>YTD ACT vs KFR2</Header_YTDACTVsKRF2>
+    <Header_YTDKRF1>YTD KFR1 13/14</Header_YTDKRF1>
+    <Header_YTDACTVsKRF1>YTD ACT vs KFR1</Header_YTDACTVsKRF1>
+    <Header_YTDKRF0>YTD KFR0 13/14</Header_YTDKRF0>
+    <Header_YTDACTVsKRF0>YTD ACT vs KFR0</Header_YTDACTVsKRF0>
+    <Header_Week_BeforeFisicalYear>12/13 Week</Header_Week_BeforeFisicalYear>
+    <Header_WeekVS_BeforeFisicalYear>VS 12/13 Week</Header_WeekVS_BeforeFisicalYear>
+    <Header_FunnelKPI>Funnel KPI</Header_FunnelKPI>
+  </FunnelWeeklyReport>
+  <FunnelWeeklyReportChina>
+    <OnlineRow>5</OnlineRow>
+    <ChinaYearMonthRowCount>19</ChinaYearMonthRowCount>
+    <OnlineLocalCurrency>A21</OnlineLocalCurrency>
+    <OnlineLocalRow>21</OnlineLocalRow>
+    <TeleSalesRow>23</TeleSalesRow>
+    <TSLocalCurrency>A36</TSLocalCurrency>
+    <TSLocalRow>36</TSLocalRow>
+    <TotalLocalCurrency>A39</TotalLocalCurrency>
+    <TotalLocalRow>39</TotalLocalRow>
+    <SourceRowCount>40</SourceRowCount>
+    <RowCount>40</RowCount>
+    <BudgetRate>A41</BudgetRate>
+  </FunnelWeeklyReportChina>
+  <FunnelMonthlyReport>
+    <YTDFunnel>Z</YTDFunnel>
+    <YTDKFR0>AA</YTDKFR0>
+    <YTD1011>AB</YTD1011>
+    <YTDACTVsKFR0>AC</YTDACTVsKFR0>
+    <VS1011YTD>AD</VS1011YTD>
+    <RowCount>53</RowCount>
+    <PreviousMonthBegin>B</PreviousMonthBegin>
+    <PreviousMonthEnd>M</PreviousMonthEnd>
+    <MonthBegin>N</MonthBegin>
+    <MonthEnd>Y</MonthEnd>
+    <RententionRateRow>15</RententionRateRow>
+    <RenewalRow>14</RenewalRow>
+    <ChargedFTPRow>12</ChargedFTPRow>
+    <FTPPrice>13</FTPPrice>
+    <Header_YTDACT_CurrentFisicalYear>ACT 13/14</Header_YTDACT_CurrentFisicalYear>
+    <Header_YTDKFR_CurrentFisicalYear>KFR0 13/14</Header_YTDKFR_CurrentFisicalYear>
+    <Header_YTDACT_BeforeFisicalYear>ACT 12/13</Header_YTDACT_BeforeFisicalYear>
+    <Header_YTDACTVsKFR>ACT vs KFR0</Header_YTDACTVsKFR>
+    <Header_YTDACTVs_BeforeFisicalYear>ACT vs 12/13</Header_YTDACTVs_BeforeFisicalYear>
+    <OnlineFTPRevenues>26</OnlineFTPRevenues>
+    <OutputRowCount>13</OutputRowCount>
+    <OutputThisMonth>B</OutputThisMonth>
+    <OutputMonth>C</OutputMonth>
+    <OutputMonthDiff>D</OutputMonthDiff>
+    <OutputActuals>E</OutputActuals>
+    <OutputKFR1>F</OutputKFR1>
+    <OutputDiff>G</OutputDiff>
+    <OutputPriorYear>H</OutputPriorYear>
+    <OutputPriorYearDiff>I</OutputPriorYearDiff>
+    <Header_OutputThisMonth>This Month</Header_OutputThisMonth>
+    <Header_OutputMonth>12/13 Month</Header_OutputMonth>
+    <Header_OutputMonthDiff>Month Diff</Header_OutputMonthDiff>
+    <Header_OutputActuals>Actuals</Header_OutputActuals>
+    <Header_OutputKFR>KFR0</Header_OutputKFR>
+    <Header_OutputDiff>Diff</Header_OutputDiff>
+    <Header_OutputPriorYear>Prior Year</Header_OutputPriorYear>
+    <Header_OutputPriorYearDiff>Diff</Header_OutputPriorYearDiff>
+  </FunnelMonthlyReport>
+  <WeeklyStatisticReport>
+    <TotalColumn>AC</TotalColumn>
+    <TSColumn>AC</TSColumn>
+    <OnlineColumn>AC</OnlineColumn>
+    <TotalRowCount>18</TotalRowCount>
+    <TSRowCount>18</TSRowCount>
+    <OnlineRowCount>18</OnlineRowCount>
+    <KFRRevenueColumn>AC</KFRRevenueColumn>
+    <KFRRevenueRowCount>18</KFRRevenueRowCount>
+  </WeeklyStatisticReport>
+  <FunnelCNMiniMerge>
+    <Online_BeginCell>B1</Online_BeginCell>
+    <Online_EndCell>R1</Online_EndCell>
+    <IB_BeginCell>S1</IB_BeginCell>
+    <IB_EndCell>AI1</IB_EndCell>
+    <WI_BeginCell>AJ1</WI_BeginCell>
+    <WI_EndCell>AZ1</WI_EndCell>
+    <Offline_BeginCell>BA1</Offline_BeginCell>
+    <Offline_EndCell>BQ1</Offline_EndCell>
+    <B2B_BeginCell>BR1</B2B_BeginCell>
+    <B2B_EndCell>CH1</B2B_EndCell>
+    <Others_BeginCell>CI1</Others_BeginCell>
+    <Others_EndCell>CY1</Others_EndCell>
+    <Referral_BeginCell>DS1</Referral_BeginCell>
+    <Referral_EndCell>EF1</Referral_EndCell>
+    <Upgrade_BeginCell>EG1</Upgrade_BeginCell>
+    <Upgrade_EndCell>ET1</Upgrade_EndCell>
+    <Renewal_BeginCell>EU1</Renewal_BeginCell>
+    <Renewal_EndCell>FH1</Renewal_EndCell>
+    <Total_BeginCell>CZ1</Total_BeginCell>
+    <Total_EndCell>DP1</Total_EndCell>
+    <MiniTSTotal_BeginCell>BR1</MiniTSTotal_BeginCell>
+    <MiniTSTotal_EndCell>CH1</MiniTSTotal_EndCell>
+    <TotalCity>10</TotalCity>
+  </FunnelCNMiniMerge>
+</Parameters>

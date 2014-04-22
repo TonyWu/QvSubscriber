@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ReportConfig>
+  <Tasks>
+    <Task Name="SH_SalesFunnelDash" Description="SH_SalesFunnelDash">
+      <OutputFolder>D:\ReportExport\ChinaSalesFunnelDash</OutputFolder>
+      <SendInSingleMail>True</SendInSingleMail>
+      <MergeInSingleExcel>True</MergeInSingleExcel>
+      <Reports>
+        <Report>SHFunnelDash_Summary_TargetImage</Report>
+        <Report>SHFunnelDash_Summary_Target</Report>
+      </Reports>
+      <Recipients>
+        <Recipient>ECSH_CGM</Recipient>
+      </Recipients>
+      <RecipientGroup>
+      </RecipientGroup>
+      <Message>
+        <From>QlikViewAdmin@ef.com</From>
+        <CC>ECSH_CSM@ef.com;David.Dai@ef.com</CC>
+        <BCC>
+        </BCC>
+        <Subject>SH Sales Funnel Dash [@Date]</Subject>
+        <Body><![CDATA[@Template
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40">
+<body>
+<div><h4>SH Sales Funnel Dash [@Date]</h4></div>
+<br>
+<div>{SHFunnelDash_Summary_TargetImage}</div>
+<br>
+<div></div>
+</body>
+</html>]]></Body>
+      </Message>
+    </Task>
+  </Tasks>
+  <Reports>
+    <Report Name="SHFunnelDash_Summary_TargetImage" Description="SHFunnelDash_Summary_TargetImage">
+      <Connection>FunnelCNMini_New</Connection>
+      <OutputFileName>Summy_TargetImage.jpg</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH13</QlikViewExportObjectId>
+      <Filter>ShanghaiSalesFunnelDash_Summary</Filter>
+      <ReportType>2</ReportType>
+    </Report>
+    <Report Name="SHFunnelDash_Summary_Target" Description="SHFunnelDash_Summary_Target">
+      <Connection>FunnelCNMini_New</Connection>
+      <OutputFileName>Summy_Target.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH82</QlikViewExportObjectId>
+      <Filter>ShanghaiSalesFunnelDash_Summary</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+  </Reports>
+  <Filters>
+    <Filter Name="ShanghaiSalesFunnelDash_Summary" Description="ShanghaiSalesFunnelDash_Summary">
+      <Connection>FunnelCNMini_New</Connection>
+      <Fields>
+        <Field Name="TheYear" Description="" Expression="YearOfTheDayCurrent" />
+        <Field Name="MonthOfYear" Description="" Expression="MonthOfTheDayCurrent" />
+        <Field Name="Region" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">SH</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="Today">
+        </Variable>
+      </Variables>
+    </Filter>
+  </Filters>
+</ReportConfig>

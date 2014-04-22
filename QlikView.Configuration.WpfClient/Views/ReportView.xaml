@@ -1,0 +1,66 @@
+﻿<UserControl x:Class="QlikView.Configuration.WpfClient.Views.ReportView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             Loaded="UserControl_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25" />
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Background="{DynamicResource OutlookButtonBackground}" Orientation="Horizontal">
+            <Label Content="Report: " VerticalAlignment="Center" Margin="10,0"/>
+            <TextBlock Text="{Binding Path=ReportItem.Name}" VerticalAlignment="Center"/>
+        </StackPanel>
+        <Grid Grid.Row="1" Name="gridName">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0" Grid.Row="0" Content="Name" Style="{DynamicResource LabelStyle}"/>
+            <TextBox Grid.Column="1" Grid.Row="0" Text="{Binding Path=ReportItem.Name}"  Style="{DynamicResource TextBoxStyle}"/>
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="32"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="32"/>
+                <RowDefinition Height="32"/>
+                <RowDefinition Height="30"/>
+            </Grid.RowDefinitions>
+
+            <Label Content="Description" Style="{StaticResource LabelStyle}"/>
+            <Label Content="Connection" Grid.Row="1" Style="{StaticResource LabelStyle}"/>
+            <Label Content="Report Type" Grid.Row="2"  Style="{StaticResource LabelStyle}"/>
+            <Label Content="Output File Name" Grid.Row="5"  Style="{StaticResource LabelStyle}"/>
+            <Label Content="Export Object Id" Grid.Row="6"  Style="{StaticResource LabelStyle}"/>
+            <Label Content="Filter" Grid.Row="7"  Style="{StaticResource LabelStyle}"/>
+
+            <TextBox Grid.Column="1" Text="{Binding Path=ReportItem.Description}" Style="{DynamicResource TextBoxStyle}"/>
+            <TextBox Grid.Row="5" Grid.Column="1" Text="{Binding Path=ReportItem.OutputFielName}" Style="{DynamicResource TextBoxStyle}"/>
+            <TextBox Grid.Row="6" Grid.Column="1" Text="{Binding Path=ReportItem.QlikViewExportObjectId}" Style="{DynamicResource TextBoxStyle}"/>
+
+            <ComboBox Grid.Row="1" Grid.Column="1" Name="comboBoxConnection" ItemsSource="{Binding Path=ConnectionList}" Style="{DynamicResource ComboBoxStyle}" SelectionChanged="comboBoxConnection_SelectionChanged"/>
+            <ComboBox Grid.Row="2" Grid.Column="1" Name="comboBoxReportType" ItemsSource="{Binding Path=ReportTypeList}" Style="{DynamicResource ComboBoxStyle}" SelectionChanged="comboBoxReportType_SelectionChanged"/>
+            <ComboBox Grid.Row="7" Grid.Column="1" Name="comboBoxFilter" ItemsSource="{Binding Path=FilterList}" Style="{DynamicResource ComboBoxStyle}" SelectionChanged="comboBoxFilter_SelectionChanged"/>
+
+            <CheckBox Grid.Row="3" Grid.Column="1" IsChecked="{Binding Path=ReportItem.IsEmbeddedInMail}" Content="Embedded in Mail" Margin="3,5"/>
+            <CheckBox Grid.Row="4" Grid.Column="1" IsChecked="{Binding Path=ReportItem.EnableDynamicNaming}" Content="Enable Dynamic Naming" Margin="3,5"/>
+        </Grid>
+        <StackPanel Name="stackNewActions" Grid.Row="3" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right" Height="32">
+            <Button Margin="10,4" Content="Add" Command="{Binding Path=QvItemAddCommand}" CommandParameter="{Binding Path=ReportItem}" Width="70"/>
+            <Button Margin="10,4" Content="Cancel" Width="70" Command="{Binding Path=QvItemAddCancelCommand}"/>
+        </StackPanel>
+    </Grid>
+</UserControl>
