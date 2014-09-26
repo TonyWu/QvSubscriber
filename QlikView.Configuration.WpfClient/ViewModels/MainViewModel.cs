@@ -78,14 +78,32 @@ namespace QlikView.Configuration.WpfClient
             }
         }
 
+        private bool _isRunReportEnabled;
+        public bool IsRunReportEnabled
+        {
+            get
+            {
+                return this._isRunReportEnabled;
+            }
+            set
+            {
+                this._isRunReportEnabled = value;
+                this.OnPropertyChanged(() => this.IsRunReportEnabled);
+            }
+        }
+
         public string CurrentReportItemType { get; set; }
 
         public DelegateCommand<IReportItem> ReportItemDeleteCommand { get; private set; }
         public DelegateCommand<IReportItem> RunTaskCommand { get; private set; }
+        public DelegateCommand<IReportItem> RunReportCommand { get; private set; }
 
         public event EventHandler ReportItemDeleted;
         public event EventHandler TaskRunning;
         public event Action<IError> TaskRunCompleted;
+
+        public event EventHandler ExportReportRunning;
+        public event Action<IError> ExportReportCompleted;
 
         public void Initialize()
         {
@@ -127,6 +145,7 @@ namespace QlikView.Configuration.WpfClient
 
             this.ReportItemDeleteCommand = new DelegateCommand<IReportItem>(this.ReportItemDelete);
             this.RunTaskCommand = new DelegateCommand<IReportItem>(this.RunTask);
+            this.RunReportCommand = new DelegateCommand<IReportItem>(this.ExportReport);
         }
 
         protected override bool OnQvItemAdd(IReportItem qvItem)
@@ -230,6 +249,45 @@ namespace QlikView.Configuration.WpfClient
             this.DeleteAllExportedFiles(task);
             if (this.TaskRunCompleted != null)
                 this.TaskRunCompleted(error);
+        }
+
+        protected void ExportReport(IReportItem reportItem)
+        {
+            if (this.ExportReportRunning != null)
+            {
+                this.ExportReportRunning(this, new EventArgs());
+            }
+
+            IError error = new QvError();
+            QlikViewReport report = null;
+
+            try
+            {
+                report = reportItem as QlikViewReport;
+                ExportEngine engine = new ExportEngine(QlikViewConnectorProxy.Instance);
+                engine.Logger = new QVConfigLog();
+                bool succeed = engine.RunReport(report, ReportConfig.SmtpServerManager.SmtpServer);
+
+                if (succeed)
+                {
+                    error.HasError = false;
+                }
+                else
+                {
+                    error.ErrorMessage.Append(string.Format("Export Report {0} failed.",report.Name));
+                    error.HasError = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                if (error == null)
+                    error = new QvError();
+                error.ErrorMessage.Append(ex.StackTrace);
+                error.HasError = true;
+            }
+
+            if (this.ExportReportCompleted != null)
+                this.ExportReportCompleted(error);
         }
 
         private void DeleteAllExportedFiles(ReportTask task)

@@ -5,6 +5,7 @@ using System.Text;
 using QlikView.Common;
 using System.IO;
 using System.Threading.Tasks;
+using QlikView.Common.Ftp;
 
 namespace QlikView.Connector
 {
@@ -62,18 +63,26 @@ namespace QlikView.Connector
                             }
                         }
 
-                        if (task.IsSendMailInSingleMail)
+                        if (recipients.Count > 0)
                         {
-                            smtpClient.SendEmail(task.MessageDefinition, reports, recipients);
+
+                            if (task.IsSendMailInSingleMail)
+                            {
+                                smtpClient.SendEmail(task.MessageDefinition, reports, recipients);
+                            }
+                            else
+                            {
+                                foreach (var item in reports)
+                                {
+                                    List<ReportContext> list = new List<ReportContext>();
+                                    list.Add(item);
+                                    smtpClient.SendEmail(task.MessageDefinition, list, recipients);
+                                }
+                            }
                         }
                         else
                         {
-                            foreach (var item in reports)
-                            {
-                                List<ReportContext> list = new List<ReportContext>();
-                                list.Add(item);
-                                smtpClient.SendEmail(task.MessageDefinition, list, recipients);
-                            }
+                            this.Logger.Error("No recipients set up");
                         }
                     }
                     else
@@ -84,6 +93,33 @@ namespace QlikView.Connector
 
                     #endregion
 
+                    #region Upload to Ftp Server
+
+                    if (task.FtpServer != null)
+                    {
+                        string remoteFile = string.Empty;
+                        try
+                        {
+                            FtpClient client = new FtpClient(task.FtpServer.Host, task.FtpServer.Username, task.FtpServer.Password, task.FtpServer.Port);
+                            
+                            foreach (var item in reports)
+                            {
+                                if (!string.IsNullOrWhiteSpace(task.FtpServer.Folder))
+                                    remoteFile = task.FtpServer.Folder + (task.FtpServer.Folder.EndsWith("/") ? string.Empty : "/") + item.OutputFullName.Split("\\".ToArray())[item.OutputFullName.Split("\\".ToArray()).Length - 1];
+                                else
+                                    remoteFile = item.OutputFullName.Split("\\".ToArray())[item.OutputFullName.Split("\\".ToArray()).Length - 1];
+                                client.Upload(remoteFile, item.OutputFullName);
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            this.Logger.Error("Ftp upload failed!" + ex.Message + ex.StackTrace);
+
+                            MailHelper.ExceptionNotify("Ftp upload failed", ex.Message + ex.StackTrace + "\n" + "Remote file:" + remoteFile, smtpServer);
+                        }
+                    }
+
+                    #endregion
                     if (missingExportReports.Count > 0)
                     {
                         string subject = "Some reports can not be exported";
@@ -129,6 +165,8 @@ namespace QlikView.Connector
         public bool RunReport(QlikViewReport report, SmtpServer smtpServer)
         {
             string outputFile;
+            if (!Directory.Exists("ReportRunTest"))
+                Directory.CreateDirectory("ReportRunTest");
             var error = this.ExportReport(report, "ReportRunTest", out outputFile);
 
             if (error.HasError)
@@ -284,7 +322,10 @@ namespace QlikView.Connector
 
                 if (report.EnableDynamicNaming)
                 {
-                    outputFile = outputFolder + @"\" + report.OutputFielName.Replace(".", "_" + DateTime.Now.ToString("yyyMMdd_HHmmss") + ".");
+                    if (report.ReportType == Common.ReportType.CSV)
+                        outputFile = outputFolder + @"\" + report.OutputFielName.Replace(".", "_" + DateTime.Now.ToString("yyyyMMdd") + ".");
+                    else
+                        outputFile = outputFolder + @"\" + report.OutputFielName.Replace(".", "_" + DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".");
                 }
                 else
                 {
@@ -301,6 +342,12 @@ namespace QlikView.Connector
                     returnCode = this._qlikViewConnector.ExportHtml(report.QlikViewExportObjectId, outputFile);
                 else if (report.ReportType == Common.ReportType.JPG)
                     returnCode = this._qlikViewConnector.ExportJPG(report.QlikViewExportObjectId, outputFile);
+                else if (report.ReportType == Common.ReportType.CSV)
+                {
+                    if (File.Exists(outputFile))
+                        File.Delete(outputFile);
+                    returnCode = this._qlikViewConnector.ExportCSV(report.QlikViewExportObjectId, outputFile);
+                }
 
                 this.Logger.Message(string.Format("Export return code [{0}]", returnCode));
 

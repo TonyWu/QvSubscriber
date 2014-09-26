@@ -80,6 +80,20 @@ namespace QlikView.Common
             }
         }
 
+        private FtpServer _ftpServer;
+        public FtpServer FtpServer
+        {
+            get
+            {
+                return _ftpServer;
+            }
+            set
+            {
+                _ftpServer = value;
+                this.OnPropertyChanged(() => this.FtpServer);
+            }
+        }
+
         private bool _isSendMailInSingleMail;
         public bool IsSendMailInSingleMail
         {

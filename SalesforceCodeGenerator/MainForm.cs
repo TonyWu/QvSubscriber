@@ -173,26 +173,33 @@ namespace SalesforceCodeGenerator
                 TemplateMgr.Save(fields, objectName);
         }
 
+        public static DateTime UnixTimeStampToDateTime(long timestamp)
+        {
+            DateTime time = new DateTime(1970, 1, 1);
+            return time.AddMilliseconds(timestamp);
+        }
+
         private void button3_Click(object sender, EventArgs e)
         {
-            string[] array = this.richTextBox1.Text.Split("\n\t".ToArray());
+            DateTime time = UnixTimeStampToDateTime(1403841609307);
+            //string[] array = this.richTextBox1.Text.Split("\n\t".ToArray());
 
-            foreach (var item in array)
-            {
-                if (string.IsNullOrWhiteSpace(item))
-                    continue;
-                var temp = item.Trim().Split(' ');
-                Field field = new Field();
+            //foreach (var item in array)
+            //{
+            //    if (string.IsNullOrWhiteSpace(item))
+            //        continue;
+            //    var temp = item.Trim().Split(' ');
+            //    Field field = new Field();
 
-                field.FieldName = temp[0].Replace("[", "").Replace("]", "");
-                field.DbType = temp[1].Split('(')[0].Replace("[", "").Replace("]", "");
-                field.Length = temp[1].Split('(').Length == 1?string.Empty:temp[1].Split('(')[1].Replace(")", "");
+            //    field.FieldName = temp[0].Replace("[", "").Replace("]", "");
+            //    field.DbType = temp[1].Split('(')[0].Replace("[", "").Replace("]", "");
+            //    field.Length = temp[1].Split('(').Length == 1?string.Empty:temp[1].Split('(')[1].Replace(")", "");
 
-                this._fields.Add(field.FieldName, field);
-            }
+            //    this._fields.Add(field.FieldName, field);
+            //}
 
-            string objectName = this.txtObjectName.Text;
-            TemplateMgr.Save(this._fields, objectName);
+            //string objectName = this.txtObjectName.Text;
+            //TemplateMgr.Save(this._fields, objectName);
         }
 
         private void btnRefectorPro_Click(object sender, EventArgs e)
@@ -239,13 +246,13 @@ namespace SalesforceCodeGenerator
 
             //var str1 = new String('*', 10);
 
-            string task = "EFLabsCost_DirectCost";
+            string task = "EFLabsCost_STN";
 
             StringBuilder sbTaskReports = new StringBuilder();
             StringBuilder sbReports = new StringBuilder();
             StringBuilder sbFilters = new StringBuilder();
 
-            var stn = ReportParameter.PopulateDirectCost();
+            var stn = ReportParameter.PopulateSTN();
 
             foreach (var item in stn)
             {

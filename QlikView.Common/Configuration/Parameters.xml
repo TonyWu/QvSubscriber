@@ -3,7 +3,8 @@
   <General>
     <KFR0>True</KFR0>
     <KFR1>True</KFR1>
-    <KFR2>False</KFR2>
+    <KFR2>True</KFR2>
+    <KFR3>True</KFR3>
   </General>
   <FunnelWeeklyReport>
     <MonthBegin>B</MonthBegin>
@@ -30,12 +31,12 @@
     <OnlineLocalCurrency>A22</OnlineLocalCurrency>
     <OnlineLocalRow>22</OnlineLocalRow>
     <TeleSalesRow>24</TeleSalesRow>
-    <TSLocalCurrency>A40</TSLocalCurrency>
-    <TSLocalRow>40</TSLocalRow>
-    <BudgetRate>A45</BudgetRate>
-    <TotalLocalCurrency>A43</TotalLocalCurrency>
-    <TotalLocalRow>43</TotalLocalRow>
-    <SourceRowCount>43</SourceRowCount>
+    <TSLocalCurrency>A43</TSLocalCurrency>
+    <TSLocalRow>43</TSLocalRow>
+    <BudgetRate>A48</BudgetRate>
+    <TotalLocalCurrency>A46</TotalLocalCurrency>
+    <TotalLocalRow>46</TotalLocalRow>
+    <SourceRowCount>46</SourceRowCount>
     <Header_YTDACT_CurrentFisicalYear>YTD ACT 13/14</Header_YTDACT_CurrentFisicalYear>
     <Header_YTDACT_BeforeFisicalYear>YTD ACT 12/13</Header_YTDACT_BeforeFisicalYear>
     <Header_YTDVS>VS 12/13 YTD</Header_YTDVS>
@@ -54,16 +55,16 @@
   <FunnelWeeklyReportChina>
     <OnlineRow>5</OnlineRow>
     <ChinaYearMonthRowCount>19</ChinaYearMonthRowCount>
-    <OnlineLocalCurrency>A21</OnlineLocalCurrency>
-    <OnlineLocalRow>21</OnlineLocalRow>
-    <TeleSalesRow>23</TeleSalesRow>
-    <TSLocalCurrency>A36</TSLocalCurrency>
-    <TSLocalRow>36</TSLocalRow>
-    <TotalLocalCurrency>A39</TotalLocalCurrency>
-    <TotalLocalRow>39</TotalLocalRow>
-    <SourceRowCount>40</SourceRowCount>
-    <RowCount>40</RowCount>
-    <BudgetRate>A41</BudgetRate>
+    <OnlineLocalCurrency>A22</OnlineLocalCurrency>
+    <OnlineLocalRow>22</OnlineLocalRow>
+    <TeleSalesRow>24</TeleSalesRow>
+    <TSLocalCurrency>A40</TSLocalCurrency>
+    <TSLocalRow>40</TSLocalRow>
+    <TotalLocalCurrency>A43</TotalLocalCurrency>
+    <TotalLocalRow>43</TotalLocalRow>
+    <SourceRowCount>44</SourceRowCount>
+    <RowCount>44</RowCount>
+    <BudgetRate>A45</BudgetRate>
   </FunnelWeeklyReportChina>
   <FunnelMonthlyReport>
     <YTDFunnel>Z</YTDFunnel>
@@ -108,9 +109,13 @@
     <TotalColumn>AC</TotalColumn>
     <TSColumn>AC</TSColumn>
     <OnlineColumn>AC</OnlineColumn>
+    <PartnerColumn>AC</PartnerColumn>
+    <SMEColumn>AC</SMEColumn>
     <TotalRowCount>18</TotalRowCount>
     <TSRowCount>18</TSRowCount>
     <OnlineRowCount>18</OnlineRowCount>
+    <PartnerRowCount>20</PartnerRowCount>
+    <SMERowCount>20</SMERowCount>
     <KFRRevenueColumn>AC</KFRRevenueColumn>
     <KFRRevenueRowCount>18</KFRRevenueRowCount>
   </WeeklyStatisticReport>

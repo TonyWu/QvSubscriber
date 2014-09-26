@@ -21,7 +21,8 @@ namespace QlikView.Configuration.WpfClient.ViewModels
             {
                 ReportType.Excel,
                 ReportType.JPG,
-                ReportType.Html
+                ReportType.Html,
+                ReportType.CSV
             };
         }
 

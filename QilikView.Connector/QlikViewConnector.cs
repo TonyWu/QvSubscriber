@@ -207,5 +207,11 @@ namespace QlikView.Connector
             System.Threading.Thread.Sleep(10000);
             this.Hide();
         }
+
+
+        public int ExportCSV(string objectId, string fileName)
+        {
+            return this._qlikViewConnector.ExportCSV(objectId, fileName);
+        }
     }
 }

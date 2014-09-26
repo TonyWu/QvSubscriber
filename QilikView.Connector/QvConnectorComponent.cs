@@ -16,6 +16,7 @@ namespace QlikView.Connector
         private static ReportConnection CurrentConnection;
 
         private Doc _doc;
+        private Filter _filter;
 
         private string _exportFileName = string.Empty;
 
@@ -64,6 +65,8 @@ namespace QlikView.Connector
                 this._doc.Clear();
                 return;
             }
+
+            this._filter = filter;
 
             this.SetSelections(filter.Fields);
             this.SetVariables(filter.Variables);       
@@ -269,6 +272,61 @@ namespace QlikView.Connector
             return -1;
         }
 
+        private int ExecuteExportCSV(string objectId, string fileName)
+        {
+            this._exportFileName = fileName;
+
+            var obj = this.FindSheetObject(objectId);
+
+            QlikView.TableBox table = obj as QlikView.TableBox;
+            QlikView.Graph graph = obj as QlikView.Graph;
+            QlikView.PivotTableBox pivotBox = obj as QlikView.PivotTableBox;
+            QlikView.StraightTableBox straightTable = obj as QlikView.StraightTableBox;
+            QlikView.ListBox listBox = obj as QlikView.ListBox;
+
+            if (obj != null)
+            {
+                if (table != null)
+                {
+                    table.Export(this._exportFileName,",");
+                    return 0;
+                }
+                else if (graph != null)
+                {
+                    /*Export format
+                        0   =   HTML
+                        1   =   Text delimited
+                        2   =   bitmap image
+                        3   =   XML
+                        4   =   QVD
+                        5   =   BIFF (Excel)
+                     * */
+                    bool ok = graph.ExportEx(this._exportFileName, 1);
+                    if (ok)
+                        return 0;
+                    else
+                        return -1;
+                }
+                else if (pivotBox != null)
+                {
+                    pivotBox.Export(this._exportFileName, ",");
+                    return 0;
+                }
+                else if (straightTable != null)
+                {
+                    straightTable.Export(this._exportFileName, ",");
+                    return 0;
+                }
+                else
+                {
+                    obj.Export(this._exportFileName, ",");
+                    return 0;
+                }
+            }
+
+            return -1;
+        }
+
         public int ExportHtml(string objectId, string fileName)
         {
             this._exportFileName = fileName;
@@ -377,7 +435,16 @@ namespace QlikView.Connector
                 if (obj.GetSheet().IsActive() == false)
                 {
                     obj.GetSheet().Activate();
-                    System.Threading.Thread.Sleep(10 * 1000);
+
+                    //special case for china dash
+                    if (this._filter != null && (this._filter.Name == "ChinaSalesFunnelDash_Summary" || this._filter.Name == "ShanghaiSalesFunnelDash_Summary"))
+                        System.Threading.Thread.Sleep(120 * 1000);
+                    else
+                        System.Threading.Thread.Sleep(10 * 1000);
+
+                    if (this._filter != null)
+                        this._filter = null;
+
                 }
 
                 if (table != null)
@@ -590,6 +657,12 @@ namespace QlikView.Connector
         public void Preview(ReportConnection connection)
         {
             //Do Nothing
+        }
+
+
+        public int ExportCSV(string objectId, string fileName)
+        {
+            return ExecuteExportCSV(objectId, fileName);
         }
     }
 }

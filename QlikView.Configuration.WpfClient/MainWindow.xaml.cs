@@ -40,6 +40,9 @@ namespace QlikView.Configuration.WpfClient
             this._viewModel.ReportItemDeleted += new EventHandler(_viewModel_ReportItemDeleted);
             this._viewModel.TaskRunning += new EventHandler(_viewModel_TaskRunning);
             this._viewModel.TaskRunCompleted += new Action<IError>(_viewModel_TaskRunCompleted);
+
+            this._viewModel.ExportReportRunning += new EventHandler(_viewModel_ExportReportRunning);
+            this._viewModel.ExportReportCompleted += new Action<IError>(_viewModel_ReportRunCompleted);
             this.DataContext = this._viewModel;
         }
 
@@ -60,6 +63,23 @@ namespace QlikView.Configuration.WpfClient
             this.lblMessage.Content = "Task is running....";
         }
 
+        void _viewModel_ReportRunCompleted(IError obj)
+        {
+            if (obj.HasError)
+            {
+                this.lblMessage.Content = obj.ErrorMessage;
+            }
+            else
+            {
+                this.lblMessage.Content = "Report exported succeed.";
+            }
+        }
+
+        void _viewModel_ExportReportRunning(object sender, EventArgs e)
+        {
+            this.lblMessage.Content = "Export Report is running....";
+        }
+
         void _viewModel_ReportItemDeleted(object sender, EventArgs e)
         {
             if (this.ViewContainer != null)
@@ -77,6 +97,7 @@ namespace QlikView.Configuration.WpfClient
             IView view = ViewFactory.CreateView(prefix);
             view.ViewModel = ViewModelFactory.CreateViewModel(prefix);
             this._viewModel.IsRunEnabled = false;
+            this._viewModel.IsRunReportEnabled = false;
             this._viewModel.CurrentReportItemType = prefix;
             switch (prefix)
             {
@@ -89,6 +110,7 @@ namespace QlikView.Configuration.WpfClient
                 case "Report":
                     {
                         view.ViewModel.ReportItem = (sender as System.Windows.Controls.ListBox).SelectedItem as QlikViewReport;
+                        this._viewModel.IsRunReportEnabled = true;
                         break;
                     }
                 case "Filter":
@@ -134,6 +156,7 @@ namespace QlikView.Configuration.WpfClient
                 this._viewModel.ReportItem = null;
                 this._viewModel.IsDeleteEnabled = false;
                 this._viewModel.IsRunEnabled = false;
+                this._viewModel.IsRunReportEnabled = false;
             }
         }
 
@@ -157,6 +180,7 @@ namespace QlikView.Configuration.WpfClient
 
             this._viewModel.IsRunEnabled = false;
             this._viewModel.IsDeleteEnabled = false;
+            this._viewModel.IsRunReportEnabled = false;
             this._viewModel.CurrentReportItemType = prefix;
             
             switch (prefix)

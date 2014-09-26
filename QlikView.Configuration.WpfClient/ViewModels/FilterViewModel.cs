@@ -5,6 +5,7 @@ using System.Text;
 using QlikView.Common;
 using Microsoft.Practices.Prism.Commands;
 using System.Windows;
+using QlikView.Configuration.WpfClient.Views;
 
 namespace QlikView.Configuration.WpfClient.ViewModels
 {
@@ -17,6 +18,7 @@ namespace QlikView.Configuration.WpfClient.ViewModels
         public DelegateCommand<QvVariable> VariableDeleteCommand { get; private set; }
         public DelegateCommand<QVField> FieldDeleteCommand { get; private set; }
         public DelegateCommand FieldAddCommand { get; private set; }
+        public DelegateCommand FilterPreViewCommand { get; private set; }
 
         private QvVariable _newVariable;
         public QvVariable NewVariable
@@ -39,6 +41,7 @@ namespace QlikView.Configuration.WpfClient.ViewModels
             this.VariableDeleteCommand = new DelegateCommand<QvVariable>(this.VariableDelete);
             this.FieldDeleteCommand = new DelegateCommand<QVField>(this.FieldDelete);
             this.FieldAddCommand = new DelegateCommand(this.FieldAdd);
+            this.FilterPreViewCommand = new DelegateCommand(this.FilterPreView);
 
             this.NewVariable = new QvVariable();
         }
@@ -128,6 +131,16 @@ namespace QlikView.Configuration.WpfClient.ViewModels
             selection.Connection = (this.ReportItem as Filter).Connection;
 
             selection.FieldAdded += new Action<QVField>(selection_FieldAdded);
+
+            selection.Open();
+        }
+
+        protected void FilterPreView()
+        {
+            IFilterSelection selection = new FilterSelectionForm();
+            selection.Connection = (this.ReportItem as Filter).Connection;
+            Filter filter = this.ReportItem as Filter;
+            selection.Fields = filter.Fields;
 
             selection.Open();
         }

@@ -41,7 +41,7 @@
             <TextBox Grid.Column="1" Grid.Row="1" Text="{Binding Path=ReportItem.OutputFolder}" Style="{DynamicResource TextBoxStyle}"/>
             <CheckBox Grid.Column="1" Grid.Row="2" Content="Send Reports in Single Mail" IsChecked="{Binding Path=ReportItem.IsSendMailInSingleMail}" Margin="3,5"/>
             <CheckBox Grid.Column="1" Grid.Row="3" Content="Merge in Single Excel" IsChecked="{Binding Path=ReportItem.IsMergeInSingleExcel}" Margin="3,5"/>
-
+            <Button Name="btnFtpSetting" Grid.Column="1" Grid.Row="3" Content="Ftp Settings..." Width="100" Margin="150,5" Click="btnFtpSetting_Click"/>
             <TabControl Grid.Column="1" Grid.Row="4" Margin="0,0,10,10">
                 <TabItem Header="Excel Reports">
                     <Grid>

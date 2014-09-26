@@ -42,13 +42,14 @@ namespace SalesforceCodeGenerator
             StudentAttObjectId.Add("EFTVDropoff", "CH874");
             StudentAttObjectId.Add("Writing", "CH871");
 
+            StudentDescription.Add("EFLabsStaff", "EFLabs Staff");
+            StudentDescription.Add("SmartOld", "Smart Old");
             StudentDescription.Add("SmartHome", "SmartHome");
             StudentDescription.Add("SmartSch", "SmartSch");
             StudentDescription.Add("Sochi", "Sochi");
             StudentDescription.Add("E1", "E1");
             StudentDescription.Add("ILS", "ILS");
             StudentDescription.Add("Mini", "Mini");
-            StudentDescription.Add("MiniSchool", "Mini School");
             StudentDescription.Add("B2S", "B2S");
             StudentDescription.Add("B2B", "B2B");
             StudentDescription.Add("Freetown", "Freetown");
@@ -74,7 +75,11 @@ namespace SalesforceCodeGenerator
             StudentFilterValueMapping.Add("Sochi", new List<string>() { "Sochi" });
             StudentFilterValueMapping.Add("SmartSch", new List<string>() { "SmartSchool" });
             StudentFilterValueMapping.Add("SmartHome", new List<string>() { "SmartHome" });
+            StudentFilterValueMapping.Add("EFLabsStaff", new List<string>() { "EFLabsStaff" });
+            StudentFilterValueMapping.Add("SmartOld", new List<string>() { "SmartOld" });
 
+            FilterDescription.Add("EFLabsStaff", "EFLabs Staff");
+            FilterDescription.Add("SmartOld", "Smart Old");
             FilterDescription.Add("SmartHome", "SmartHome");
             FilterDescription.Add("SmartSch", "SmartSch");
             FilterDescription.Add("Sochi", "Sochi");
@@ -107,6 +112,8 @@ namespace SalesforceCodeGenerator
             FilterValueMapping.Add("Sochi", new List<string>() { "Sochi" });
             FilterValueMapping.Add("SmartSch", new List<string>() { "SmartSchool" });
             FilterValueMapping.Add("SmartHome", new List<string>() { "SmartHome" });
+            FilterValueMapping.Add("EFLabsStaff", new List<string>() { "EFLabsStaff" });
+            FilterValueMapping.Add("SmartOld", new List<string>() { "SmartOld" });
         }
 
         public static List<ReportParameter> PopulateSTN()

@@ -182,6 +182,15 @@ namespace QlikView.Common
             task.MessageDefinition.Subject = xmlNode.GetNodeValueIf("Message/Subject");
             task.MessageDefinition.Body = xmlNode.GetNodeValueIf("Message/Body");
 
+            if (xmlNode.ChildNodeExists("FtpServer"))
+            {
+                task.FtpServer = new FtpServer();
+                task.FtpServer.Host = xmlNode.GetNodeValueIf("FtpServer/Host");
+                task.FtpServer.Username = xmlNode.GetNodeValueIf("FtpServer/Username");
+                task.FtpServer.Password = EncryptionDecryption.Decode(xmlNode.GetNodeValueIf("FtpServer/Password"));
+                task.FtpServer.Folder = xmlNode.GetNodeValueIf("FtpServer/Folder");
+                task.FtpServer.Port = xmlNode.GetNodeValueIf("FtpServer/Port");
+            }
             return task;
         }
 
@@ -222,6 +231,16 @@ namespace QlikView.Common
                 XmlNode bodyNode = messageNode.AddChildNode("Body", string.Empty);
                 XmlCDataSection dateSec = this._xmlDoc.CreateCDataSection(item.MessageDefinition.Body);
                 bodyNode.AppendChild(dateSec);
+
+                if (item.FtpServer != null)
+                {
+                    XmlNode ftpServerNode = node.AddChildNode("FtpServer", string.Empty);
+                    ftpServerNode.AddChildNode("Host", item.FtpServer.Host);
+                    ftpServerNode.AddChildNode("Username", item.FtpServer.Username);
+                    ftpServerNode.AddChildNode("Password",EncryptionDecryption.Encode(item.FtpServer.Password));
+                    ftpServerNode.AddChildNode("Folder", item.FtpServer.Folder);
+                    ftpServerNode.AddChildNode("Port", item.FtpServer.Port);
+                }
 
                 itemRootNode.AppendChild(node);
             }

@@ -6,6 +6,8 @@
       <SendInSingleMail>True</SendInSingleMail>
       <MergeInSingleExcel>True</MergeInSingleExcel>
       <Reports>
+        <Report>EFLabsCost_STN_EFLabsStaff</Report>
+        <Report>EFLabsCost_STN_SmartOld</Report>
         <Report>EFLabsCost_STN_SmartHome</Report>
         <Report>EFLabsCost_STN_SmartSch</Report>
         <Report>EFLabsCost_STN_Sochi</Report>
@@ -44,6 +46,24 @@ Thanks,]]></Body>
     </Task>
   </Tasks>
   <Reports>
+    <Report Name="EFLabsCost_STN_EFLabsStaff" Description="EFLabs Staff">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_STN_EFLabsStaff.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH866</QlikViewExportObjectId>
+      <Filter>EFLabsCost_STN_EFLabsStaff</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_STN_SmartOld" Description="Smart Old">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_STN_SmartOld.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH866</QlikViewExportObjectId>
+      <Filter>EFLabsCost_STN_SmartOld</Filter>
+      <ReportType>0</ReportType>
+    </Report>
     <Report Name="EFLabsCost_STN_SmartHome" Description="SmartHome">
       <Connection>EFLabsCost</Connection>
       <OutputFileName>EFLabsCost_STN_SmartHome.xls</OutputFileName>
@@ -181,6 +201,28 @@ Thanks,]]></Body>
     </Report>
   </Reports>
   <Filters>
+    <Filter Name="EFLabsCost_STN_EFLabsStaff" Description="EFLabs Staff">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">EFLabsStaff</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_STN_SmartOld" Description="Smart Old">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">SmartOld</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
     <Filter Name="EFLabsCost_STN_SmartHome" Description="SmartHome">
       <Connection>EFLabsCost</Connection>
       <Fields>
@@ -219,8 +261,7 @@ Thanks,]]></Body>
       <Fields>
         <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
         <Field Name="ProductCategory" Description="" Expression="">
-          <Value Number="1E+300" IsNumeric="False">COEF</Value>
-          <Value Number="1E+300" IsNumeric="False">Owned</Value>
+          <Value Number="1E+300" IsNumeric="False">Kids</Value>
         </Field>
       </Fields>
       <Variables>

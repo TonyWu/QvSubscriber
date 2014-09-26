@@ -9,7 +9,7 @@
         <Report>CCDailyFunnel_ByCenter_DG</Report>
       </Reports>
       <Recipients>
-        <Recipient>EtownCenter_DG1_Sales</Recipient>
+        <Recipient>ECHK_DG1_Sales</Recipient>
       </Recipients>
       <RecipientGroup>
       </RecipientGroup>

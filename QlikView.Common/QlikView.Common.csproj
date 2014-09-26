@@ -78,6 +78,7 @@
     <Compile Include="Excel\ExcelMergeFactory.cs" />
     <Compile Include="Excel\ExcelUtilies.cs" />
     <Compile Include="Excel\ExcelMerge.cs" />
+    <Compile Include="Ftp\FtpClient.cs" />
     <Compile Include="FunnelReport\ChinaSalesFunnelDash.cs" />
     <Compile Include="FunnelReport\ShanghaiSalesFunnelDash.cs" />
     <Compile Include="FunnelReport\EFECMKTDash.cs" />
@@ -103,6 +104,7 @@
     <Compile Include="Mail\SmtpClientAdaptor.cs" />
     <Compile Include="Mail\SmtpServer.cs" />
     <Compile Include="Model\BindingHelper.cs" />
+    <Compile Include="Model\FtpServer.cs" />
     <Compile Include="Model\IReportItem.cs" />
     <Compile Include="Model\QlikViewReport.cs" />
     <Compile Include="Model\FieldValue.cs" />
@@ -213,6 +215,7 @@
     </Content>
     <Content Include="Tasks\CCDailyFunnel_Summary_WEST.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="Tasks\CCDailyFunnel_Summary_HK.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -245,9 +248,11 @@
     </Content>
     <Content Include="Tasks\CCDailyFunnel_ByCenter_WH.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="Tasks\CCDailyFunnel_ByCenter_CQ.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="Tasks\CCDailyFunnel_ByCenter_FS.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -326,10 +331,31 @@
     <Content Include="Tasks\CCDailyFunnel_ByCenter_HZHBC.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Tasks\CCDailyFunnel_ByCenter_CDLFS.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tasks\CCDailyFunnel_ByCenter_XA2.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tasks\CCDailyFunnel_ByCenter_HZCXC.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Tasks\CCDailyFunnel_ByCenter_HZWLC.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tasks\CCDailyFunnel_ByCenter_HZBJC.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tasks\CCDailyFunnel_ByCenter_WHTDC.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tasks\EFECMKTDash_CSV_big.xml" />
     <Content Include="Tasks\EFECMKTDash.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Tasks\EFECMKTDash_CSV.xml" />
     <Content Include="Tasks\FunnelChinaFunnelBCC.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -350,6 +376,7 @@
     <Content Include="Tasks\FunnelCNMini.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Tasks\SH_SalesFunnelDash.xml" />
     <Content Include="Tasks\SpotRateMonthly.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -358,6 +385,7 @@
     </Content>
     <Content Include="Tasks\WeeklyStatisticReport.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="Tasks\FunnelByWeek.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

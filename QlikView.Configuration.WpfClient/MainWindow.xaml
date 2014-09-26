@@ -63,12 +63,17 @@
 										 IsEnabled="{Binding IsDeleteEnabled}"/>
 					<ribbon:RibbonButton x:Name="Run"
 										 LargeImageSource="Images\run_test.png"
-										 Label="Run" 
+										 Label="Run Task" 
 										 Command="{Binding RunTaskCommand}"
 										 CommandParameter="{Binding ReportItem}"
 										 IsEnabled="{Binding IsRunEnabled}"/>
 
-
+                    <ribbon:RibbonButton x:Name="TestRun"
+										 LargeImageSource="Images\run_test.png"
+										 Label="Export Report" 
+										 Command="{Binding RunReportCommand}"
+										 CommandParameter="{Binding ReportItem}"
+										 IsEnabled="{Binding IsRunReportEnabled}"/>
 				</ribbon:RibbonGroup>
 
 			</ribbon:RibbonTab>

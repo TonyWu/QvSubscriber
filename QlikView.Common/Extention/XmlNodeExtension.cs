@@ -31,5 +31,12 @@ namespace QlikView.Common
 
             return node;
         }
+
+        public static bool ChildNodeExists(this XmlNode xmlNode,string name)
+        {
+            XmlNode node = xmlNode.SelectSingleNode(name);
+
+            return node != null;
+        }
     }
 }

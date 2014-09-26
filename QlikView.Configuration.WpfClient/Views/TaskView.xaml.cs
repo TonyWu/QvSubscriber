@@ -77,5 +77,17 @@ namespace QlikView.Configuration.WpfClient.Views
                 this.stackNewActions.Visibility = System.Windows.Visibility.Collapsed;
             }
         }
+
+        private void btnFtpSetting_Click(object sender, RoutedEventArgs e)
+        {
+            ReportTask task = this.ViewModel.ReportItem as ReportTask;
+            FtpSettings settingForm = new FtpSettings();
+            settingForm.FtpServer = task.FtpServer;
+
+            if (settingForm.ShowDialog() == true)
+            {
+                task.FtpServer = settingForm.FtpServer;
+            }
+        }
     }
 }

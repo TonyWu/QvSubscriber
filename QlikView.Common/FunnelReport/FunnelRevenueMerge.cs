@@ -18,6 +18,8 @@ namespace QlikView.Common
         Excel.Workbook totalBook = null;
         Excel.Workbook TSBook = null;
         Excel.Workbook onlineBook = null;
+        Excel.Workbook partnerBook = null;
+        Excel.Workbook smeBook = null;
 
         public bool MergeFiles(Dictionary<string, ReportContext> MergedFiles, string outputFile, out string mergedFile)
         {
@@ -32,6 +34,8 @@ namespace QlikView.Common
             Dictionary<string, string> totalReports = FunnelReportHelper.GetMergedFilesByCategory(MergedFiles, "Total");
             Dictionary<string, string> tsReports = FunnelReportHelper.GetMergedFilesByCategory(MergedFiles, "TS");
             Dictionary<string, string> onlineReports = FunnelReportHelper.GetMergedFilesByCategory(MergedFiles, "Online");
+            Dictionary<string, string> partnerReports = FunnelReportHelper.GetMergedFilesByCategory(MergedFiles, "Partner");
+            Dictionary<string, string> smeReports = FunnelReportHelper.GetMergedFilesByCategory(MergedFiles, "SME");
 
             Excel.Workbook tempWorkbook = null;
             Excel.Workbook bookDest = null;
@@ -87,8 +91,43 @@ namespace QlikView.Common
                         ExcelUtilies.CopyRange(copySourceSheet, "A1", WeeklyStatisticReportParameters.OnlineColumn + WeeklyStatisticReportParameters.OnlineRowCount, copyDestSheet, "A40");
                         //ExcelUtilies.ReleaseComObject(weekSheet);                  
                     }
+
+                    //append Partner revenue
+                    //Column 
+                    this.Logger.Message("append Partner revenue," + partnerReports.Count);
+                    if (partnerReports.ContainsKey(item))
+                    {
+                        this.Logger.Message("append Partner revenue");
+                        partnerBook = excel.Workbooks.Open(partnerReports[item]);
+                        Excel.Worksheet weekSheet = partnerBook.Worksheets[1];
+                        weekSheet.Name = item + "3";
+
+                        weekSheet.Copy(Missing.Value, tempWorkSheet);
+                        Excel.Worksheet copySourceSheet = tempWorkbook.Worksheets[item + "3"];
+
+                        //copy week report to dest
+                        ExcelUtilies.CopyRange(copySourceSheet, "A1", WeeklyStatisticReportParameters.PartnerColumn + WeeklyStatisticReportParameters.PartnerRowCount, copyDestSheet, "A62");
+                        //ExcelUtilies.ReleaseComObject(weekSheet);                  
+                    }
+
+                    //append SME revenue
+                    //Column 
+                    if (smeReports.ContainsKey(item))
+                    {
+                        this.Logger.Message("append SME revenue");
+                        smeBook = excel.Workbooks.Open(smeReports[item]);
+                        Excel.Worksheet weekSheet = smeBook.Worksheets[1];
+                        weekSheet.Name = item + "4";
+
+                        weekSheet.Copy(Missing.Value, tempWorkSheet);
+                        Excel.Worksheet copySourceSheet = tempWorkbook.Worksheets[item + "4"];
+
+                        //copy week report to dest
+                        ExcelUtilies.CopyRange(copySourceSheet, "A1", WeeklyStatisticReportParameters.SMEColumn + WeeklyStatisticReportParameters.SMERowCount, copyDestSheet, "A85");
+                        //ExcelUtilies.ReleaseComObject(weekSheet);                  
+                    }
                     
-                    copyDestSheet.Range["A1", WeeklyStatisticReportParameters.TotalColumn + "100"].Interior.ColorIndex = 0;
+                    copyDestSheet.Range["A1", WeeklyStatisticReportParameters.TotalColumn + "110"].Interior.ColorIndex = 0;
 
                     Excel.Range range = copyDestSheet.Range["A1"];
                     range.EntireRow.Insert(Excel.XlInsertShiftDirection.xlShiftDown);
@@ -97,16 +136,23 @@ namespace QlikView.Common
                     this.SetTitle(copyDestSheet, 1, 1, "Total by product");
                     this.SetTitle(copyDestSheet, 22, 1, "Telesales");
                     this.SetTitle(copyDestSheet, 40, 1, "Online");
+                    this.SetTitle(copyDestSheet, 62, 1, "Partner revenue");
+                    this.SetTitle(copyDestSheet, 85, 1, "SME revenue");
 
-                    if (GeneralParameters.KFR2 == false && GeneralParameters.KFR1 == false)
+                    if (GeneralParameters.KFR2 == false && GeneralParameters.KFR1 == false && GeneralParameters.KFR3 == false)
                     {
                         ExcelUtilies.DeleteColumns(copyDestSheet, "U", "AC");
                         ExcelUtilies.DeleteColumns(copyDestSheet, "I", "N");
                     }
-                    else if (GeneralParameters.KFR1 == true && GeneralParameters.KFR2 == false)
+                    else if (GeneralParameters.KFR1 == true && GeneralParameters.KFR2 == false && GeneralParameters.KFR3 == false)
                     {
                         ExcelUtilies.DeleteColumns(copyDestSheet, "X", "AC");
                         ExcelUtilies.DeleteColumns(copyDestSheet, "K", "N");
+                    }
+                    else if (GeneralParameters.KFR1 == true && GeneralParameters.KFR2 == true && GeneralParameters.KFR3 == false)
+                    {
+                        ExcelUtilies.DeleteColumns(copyDestSheet, "AA", "AC");
+                        ExcelUtilies.DeleteColumns(copyDestSheet, "M", "N");
                     }
 
                     //ExcelUtilies.ReleaseComObject(copyDestSheet);
@@ -243,17 +289,56 @@ namespace QlikView.Common
                     //ExcelUtilies.ReleaseComObject(weekSheet);
                 }
 
-                copyDestSheet.Range["A1", WeeklyStatisticReportParameters.TotalColumn + "56"].Interior.ColorIndex = 0;
+                //append Partner report
+                //Column 
+                if (MergedFiles.ContainsKey("FunnelRevenue_KFRRevenue_CH184"))
+                {
+                    report = MergedFiles["FunnelRevenue_KFRRevenue_CH184"];
+                    partnerBook = excel.Workbooks.Open(report.OutputFullName);
+                    Excel.Worksheet weekSheet = partnerBook.Worksheets[1];
+                    weekSheet.Name = report.Description;
 
-                if (GeneralParameters.KFR2 == false && GeneralParameters.KFR1 == false)
+                    weekSheet.Copy(Missing.Value, tempWorkSheet);
+                    Excel.Worksheet copySourceSheet = tempWorkbook.Worksheets[report.Description];
+
+                    //copy week report to dest
+                    ExcelUtilies.CopyRange(copySourceSheet, "A1", WeeklyStatisticReportParameters.KFRRevenueColumn + WeeklyStatisticReportParameters.KFRRevenueRowCount, copyDestSheet, "A58");
+                    //ExcelUtilies.ReleaseComObject(weekSheet);
+                }
+
+                //append SME report
+                //Column 
+                if (MergedFiles.ContainsKey("FunnelRevenue_KFRRevenue_CH185"))
+                {
+                    report = MergedFiles["FunnelRevenue_KFRRevenue_CH185"];
+                    smeBook = excel.Workbooks.Open(report.OutputFullName);
+                    Excel.Worksheet weekSheet = smeBook.Worksheets[1];
+                    weekSheet.Name = report.Description;
+
+                    weekSheet.Copy(Missing.Value, tempWorkSheet);
+                    Excel.Worksheet copySourceSheet = tempWorkbook.Worksheets[report.Description];
+
+                    //copy week report to dest
+                    ExcelUtilies.CopyRange(copySourceSheet, "A1", WeeklyStatisticReportParameters.KFRRevenueColumn + WeeklyStatisticReportParameters.KFRRevenueRowCount, copyDestSheet, "A78");
+                    //ExcelUtilies.ReleaseComObject(weekSheet);
+                }
+
+                copyDestSheet.Range["A1", WeeklyStatisticReportParameters.TotalColumn + "106"].Interior.ColorIndex = 0;
+
+                if (GeneralParameters.KFR2 == false && GeneralParameters.KFR1 == false && GeneralParameters.KFR3 == false)
                 {
                     ExcelUtilies.DeleteColumns(copyDestSheet, "S", "AA");
                     ExcelUtilies.DeleteColumns(copyDestSheet, "G", "L");
                 }
-                else if (GeneralParameters.KFR1 == true && GeneralParameters.KFR2 == false)
+                else if (GeneralParameters.KFR1 == true && GeneralParameters.KFR2 == false && GeneralParameters.KFR3 == false)
                 {
                     ExcelUtilies.DeleteColumns(copyDestSheet, "V", "AA");
                     ExcelUtilies.DeleteColumns(copyDestSheet, "I", "L");
+                }
+                else if (GeneralParameters.KFR1 == true && GeneralParameters.KFR2 == true && GeneralParameters.KFR3 == false)
+                {
+                    ExcelUtilies.DeleteColumns(copyDestSheet, "Y", "AA");
+                    ExcelUtilies.DeleteColumns(copyDestSheet, "K", "L");
                 }
 
                 //ExcelUtilies.ReleaseComObject(copyDestSheet);
@@ -266,6 +351,8 @@ namespace QlikView.Common
             FunnelReportHelper.CloseWorkingWorkbook(totalBook);
             FunnelReportHelper.CloseWorkingWorkbook(TSBook);
             FunnelReportHelper.CloseWorkingWorkbook(onlineBook);
+            FunnelReportHelper.CloseWorkingWorkbook(partnerBook);
+            FunnelReportHelper.CloseWorkingWorkbook(smeBook);
         }
 
         private void SetTitle(Excel.Worksheet sheet, int row, int column, string title)

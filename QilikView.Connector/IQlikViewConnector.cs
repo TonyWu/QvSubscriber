@@ -17,6 +17,7 @@ namespace QlikView.Connector
         int ExportExcel(string objectId, string fileName);
         int ExportHtml(string objectId, string fileName);
         int ExportJPG(string objectId, string fileName);
+        int ExportCSV(string objectId, string fileName);
         List<string> GetExportDocumentIdList();
         ReportItemDictionary<QVField> GetCurrentSelection();
         void SetSelections(ReportItemDictionary<QVField> qvFieldCollection);

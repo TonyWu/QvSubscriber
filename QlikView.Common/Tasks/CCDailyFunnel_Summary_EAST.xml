@@ -6,12 +6,14 @@
       <SendInSingleMail>True</SendInSingleMail>
       <MergeInSingleExcel>False</MergeInSingleExcel>
       <Reports>
-        <Report>CCDailyFunnel_Summary_NJXJK</Report>
         <Report>CCDailyFunnel_Summary_NJIST</Report>
         <Report>CCDailyFunnel_Summary_WXHDP</Report>
         <Report>CCDailyFunnel_Summary_NBMLC</Report>
         <Report>CCDailyFunnel_Summary_HZHLL</Report>
         <Report>CCDailyFunnel_Summary_HZHBC</Report>
+        <Report>CCDailyFunnel_Summary_HZCXC</Report>
+        <Report>CCDailyFunnel_Summary_HZWLC</Report>
+        <Report>CCDailyFunnel_Summary_HZBJC</Report>
       </Reports>
       <Recipients>
         <Recipient>David.Min</Recipient>
@@ -24,12 +26,9 @@
         <BCC>
         </BCC>
         <Subject>CC's Daily Funnel Report (EAST) [@Date]</Subject>
-        <Body><![CDATA[@Template
+        <Body>
+  <![CDATA[@Template
 <h3>CC's Daily Funnel Report Date:@Date</h3> <br>
-<span lang=EN-US style='color:#1F497D;font-weight:bold'>Center Target Achievement - By CC (NJ XJK) </span>
-{CCDailyFunnel_Summary_NJXJK}
-<br>
-<br>
 <span lang=EN-US style='color:#1F497D;font-weight:bold'>Center Target Achievement - By CC (NJ IST)</span>
 {CCDailyFunnel_Summary_NJIST}
 <br>
@@ -48,20 +47,23 @@
 <br>
 <span lang=EN-US style='color:#1F497D;font-weight:bold'>Center Target Achievement - By CC (HZ HBC)</span>
 {CCDailyFunnel_Summary_HZHBC}
+<br>
+<br>
+<span lang=EN-US style='color:#1F497D;font-weight:bold'>Center Target Achievement - By CC (HZ CXC)</span>
+{CCDailyFunnel_Summary_HZCXC}
+<br>
+<br>
+<span lang=EN-US style='color:#1F497D;font-weight:bold'>Center Target Achievement - By CC (HZ WLC)</span>
+{CCDailyFunnel_Summary_HZWLC}
+<br>
+<br>
+<span lang=EN-US style='color:#1F497D;font-weight:bold'>Center Target Achievement - By CC (HZ BJC)</span>
+{CCDailyFunnel_Summary_HZBJC}
 ]]></Body>
       </Message>
     </Task>
   </Tasks>
   <Reports>
-    <Report Name="CCDailyFunnel_Summary_NJXJK" Description="CCDailyFunnel_Summary_NJXJK">
-      <Connection>FunnelCNMini_New</Connection>
-      <OutputFileName>CCDailyFunnel_Summary_NJXJK.jpg</OutputFileName>
-      <EnableDynamicNaming>True</EnableDynamicNaming>
-      <EmbeddedInMail>False</EmbeddedInMail>
-      <QlikViewExportObjectId>Document\CH19</QlikViewExportObjectId>
-      <Filter>CCDailyFunnel_Summary_NJXJK</Filter>
-      <ReportType>2</ReportType>
-    </Report>
     <Report Name="CCDailyFunnel_Summary_NJIST" Description="CCDailyFunnel_Summary_NJIST">
       <Connection>FunnelCNMini_New</Connection>
       <OutputFileName>CCDailyFunnel_Summary_NJIST.jpg</OutputFileName>
@@ -107,25 +109,35 @@
       <Filter>CCDailyFunnel_Summary_HZHBC</Filter>
       <ReportType>2</ReportType>
     </Report>
+    <Report Name="CCDailyFunnel_Summary_HZCXC" Description="CCDailyFunnel_Summary_HZCXC">
+      <Connection>FunnelCNMini_New</Connection>
+      <OutputFileName>CCDailyFunnel_Summary_HZCXC.jpg</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH19</QlikViewExportObjectId>
+      <Filter>CCDailyFunnel_Summary_HZCXC</Filter>
+      <ReportType>2</ReportType>
+    </Report>
+    <Report Name="CCDailyFunnel_Summary_HZWLC" Description="CCDailyFunnel_Summary_HZWLC">
+      <Connection>FunnelCNMini_New</Connection>
+      <OutputFileName>CCDailyFunnel_Summary_HZWLC.jpg</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH19</QlikViewExportObjectId>
+      <Filter>CCDailyFunnel_Summary_HZWLC</Filter>
+      <ReportType>2</ReportType>
+    </Report>
+    <Report Name="CCDailyFunnel_Summary_HZBJC" Description="CCDailyFunnel_Summary_HZBJC">
+      <Connection>FunnelCNMini_New</Connection>
+      <OutputFileName>CCDailyFunnel_Summary_HZBJC.jpg</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH19</QlikViewExportObjectId>
+      <Filter>CCDailyFunnel_Summary_HZBJC</Filter>
+      <ReportType>2</ReportType>
+    </Report>
   </Reports>
   <Filters>
-    <Filter Name="CCDailyFunnel_Summary_NJXJK" Description="CCDailyFunnel_Summary_NJXJK">
-      <Connection>FunnelCNMini_New</Connection>
-      <Fields>
-        <Field Name="TheYear" Description="" Expression="YearOfTheDayCurrent" />
-        <Field Name="MonthOfYear" Description="" Expression="MonthOfTheDayCurrent" />
-        <Field Name="CityType" Description="" Expression="">
-          <Value Number="1E+300" IsNumeric="False">Center</Value>
-        </Field>
-        <Field Name="CN_City__c" Description="" Expression="">
-          <Value Number="1E+300" IsNumeric="False">NJ XJK</Value>
-        </Field>
-      </Fields>
-      <Variables>
-        <Variable Name="vYTDDate" Expression="Today">
-        </Variable>
-      </Variables>
-    </Filter>
     <Filter Name="CCDailyFunnel_Summary_NJIST" Description="CCDailyFunnel_Summary_NJIST">
       <Connection>FunnelCNMini_New</Connection>
       <Fields>
@@ -204,6 +216,57 @@
         </Field>
         <Field Name="CN_City__c" Description="" Expression="">
           <Value Number="1E+300" IsNumeric="False">HZ HBC</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="Today">
+        </Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="CCDailyFunnel_Summary_HZCXC" Description="CCDailyFunnel_Summary_HZCXC">
+      <Connection>FunnelCNMini_New</Connection>
+      <Fields>
+        <Field Name="TheYear" Description="" Expression="YearOfTheDayCurrent" />
+        <Field Name="MonthOfYear" Description="" Expression="MonthOfTheDayCurrent" />
+        <Field Name="CityType" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Center</Value>
+        </Field>
+        <Field Name="CN_City__c" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">HZ CXC</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="Today">
+        </Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="CCDailyFunnel_Summary_HZWLC" Description="CCDailyFunnel_Summary_HZWLC">
+      <Connection>FunnelCNMini_New</Connection>
+      <Fields>
+        <Field Name="TheYear" Description="" Expression="YearOfTheDayCurrent" />
+        <Field Name="MonthOfYear" Description="" Expression="MonthOfTheDayCurrent" />
+        <Field Name="CityType" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Center</Value>
+        </Field>
+        <Field Name="CN_City__c" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">HZ WLC</Value>
+        </Field>
+      </Fields>
+      <Variables>
+        <Variable Name="vYTDDate" Expression="Today">
+        </Variable>
+      </Variables>
+    </Filter>
+    <Filter Name="CCDailyFunnel_Summary_HZBJC" Description="CCDailyFunnel_Summary_HZBJC">
+      <Connection>FunnelCNMini_New</Connection>
+      <Fields>
+        <Field Name="TheYear" Description="" Expression="YearOfTheDayCurrent" />
+        <Field Name="MonthOfYear" Description="" Expression="MonthOfTheDayCurrent" />
+        <Field Name="CityType" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">Center</Value>
+        </Field>
+        <Field Name="CN_City__c" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">HZ BJC</Value>
         </Field>
       </Fields>
       <Variables>

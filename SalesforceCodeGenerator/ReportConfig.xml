@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ReportConfig>
+  <ReportConfig>
+    <Tasks>
+      <Task Name="EFLabsCost_DirectCost" Description="EFLabsCost_DirectCost">
+        <OutputFolder>D:\ReportExport\EFLabsCost_DirectCost</OutputFolder>
+        <SendInSingleMail>False</SendInSingleMail>
+        <MergeInSingleExcel>True</MergeInSingleExcel>
+        <Reports>
+          {TaskReport}
+        </Reports>
+        <Recipients>
+          <Recipient>Robert.Qiu</Recipient>
+        </Recipients>
+        <RecipientGroup>
+        </RecipientGroup>
+        <Message>
+          <From>QlikViewAdmin@ef.com</From>
+          <CC>
+          </CC>
+          <Subject>EFLabs DirectCost  Report [@Date]</Subject>
+          <Body>
+            <![CDATA[Hi,
+<br>
+
+Pls find the  EFLabs DirectCost  Report from the attachment!
+<br>
+Thanks,]]>
+          </Body>
+        </Message>
+      </Task>
+    </Tasks>
+    <Reports>
+      {Report}
+    </Reports>
+    <Filters>
+      {Filter}
+    </Filters>
+  </ReportConfig>
+</ReportConfig>

@@ -9,6 +9,7 @@ namespace QlikView.Common
     {
         Excel = 0,
         Html,
-        JPG
+        JPG,
+        CSV
     }
 }

@@ -10,6 +10,7 @@ namespace QlikView.Common
         public static readonly bool KFR0 = ParameterConfig.GetBoolValue("General", "KFR0");
         public static readonly bool KFR1 = ParameterConfig.GetBoolValue("General", "KFR1");
         public static readonly bool KFR2 = ParameterConfig.GetBoolValue("General", "KFR2");
+        public static readonly bool KFR3 = ParameterConfig.GetBoolValue("General", "KFR3");
     }
 
     public static class FunnelWeeklyReportParameters
@@ -137,10 +138,14 @@ namespace QlikView.Common
         public static readonly string TotalColumn = ParameterConfig.GetStringValue("WeeklyStatisticReport", "TotalColumn") ?? "X";
         public static readonly string TSColumn = ParameterConfig.GetStringValue("WeeklyStatisticReport", "TSColumn") ?? "X";
         public static readonly string OnlineColumn = ParameterConfig.GetStringValue("WeeklyStatisticReport", "OnlineColumn") ?? "X";
+        public static readonly string PartnerColumn = ParameterConfig.GetStringValue("WeeklyStatisticReport", "PartnerColumn") ?? "X";
+        public static readonly string SMEColumn = ParameterConfig.GetStringValue("WeeklyStatisticReport", "SMEColumn") ?? "X";
 
         public static readonly int TotalRowCount = ParameterConfig.GetIntValue("WeeklyStatisticReport", "TotalRowCount");//17;
         public static readonly int TSRowCount = ParameterConfig.GetIntValue("WeeklyStatisticReport", "TSRowCount");//17;
         public static readonly int OnlineRowCount = ParameterConfig.GetIntValue("WeeklyStatisticReport", "OnlineRowCount");//17;
+        public static readonly int PartnerRowCount = ParameterConfig.GetIntValue("WeeklyStatisticReport", "PartnerRowCount");//17;
+        public static readonly int SMERowCount = ParameterConfig.GetIntValue("WeeklyStatisticReport", "SMERowCount");//17;
 
         public static readonly string KFRRevenueColumn = ParameterConfig.GetStringValue("WeeklyStatisticReport", "KFRRevenueColumn") ?? "V";
         public static readonly int KFRRevenueRowCount = ParameterConfig.GetIntValue("WeeklyStatisticReport", "KFRRevenueRowCount");//17;

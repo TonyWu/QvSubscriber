@@ -6,6 +6,8 @@
       <SendInSingleMail>False</SendInSingleMail>
       <MergeInSingleExcel>True</MergeInSingleExcel>
       <Reports>
+        <Report>EFLabsCost_DirectCost_WritingEFLabsStaff</Report>
+        <Report>EFLabsCost_DirectCost_WritingSmartOld</Report>
         <Report>EFLabsCost_DirectCost_WritingSmartHome</Report>
         <Report>EFLabsCost_DirectCost_WritingSmartSch</Report>
         <Report>EFLabsCost_DirectCost_WritingSochi</Report>
@@ -51,6 +53,8 @@
         <Report>EFLabsCost_DirectCost_EFTVB2COS</Report>
         <Report>EFLabsCost_DirectCost_EFTVB2CCS</Report>
         <Report>EFLabsCost_DirectCost_EFTVB2CTS</Report>
+        <Report>EFLabsCost_DirectCost_PLDropoffEFLabsStaff</Report>
+        <Report>EFLabsCost_DirectCost_PLDropoffSmartOld</Report>
         <Report>EFLabsCost_DirectCost_PLDropoffSmartHome</Report>
         <Report>EFLabsCost_DirectCost_PLDropoffSmartSch</Report>
         <Report>EFLabsCost_DirectCost_PLDropoffSochi</Report>
@@ -66,6 +70,8 @@
         <Report>EFLabsCost_DirectCost_PLDropoffB2COS</Report>
         <Report>EFLabsCost_DirectCost_PLDropoffB2CCS</Report>
         <Report>EFLabsCost_DirectCost_PLDropoffB2CTS</Report>
+        <Report>EFLabsCost_DirectCost_PLLateCancelEFLabsStaff</Report>
+        <Report>EFLabsCost_DirectCost_PLLateCancelSmartOld</Report>
         <Report>EFLabsCost_DirectCost_PLLateCancelSmartHome</Report>
         <Report>EFLabsCost_DirectCost_PLLateCancelSmartSch</Report>
         <Report>EFLabsCost_DirectCost_PLLateCancelSochi</Report>
@@ -81,6 +87,8 @@
         <Report>EFLabsCost_DirectCost_PLLateCancelB2COS</Report>
         <Report>EFLabsCost_DirectCost_PLLateCancelB2CCS</Report>
         <Report>EFLabsCost_DirectCost_PLLateCancelB2CTS</Report>
+        <Report>EFLabsCost_DirectCost_PLEFLabsStaff</Report>
+        <Report>EFLabsCost_DirectCost_PLSmartOld</Report>
         <Report>EFLabsCost_DirectCost_PLSmartHome</Report>
         <Report>EFLabsCost_DirectCost_PLSmartSch</Report>
         <Report>EFLabsCost_DirectCost_PLSochi</Report>
@@ -96,6 +104,8 @@
         <Report>EFLabsCost_DirectCost_PLB2COS</Report>
         <Report>EFLabsCost_DirectCost_PLB2CCS</Report>
         <Report>EFLabsCost_DirectCost_PLB2CTS</Report>
+        <Report>EFLabsCost_DirectCost_GLEFLabsStaff</Report>
+        <Report>EFLabsCost_DirectCost_GLSmartOld</Report>
         <Report>EFLabsCost_DirectCost_GLSmartHome</Report>
         <Report>EFLabsCost_DirectCost_GLSmartSch</Report>
         <Report>EFLabsCost_DirectCost_GLSochi</Report>
@@ -134,6 +144,24 @@ Thanks,]]></Body>
     </Task>
   </Tasks>
   <Reports>
+    <Report Name="EFLabsCost_DirectCost_WritingEFLabsStaff" Description="EFLabs Staff Writing">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_WritingEFLabsStaff.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH871</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_WritingEFLabsStaff</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_WritingSmartOld" Description="Smart Old Writing">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_WritingSmartOld.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH871</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_WritingSmartOld</Filter>
+      <ReportType>0</ReportType>
+    </Report>
     <Report Name="EFLabsCost_DirectCost_WritingSmartHome" Description="SmartHome Writing">
       <Connection>EFLabsCost</Connection>
       <OutputFileName>EFLabsCost_DirectCost_WritingSmartHome.xls</OutputFileName>
@@ -539,6 +567,24 @@ Thanks,]]></Body>
       <Filter>EFLabsCost_DirectCost_EFTVB2CTS</Filter>
       <ReportType>0</ReportType>
     </Report>
+    <Report Name="EFLabsCost_DirectCost_PLDropoffEFLabsStaff" Description="EFLabs Staff PL Drop off">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLDropoffEFLabsStaff.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH873</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLDropoffEFLabsStaff</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLDropoffSmartOld" Description="Smart Old PL Drop off">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLDropoffSmartOld.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH873</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLDropoffSmartOld</Filter>
+      <ReportType>0</ReportType>
+    </Report>
     <Report Name="EFLabsCost_DirectCost_PLDropoffSmartHome" Description="SmartHome PL Drop off">
       <Connection>EFLabsCost</Connection>
       <OutputFileName>EFLabsCost_DirectCost_PLDropoffSmartHome.xls</OutputFileName>
@@ -672,6 +718,24 @@ Thanks,]]></Body>
       <EmbeddedInMail>False</EmbeddedInMail>
       <QlikViewExportObjectId>Document\CH873</QlikViewExportObjectId>
       <Filter>EFLabsCost_DirectCost_PLDropoffB2CTS</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLEFLabsStaff" Description="EFLabs Staff PL">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLEFLabsStaff.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH849</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLEFLabsStaff</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLSmartOld" Description="Smart Old PL">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLSmartOld.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH849</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLSmartOld</Filter>
       <ReportType>0</ReportType>
     </Report>
     <Report Name="EFLabsCost_DirectCost_PLSmartHome" Description="SmartHome PL">
@@ -809,6 +873,24 @@ Thanks,]]></Body>
       <Filter>EFLabsCost_DirectCost_PLB2CTS</Filter>
       <ReportType>0</ReportType>
     </Report>
+    <Report Name="EFLabsCost_DirectCost_GLEFLabsStaff" Description="EFLabs Staff GL">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_GLEFLabsStaff.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH848</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_GLEFLabsStaff</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_GLSmartOld" Description="Smart Old GL">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_GLSmartOld.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH848</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_GLSmartOld</Filter>
+      <ReportType>0</ReportType>
+    </Report>
     <Report Name="EFLabsCost_DirectCost_GLSmartHome" Description="SmartHome GL">
       <Connection>EFLabsCost</Connection>
       <OutputFileName>EFLabsCost_DirectCost_GLSmartHome.xls</OutputFileName>
@@ -942,6 +1024,24 @@ Thanks,]]></Body>
       <EmbeddedInMail>False</EmbeddedInMail>
       <QlikViewExportObjectId>Document\CH848</QlikViewExportObjectId>
       <Filter>EFLabsCost_DirectCost_GLB2CTS</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLLateCancelEFLabsStaff" Description="EFLabsStaff PL Late Cancel">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLLateCancelEFLabsStaff.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH905</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLLateCancelEFLabsStaff</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_PLLateCancelSmartOld" Description="SmartOld PL Late Cancel">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_PLLateCancelSmartOld.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH905</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_PLLateCancelSmartOld</Filter>
       <ReportType>0</ReportType>
     </Report>
     <Report Name="EFLabsCost_DirectCost_PLLateCancelSmartHome" Description="SmartHome PL Late Cancel">
@@ -1081,6 +1181,28 @@ Thanks,]]></Body>
     </Report>
   </Reports>
   <Filters>
+    <Filter Name="EFLabsCost_DirectCost_WritingEFLabsStaff" Description="EFLabs Staff Writing">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">EFLabsStaff</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_WritingSmartOld" Description="Smart Old Writing">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">SmartOld</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
     <Filter Name="EFLabsCost_DirectCost_WritingSmartHome" Description="SmartHome Writing">
       <Connection>EFLabsCost</Connection>
       <Fields>
@@ -1119,8 +1241,7 @@ Thanks,]]></Body>
       <Fields>
         <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
         <Field Name="ProductCategory" Description="" Expression="">
-          <Value Number="1E+300" IsNumeric="False">COEF</Value>
-          <Value Number="1E+300" IsNumeric="False">Owned</Value>
+          <Value Number="1E+300" IsNumeric="False">Kids</Value>
         </Field>
       </Fields>
       <Variables>
@@ -1290,8 +1411,7 @@ Thanks,]]></Body>
       <Fields>
         <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
         <Field Name="ProductCategory" Description="" Expression="">
-          <Value Number="1E+300" IsNumeric="False">COEF</Value>
-          <Value Number="1E+300" IsNumeric="False">Owned</Value>
+          <Value Number="1E+300" IsNumeric="False">Kids</Value>
         </Field>
       </Fields>
       <Variables>
@@ -1461,8 +1581,7 @@ Thanks,]]></Body>
       <Fields>
         <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
         <Field Name="ProductCategory" Description="" Expression="">
-          <Value Number="1E+300" IsNumeric="False">COEF</Value>
-          <Value Number="1E+300" IsNumeric="False">Owned</Value>
+          <Value Number="1E+300" IsNumeric="False">Kids</Value>
         </Field>
       </Fields>
       <Variables>
@@ -1594,6 +1713,28 @@ Thanks,]]></Body>
       <Variables>
       </Variables>
     </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLDropoffEFLabsStaff" Description="EFLabs Staff PL Drop off">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">EFLabsStaff</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLDropoffSmartOld" Description="Smart Old PL Drop off">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">SmartOld</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
     <Filter Name="EFLabsCost_DirectCost_PLDropoffSmartHome" Description="SmartHome PL Drop off">
       <Connection>EFLabsCost</Connection>
       <Fields>
@@ -1632,8 +1773,7 @@ Thanks,]]></Body>
       <Fields>
         <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
         <Field Name="ProductCategory" Description="" Expression="">
-          <Value Number="1E+300" IsNumeric="False">COEF</Value>
-          <Value Number="1E+300" IsNumeric="False">Owned</Value>
+          <Value Number="1E+300" IsNumeric="False">Kids</Value>
         </Field>
       </Fields>
       <Variables>
@@ -1765,6 +1905,28 @@ Thanks,]]></Body>
       <Variables>
       </Variables>
     </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLEFLabsStaff" Description="EFLabs Staff PL">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">EFLabsStaff</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLSmartOld" Description="Smart Old PL">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">SmartOld</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
     <Filter Name="EFLabsCost_DirectCost_PLSmartHome" Description="SmartHome PL">
       <Connection>EFLabsCost</Connection>
       <Fields>
@@ -1803,8 +1965,7 @@ Thanks,]]></Body>
       <Fields>
         <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
         <Field Name="ProductCategory" Description="" Expression="">
-          <Value Number="1E+300" IsNumeric="False">COEF</Value>
-          <Value Number="1E+300" IsNumeric="False">Owned</Value>
+          <Value Number="1E+300" IsNumeric="False">Kids</Value>
         </Field>
       </Fields>
       <Variables>
@@ -1936,6 +2097,28 @@ Thanks,]]></Body>
       <Variables>
       </Variables>
     </Filter>
+    <Filter Name="EFLabsCost_DirectCost_GLEFLabsStaff" Description="EFLabs Staff GL">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">EFLabsStaff</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_GLSmartOld" Description="Smart Old GL">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">SmartOld</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
     <Filter Name="EFLabsCost_DirectCost_GLSmartHome" Description="SmartHome GL">
       <Connection>EFLabsCost</Connection>
       <Fields>
@@ -1974,8 +2157,7 @@ Thanks,]]></Body>
       <Fields>
         <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
         <Field Name="ProductCategory" Description="" Expression="">
-          <Value Number="1E+300" IsNumeric="False">COEF</Value>
-          <Value Number="1E+300" IsNumeric="False">Owned</Value>
+          <Value Number="1E+300" IsNumeric="False">Kids</Value>
         </Field>
       </Fields>
       <Variables>
@@ -2107,6 +2289,28 @@ Thanks,]]></Body>
       <Variables>
       </Variables>
     </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLLateCancelEFLabsStaff" Description="EFLabs Staff PL Late Cancellation">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">EFLabsStaff</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_PLLateCancelSmartOld" Description="Smart Old PL Late Cancellation">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">SmartOld</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
     <Filter Name="EFLabsCost_DirectCost_PLLateCancelSmartHome" Description="SmartHome PL Late Cancel">
       <Connection>EFLabsCost</Connection>
       <Fields>
@@ -2145,8 +2349,7 @@ Thanks,]]></Body>
       <Fields>
         <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
         <Field Name="ProductCategory" Description="" Expression="">
-          <Value Number="1E+300" IsNumeric="False">COEF</Value>
-          <Value Number="1E+300" IsNumeric="False">Owned</Value>
+          <Value Number="1E+300" IsNumeric="False">Kids</Value>
         </Field>
       </Fields>
       <Variables>

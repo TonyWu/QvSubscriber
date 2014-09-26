@@ -115,5 +115,11 @@ namespace QlikView.Connector
         {
             this._qlikViewConnector.Preview(connection);
         }
+
+
+        public int ExportCSV(string objectId, string fileName)
+        {
+            return this._qlikViewConnector.ExportCSV(objectId, fileName);
+        }
     }
 }

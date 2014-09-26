@@ -11,13 +11,15 @@
       </Reports>
       <Recipients>
         <Recipient>Sam Cheung</Recipient>
+        <Recipient>Hope.Ma</Recipient>
       </Recipients>
       <RecipientGroup>
       </RecipientGroup>
       <Message>
         <From>QlikViewAdmin@ef.com</From>
-        <CC>Annabelle.Vultee@EF.com;Tracy.Li@EF.com;david.hu@EF.com;Irene.Zhangry@EF.com;Jimmy.LZ@EF.com;jane.jiang@EF.com;Shirley.WangRong@EF.com;Angela.Xu@EF.com;Marc.Hollander@EF.com;Johan.Wilhelmsson@EF.com;Gareth.Magowan@EF.com;xiaofei.tang@ef.com;EFEC_CSO@EF.com;EFEC_NSO@ef.com;EFEC_RGM@ef.com;EFEC_Report@ef.com</CC>
-        <BCC>Eric.Azumi@ef.com</BCC>
+        <CC>Annabelle.Vultee@EF.com;Tracy.Li@EF.com;david.hu@EF.com;Irene.Zhangry@EF.com;Jimmy.LZ@EF.com;jane.jiang@EF.com;Shirley.WangRong@EF.com;Angela.Xu@EF.com;Marc.Hollander@EF.com;Johan.Wilhelmsson@EF.com;xiaofei.tang@ef.com;Richard.Eriksson@ef.com;EFEC_CSO@EF.com;EFEC_NSO@ef.com;EFEC_RGM@ef.com;EFEC_Report@ef.com</CC>
+        <BCC>
+        </BCC>
         <Subject>China Sales Funnel Dash [@Date]</Subject>
         <Body><![CDATA[@Template
 <html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40">

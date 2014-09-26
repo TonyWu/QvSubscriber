@@ -82,6 +82,7 @@
     </ApplicationDefinition>
     <Compile Include="Command\ReportItemCommand.cs" />
     <Compile Include="ViewModels\ConnectionViewModel.cs" />
+    <Compile Include="Views\IFilterSelection.cs" />
     <Compile Include="Views\FieldSelectionForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,8 +105,17 @@
     <Compile Include="Views\FieldSelectionWindow.xaml.cs">
       <DependentUpon>FieldSelectionWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\FilterSelectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FilterSelectionForm.Designer.cs">
+      <DependentUpon>FilterSelectionForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\FilterView.xaml.cs">
       <DependentUpon>FilterView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FtpSettings.xaml.cs">
+      <DependentUpon>FtpSettings.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\GroupView.xaml.cs">
       <DependentUpon>GroupView.xaml</DependentUpon>
@@ -168,6 +178,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\FtpSettings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\GroupView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -213,6 +227,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FieldSelectionForm.resx">
       <DependentUpon>FieldSelectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FilterSelectionForm.resx">
+      <DependentUpon>FilterSelectionForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config">
       <SubType>Designer</SubType>
