@@ -333,5 +333,61 @@ namespace QlikView.Common
                 return new List<int>(){0};
             }
         }
+
+        /// <summary>
+        /// Just for getting current Fiscal Year Name, for example 14-15
+        /// </summary>
+        /// <returns></returns>
+        public static ObservableCollection<FieldValue> GetCurrentFiscalYearName()
+        {
+            ObservableCollection<FieldValue> values = new ObservableCollection<FieldValue>();
+
+            int currentYear = DateTime.Today.Year;
+
+            if (DateTime.Today.Month >= 10)
+                values.Add(new FieldValue()
+                {
+                    Number = double.Parse("1E+300"),
+                    IsNumeric = false,
+                    Value = currentYear.ToString().Substring(2, 2) + "-" + (currentYear + 1).ToString().Substring(2, 2)
+                });
+            else
+                values.Add(new FieldValue()
+                {
+                    Number = double.Parse("1E+300"),
+                    IsNumeric = false,
+                    Value = (currentYear - 1).ToString().Substring(2, 2) + "-" + currentYear.ToString().Substring(2, 2)
+                });
+
+            return values;
+        }
+
+        /// <summary>
+        /// Just for getting current Fiscal Year Name, for example 14-15
+        /// </summary>
+        /// <returns></returns>
+        public static ObservableCollection<FieldValue> GetPreviousFiscalYearName()
+        {
+            ObservableCollection<FieldValue> values = new ObservableCollection<FieldValue>();
+
+            int currentYear = DateTime.Today.Year;
+
+            if (DateTime.Today.Month >= 10)
+                values.Add(new FieldValue()
+                {
+                    Number = double.Parse("1E+300"),
+                    IsNumeric = false,
+                    Value = (currentYear - 1).ToString().Substring(2, 2) + "-" + currentYear.ToString().Substring(2, 2)
+                });
+            else
+                values.Add(new FieldValue()
+                {
+                    Number = double.Parse("1E+300"),
+                    IsNumeric = false,
+                    Value = (currentYear - 2).ToString().Substring(2, 2) + "-" + (currentYear - 1).ToString().Substring(2, 2)
+                });
+
+            return values;
+        }
     }
 }

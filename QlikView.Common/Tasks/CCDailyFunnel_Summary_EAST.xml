@@ -26,8 +26,7 @@
         <BCC>
         </BCC>
         <Subject>CC's Daily Funnel Report (EAST) [@Date]</Subject>
-        <Body>
-  <![CDATA[@Template
+        <Body><![CDATA[@Template
 <h3>CC's Daily Funnel Report Date:@Date</h3> <br>
 <span lang=EN-US style='color:#1F497D;font-weight:bold'>Center Target Achievement - By CC (NJ IST)</span>
 {CCDailyFunnel_Summary_NJIST}

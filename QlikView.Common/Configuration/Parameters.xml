@@ -2,9 +2,10 @@
 <Parameters>
   <General>
     <KFR0>True</KFR0>
-    <KFR1>True</KFR1>
-    <KFR2>True</KFR2>
-    <KFR3>True</KFR3>
+    <KFR1>False</KFR1>
+    <KFR2>False</KFR2>
+    <KFR3>False</KFR3>
+    <DueDate>LastWeekendDate</DueDate>
   </General>
   <FunnelWeeklyReport>
     <MonthBegin>B</MonthBegin>
@@ -37,19 +38,19 @@
     <TotalLocalCurrency>A46</TotalLocalCurrency>
     <TotalLocalRow>46</TotalLocalRow>
     <SourceRowCount>46</SourceRowCount>
-    <Header_YTDACT_CurrentFisicalYear>YTD ACT 13/14</Header_YTDACT_CurrentFisicalYear>
-    <Header_YTDACT_BeforeFisicalYear>YTD ACT 12/13</Header_YTDACT_BeforeFisicalYear>
-    <Header_YTDVS>VS 12/13 YTD</Header_YTDVS>
-    <Header_YTDKRF3>YTD KFR3 13/14</Header_YTDKRF3>
+    <Header_YTDACT_CurrentFisicalYear>YTD ACT 14/15</Header_YTDACT_CurrentFisicalYear>
+    <Header_YTDACT_BeforeFisicalYear>YTD ACT 13/14</Header_YTDACT_BeforeFisicalYear>
+    <Header_YTDVS>VS 13/14 YTD</Header_YTDVS>
+    <Header_YTDKRF3>YTD KFR3 14/15</Header_YTDKRF3>
     <Header_YTDACTVsKRF3>YTD ACT vs KFR3</Header_YTDACTVsKRF3>
-    <Header_YTDKRF2>YTD KFR2 13/14</Header_YTDKRF2>
+    <Header_YTDKRF2>YTD KFR2 14/15</Header_YTDKRF2>
     <Header_YTDACTVsKRF2>YTD ACT vs KFR2</Header_YTDACTVsKRF2>
-    <Header_YTDKRF1>YTD KFR1 13/14</Header_YTDKRF1>
+    <Header_YTDKRF1>YTD KFR1 14/15</Header_YTDKRF1>
     <Header_YTDACTVsKRF1>YTD ACT vs KFR1</Header_YTDACTVsKRF1>
-    <Header_YTDKRF0>YTD KFR0 13/14</Header_YTDKRF0>
+    <Header_YTDKRF0>YTD KFR0 14/15</Header_YTDKRF0>
     <Header_YTDACTVsKRF0>YTD ACT vs KFR0</Header_YTDACTVsKRF0>
-    <Header_Week_BeforeFisicalYear>12/13 Week</Header_Week_BeforeFisicalYear>
-    <Header_WeekVS_BeforeFisicalYear>VS 12/13 Week</Header_WeekVS_BeforeFisicalYear>
+    <Header_Week_BeforeFisicalYear>13/14 Week</Header_Week_BeforeFisicalYear>
+    <Header_WeekVS_BeforeFisicalYear>VS 13/14 Week</Header_WeekVS_BeforeFisicalYear>
     <Header_FunnelKPI>Funnel KPI</Header_FunnelKPI>
   </FunnelWeeklyReport>
   <FunnelWeeklyReportChina>
@@ -81,11 +82,11 @@
     <RenewalRow>14</RenewalRow>
     <ChargedFTPRow>12</ChargedFTPRow>
     <FTPPrice>13</FTPPrice>
-    <Header_YTDACT_CurrentFisicalYear>ACT 13/14</Header_YTDACT_CurrentFisicalYear>
-    <Header_YTDKFR_CurrentFisicalYear>KFR0 13/14</Header_YTDKFR_CurrentFisicalYear>
-    <Header_YTDACT_BeforeFisicalYear>ACT 12/13</Header_YTDACT_BeforeFisicalYear>
+    <Header_YTDACT_CurrentFisicalYear>ACT 14/15</Header_YTDACT_CurrentFisicalYear>
+    <Header_YTDKFR_CurrentFisicalYear>KFR0 14/15</Header_YTDKFR_CurrentFisicalYear>
+    <Header_YTDACT_BeforeFisicalYear>ACT 13/14</Header_YTDACT_BeforeFisicalYear>
     <Header_YTDACTVsKFR>ACT vs KFR0</Header_YTDACTVsKFR>
-    <Header_YTDACTVs_BeforeFisicalYear>ACT vs 12/13</Header_YTDACTVs_BeforeFisicalYear>
+    <Header_YTDACTVs_BeforeFisicalYear>ACT vs 13/14</Header_YTDACTVs_BeforeFisicalYear>
     <OnlineFTPRevenues>26</OnlineFTPRevenues>
     <OutputRowCount>13</OutputRowCount>
     <OutputThisMonth>B</OutputThisMonth>
@@ -97,7 +98,7 @@
     <OutputPriorYear>H</OutputPriorYear>
     <OutputPriorYearDiff>I</OutputPriorYearDiff>
     <Header_OutputThisMonth>This Month</Header_OutputThisMonth>
-    <Header_OutputMonth>12/13 Month</Header_OutputMonth>
+    <Header_OutputMonth>13/14 Month</Header_OutputMonth>
     <Header_OutputMonthDiff>Month Diff</Header_OutputMonthDiff>
     <Header_OutputActuals>Actuals</Header_OutputActuals>
     <Header_OutputKFR>KFR0</Header_OutputKFR>

@@ -12,7 +12,7 @@
         <Report>CCDailyFunnel_Summary_WHTDC</Report>
         <Report>CCDailyFunnel_Summary_CQGYQ</Report>
         <Report>CCDailyFunnel_Summary_XAXGX</Report>
-        <Report>CCDailyFunnel_Summary_XAXZC</Report>        
+        <Report>CCDailyFunnel_Summary_XAXZC</Report>
       </Reports>
       <Recipients>
         <Recipient>Lei.Zang</Recipient>
@@ -25,8 +25,7 @@
         <BCC>
         </BCC>
         <Subject>CC's Daily Funnel Report (WEST) [@Date]</Subject>
-        <Body>
-  <![CDATA[@Template
+        <Body><![CDATA[@Template
 <h3>CC's Daily Funnel Report Date:@Date</h3> <br>
 <span lang=EN-US style='color:#1F497D;font-weight:bold'>Center Target Achievement - By CC (CD TFG) </span>
 {CCDailyFunnel_Summary_CDTFG}

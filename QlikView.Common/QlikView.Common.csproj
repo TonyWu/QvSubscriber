@@ -130,12 +130,16 @@
     <Compile Include="Zip\ZipFile.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Configuration\Parameters_1516.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Configuration\Parameters.xml">
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Configuration\ReportConfig.xml">
       <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Tasks\CCDailyFunnel_ByCenter_GZGYQ.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -350,12 +354,28 @@
     <Content Include="Tasks\CCDailyFunnel_ByCenter_WHTDC.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Tasks\EFECMKTDash_CSV_big.xml" />
+    <Content Include="Tasks\FunnelByWeek_KFR0.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tasks\FunnelByWeek_KFR1.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tasks\EFECMKTDash_CSV_big.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Tasks\EFECMKTDash.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="Tasks\EFECMKTDash_CSV.xml" />
+    <Content Include="Tasks\EFECMKTDash_CSV.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tasks\FunnelByWeek_KFR2.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tasks\FunnelByWeek_KFR3.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Tasks\FunnelChinaFunnelBCC.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -376,7 +396,9 @@
     <Content Include="Tasks\FunnelCNMini.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Tasks\SH_SalesFunnelDash.xml" />
+    <Content Include="Tasks\SH_SalesFunnelDash.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Tasks\SpotRateMonthly.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

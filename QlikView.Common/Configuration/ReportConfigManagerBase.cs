@@ -57,25 +57,32 @@ namespace QlikView.Common
 
         protected virtual void LoadItemCollection()
         {
-            foreach (var config in ReportConfig.ConfigLocations.Keys)
+            try
             {
-                this._xmlDoc = new XmlDocument();
-                this._xmlDoc.Load(ReportConfig.ConfigLocations[config]);
-                XmlNode rootNode = this.GetItemRootNode();
-
-                if (rootNode != null && rootNode.HasChildNodes)
+                foreach (var config in ReportConfig.ConfigLocations.Keys)
                 {
-                    foreach (var item in rootNode.ChildNodes)
+                    this._xmlDoc = new XmlDocument();
+                    this._xmlDoc.Load(ReportConfig.ConfigLocations[config]);
+                    XmlNode rootNode = this.GetItemRootNode();
+
+                    if (rootNode != null && rootNode.HasChildNodes)
                     {
-                        XmlNode node = item as XmlNode;
-                        var Item = this.CreateItemFromXmlNode(node);
+                        foreach (var item in rootNode.ChildNodes)
+                        {
+                            XmlNode node = item as XmlNode;
+                            var Item = this.CreateItemFromXmlNode(node);
 
-                        if(!this.ItemCollection.ContainsKey(Item.Name))
-                        this.ItemCollection.Add(Item.Name, Item);
+                            if (!this.ItemCollection.ContainsKey(Item.Name))
+                                this.ItemCollection.Add(Item.Name, Item);
+                        }
                     }
-                }
 
-            }        
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         protected XmlNode CreateNodeBase(string name, string nameValue, string descriptionValue)

@@ -1005,17 +1005,24 @@ namespace QlikView.Common
 
             DateTime fiscalStartDate;
 
-            if (DateTime.Today.LastWeekendDate().Month < 10)
-                fiscalStartDate = new DateTime(DateTime.Today.LastWeekendDate().Year - 1, 10, 1);
+            DateTime dueDate;
+
+            if (GeneralParameters.DueDate == "LastWeekendDate")
+                dueDate = DateTime.Today.LastWeekendDate();
             else
-                fiscalStartDate = new DateTime(DateTime.Today.LastWeekendDate().Year, 10, 1);
+                dueDate = DateTime.Parse(GeneralParameters.DueDate);
+
+            if (dueDate.Month < 10)
+                fiscalStartDate = new DateTime(dueDate.Year - 1, 10, 1);
+            else
+                fiscalStartDate = new DateTime(dueDate.Year, 10, 1);
 
             int count = 0;
 
             if (fiscalStartDate.DayOfWeek == DayOfWeek.Monday)
-                count = ((DateTime.Today.LastWeekendDate() - fiscalStartDate).Days + 1) / 7;
+                count = ((dueDate - fiscalStartDate).Days + 1) / 7;
             else
-                count = ((DateTime.Today.LastWeekendDate() - fiscalStartDate).Days + 1) / 7 + 1;
+                count = ((dueDate - fiscalStartDate).Days + 1) / 7 + 1;
 
             //BB column is the 2012Wk40(2012/09/24-2012/09/30)
             currentIndex = ExcelUtilies.ExcelColumnNameToIndex("BN") + count;

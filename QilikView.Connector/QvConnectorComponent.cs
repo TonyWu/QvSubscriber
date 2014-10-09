@@ -615,17 +615,25 @@ namespace QlikView.Connector
             {
                 values = Functions.GetValuesFromCurrentYearMonth();
             }
+            else if (item.Name == "FiscalYearName" && item.Expression == "CurrentFiscalYearName")
+            {
+                values = Functions.GetCurrentFiscalYearName();
+            }
+            else if (item.Name == "FiscalYearName" && item.Expression == "PreviousFiscalYearName")
+            {
+                values = Functions.GetPreviousFiscalYearName();
+            }
             else if (item.Name == "UsageYearMonth" && item.Expression.Contains("LastMonthFiscalYearMonth"))
             {
                 values = Functions.GetValuesFromLastMonthFiscalYearMonth();
 
-                var field = this.GetQVFieldByName(item.Name);                
+                var field = this.GetQVFieldByName(item.Name);
 
                 foreach (var value in values)
                 {
                     value.IsNumeric = field.Values.First(x => x.Value == value.Value).IsNumeric;
                     value.Number = field.Values.First(x => x.Value == value.Value).Number;
-                }                
+                }
             }
             else
             {

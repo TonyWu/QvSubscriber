@@ -15,17 +15,25 @@
         <Report>FunnelRevenue_KFRRevenue_NotSet</Report>
         <Report>FunnelRevenue_KFRRevenue_CH157</Report>
         <Report>FunnelRevenue_KFRRevenue_CH159</Report>
+        <Report>FunnelRevenue_Partner_USD</Report>
+        <Report>FunnelRevenue_SME_USD</Report>
+        <Report>FunnelRevenue_Partner_Local</Report>
+        <Report>FunnelRevenue_SME_Local</Report>
+        <Report>FunnelRevenue_KFRRevenue_CH184</Report>
+        <Report>FunnelRevenue_KFRRevenue_CH185</Report>
       </Reports>
       <Recipients>
         <Recipient>Natalie</Recipient>
         <Recipient>kristina.howes</Recipient>
+        <Recipient>andy.alexander</Recipient>
       </Recipients>
       <RecipientGroup>
       </RecipientGroup>
       <Message>
         <From>QlikViewAdmin@ef.com</From>
         <CC>QlikViewAdmin@ef.com</CC>
-        <BCC>Eric.Azumi@ef.com</BCC>
+        <BCC>
+        </BCC>
         <Subject>Weekly Statistic Report</Subject>
         <Body><![CDATA[Hi all,
 <br/>
@@ -37,6 +45,60 @@ Please feel free to contact QlikViewAdmin@EF.com if you have any problem on this
     </Task>
   </Tasks>
   <Reports>
+    <Report Name="FunnelRevenue_Partner_USD" Description="USD">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelRevenue_Partner_USD.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH177</QlikViewExportObjectId>
+      <Filter>FunnelRevenue_Week</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelRevenue_SME_USD" Description="USD">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelRevenue_SME_USD.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH178</QlikViewExportObjectId>
+      <Filter>FunnelRevenue_Week</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelRevenue_Partner_Local" Description="Local">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelRevenue_Partner_Local.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH179</QlikViewExportObjectId>
+      <Filter>FunnelRevenue_Week</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelRevenue_SME_Local" Description="Local">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelRevenue_SME_Local.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH180</QlikViewExportObjectId>
+      <Filter>FunnelRevenue_Week</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelRevenue_KFRRevenue_CH184" Description="KFRRevenueCH184">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelRevenue_KFRRevenue_CH184.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH184</QlikViewExportObjectId>
+      <Filter>FunnelRevenue_Week</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="FunnelRevenue_KFRRevenue_CH185" Description="KFRRevenueCH185">
+      <Connection>ETB2CFinance_Connection</Connection>
+      <OutputFileName>FunnelRevenue_KFRRevenue_CH185.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH185</QlikViewExportObjectId>
+      <Filter>FunnelRevenue_Week</Filter>
+      <ReportType>0</ReportType>
+    </Report>
     <Report Name="FunnelRevenue_Total_USD" Description="USD">
       <Connection>ETB2CFinance_Connection</Connection>
       <OutputFileName>FunnelRevenue_Total_USD.xls</OutputFileName>
@@ -61,24 +123,6 @@ Please feel free to contact QlikViewAdmin@EF.com if you have any problem on this
       <EnableDynamicNaming>True</EnableDynamicNaming>
       <EmbeddedInMail>False</EmbeddedInMail>
       <QlikViewExportObjectId>Document\CH83</QlikViewExportObjectId>
-      <Filter>FunnelRevenue_Week</Filter>
-      <ReportType>0</ReportType>
-    </Report>
-    <Report Name="FunnelRevenue_Partner_USD" Description="USD">
-      <Connection>ETB2CFinance_Connection</Connection>
-      <OutputFileName>FunnelRevenue_Online_USD.xls</OutputFileName>
-      <EnableDynamicNaming>True</EnableDynamicNaming>
-      <EmbeddedInMail>False</EmbeddedInMail>
-      <QlikViewExportObjectId>Document\CH177</QlikViewExportObjectId>
-      <Filter>FunnelRevenue_Week</Filter>
-      <ReportType>0</ReportType>
-    </Report>
-    <Report Name="FunnelRevenue_SME_USD" Description="USD">
-      <Connection>ETB2CFinance_Connection</Connection>
-      <OutputFileName>FunnelRevenue_Online_USD.xls</OutputFileName>
-      <EnableDynamicNaming>True</EnableDynamicNaming>
-      <EmbeddedInMail>False</EmbeddedInMail>
-      <QlikViewExportObjectId>Document\CH178</QlikViewExportObjectId>
       <Filter>FunnelRevenue_Week</Filter>
       <ReportType>0</ReportType>
     </Report>
@@ -109,24 +153,6 @@ Please feel free to contact QlikViewAdmin@EF.com if you have any problem on this
       <Filter>FunnelRevenue_Week</Filter>
       <ReportType>0</ReportType>
     </Report>
-    <Report Name="FunnelRevenue_Partner_Local" Description="Local">
-      <Connection>ETB2CFinance_Connection</Connection>
-      <OutputFileName>FunnelRevenue_Online_Local.xls</OutputFileName>
-      <EnableDynamicNaming>True</EnableDynamicNaming>
-      <EmbeddedInMail>False</EmbeddedInMail>
-      <QlikViewExportObjectId>Document\CH179</QlikViewExportObjectId>
-      <Filter>FunnelRevenue_Week</Filter>
-      <ReportType>0</ReportType>
-    </Report>
-    <Report Name="FunnelRevenue_SME_Local" Description="Local">
-      <Connection>ETB2CFinance_Connection</Connection>
-      <OutputFileName>FunnelRevenue_Online_Local.xls</OutputFileName>
-      <EnableDynamicNaming>True</EnableDynamicNaming>
-      <EmbeddedInMail>False</EmbeddedInMail>
-      <QlikViewExportObjectId>Document\CH180</QlikViewExportObjectId>
-      <Filter>FunnelRevenue_Week</Filter>
-      <ReportType>0</ReportType>
-    </Report>
     <Report Name="FunnelRevenue_KFRRevenue_NotSet" Description="KFR Revenue">
       <Connection>ETB2CFinance_Connection</Connection>
       <OutputFileName>FunnelRevenue_KFRRevenue_NotSet.xls</OutputFileName>
@@ -154,31 +180,13 @@ Please feel free to contact QlikViewAdmin@EF.com if you have any problem on this
       <Filter>FunnelRevenue_Week</Filter>
       <ReportType>0</ReportType>
     </Report>
-    <Report Name="FunnelRevenue_KFRRevenue_CH184" Description="KFRRevenueCH184">
-      <Connection>ETB2CFinance_Connection</Connection>
-      <OutputFileName>FunnelRevenue_KFRRevenue_CH184.xls</OutputFileName>
-      <EnableDynamicNaming>True</EnableDynamicNaming>
-      <EmbeddedInMail>False</EmbeddedInMail>
-      <QlikViewExportObjectId>Document\CH184</QlikViewExportObjectId>
-      <Filter>FunnelRevenue_Week</Filter>
-      <ReportType>0</ReportType>
-    </Report>
-    <Report Name="FunnelRevenue_KFRRevenue_CH185" Description="KFRRevenueCH185">
-      <Connection>ETB2CFinance_Connection</Connection>
-      <OutputFileName>FunnelRevenue_KFRRevenue_CH185.xls</OutputFileName>
-      <EnableDynamicNaming>True</EnableDynamicNaming>
-      <EmbeddedInMail>False</EmbeddedInMail>
-      <QlikViewExportObjectId>Document\CH185</QlikViewExportObjectId>
-      <Filter>FunnelRevenue_Week</Filter>
-      <ReportType>0</ReportType>
-    </Report>
   </Reports>
   <Filters>
     <Filter Name="FunnelRevenue_Week" Description="FunnelRevenue_Week">
       <Connection>ETB2CFinance_Connection</Connection>
       <Fields>
         <Field Name="FiscalYearName" Description="" Expression="">
-          <Value Number="1E+300" IsNumeric="False">13-14</Value>
+          <Value Number="1E+300" IsNumeric="False">14-15</Value>
         </Field>
       </Fields>
       <Variables>

@@ -121,9 +121,16 @@
         <Report>EFLabsCost_DirectCost_GLB2COS</Report>
         <Report>EFLabsCost_DirectCost_GLB2CCS</Report>
         <Report>EFLabsCost_DirectCost_GLB2CTS</Report>
+        <Report>EFLabsCost_DirectCost_CP20Smart</Report>
+        <Report>EFLabsCost_DirectCost_CP20SmartNoShow</Report>
+        <Report>EFLabsCost_DirectCost_CP20SmartLateCancel</Report>
+        <Report>EFLabsCost_DirectCost_CP20Mini</Report>
+        <Report>EFLabsCost_DirectCost_CP20MiniNoShow</Report>
+        <Report>EFLabsCost_DirectCost_CP20MiniLateCancel</Report>
       </Reports>
       <Recipients>
         <Recipient>Robert.Qiu</Recipient>
+        <Recipient>adalynn zou</Recipient>
       </Recipients>
       <RecipientGroup>
       </RecipientGroup>
@@ -1177,6 +1184,60 @@ Thanks,]]></Body>
       <EmbeddedInMail>False</EmbeddedInMail>
       <QlikViewExportObjectId>Document\CH905</QlikViewExportObjectId>
       <Filter>EFLabsCost_DirectCost_PLLateCancelB2CTS</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_CP20Smart" Description="Smart CP20">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_CP20Smart.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH911</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_CP20Smart</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_CP20SmartNoShow" Description="Smart CP20 NoShow">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_SmartEFECNoShow.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH913</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_CP20SmartNoShow</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_CP20SmartLateCancel" Description="Smart CP20 LateCancel">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_CP20SmartLateCancel.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH914</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_CP20SmartLateCancel</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_CP20Mini" Description="Mini CP20">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_CP20Mini.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH911</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_CP20Mini</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_CP20MiniNoShow" Description="Mini CP20 NoShow">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_MiniEFECNoShow.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH913</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_CP20MiniNoShow</Filter>
+      <ReportType>0</ReportType>
+    </Report>
+    <Report Name="EFLabsCost_DirectCost_CP20MiniLateCancel" Description="Mini CP20 LateCancel">
+      <Connection>EFLabsCost</Connection>
+      <OutputFileName>EFLabsCost_DirectCost_CP20MiniLateCancel.xls</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH914</QlikViewExportObjectId>
+      <Filter>EFLabsCost_DirectCost_CP20MiniLateCancel</Filter>
       <ReportType>0</ReportType>
     </Report>
   </Reports>
@@ -2474,6 +2535,78 @@ Thanks,]]></Body>
         <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
         <Field Name="ProductCategory" Description="" Expression="">
           <Value Number="1E+300" IsNumeric="False">TeleSales</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_CP20Smart" Description="Smart CP20">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">SmartHome</Value>
+          <Value Number="1E+300" IsNumeric="False">SmartSchool</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_CP20Mini" Description="Mini CP20">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">MiniSchool</Value>
+          <Value Number="1E+300" IsNumeric="False">MiniHome</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_CP20SmartNoShow" Description="Smart CP20 NoShow">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">SmartHome</Value>
+          <Value Number="1E+300" IsNumeric="False">SmartSchool</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_CP20SmartLateCancel" Description="Smart CP20 LateCancel">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">SmartHome</Value>
+          <Value Number="1E+300" IsNumeric="False">SmartSchool</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_CP20MiniNoShow" Description="Mini CP20 NoShow">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">MiniSchool</Value>
+          <Value Number="1E+300" IsNumeric="False">MiniHome</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+    <Filter Name="EFLabsCost_DirectCost_CP20MiniLateCancel" Description="Mini CP20 LateCancel">
+      <Connection>EFLabsCost</Connection>
+      <Fields>
+        <Field Name="UsageYearMonth" Description="" Expression="LastMonthFiscalYearMonth" />
+        <Field Name="ProductCategory" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">MiniSchool</Value>
+          <Value Number="1E+300" IsNumeric="False">MiniHome</Value>
         </Field>
       </Fields>
       <Variables>

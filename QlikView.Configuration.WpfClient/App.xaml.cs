@@ -15,7 +15,16 @@ namespace QlikView.Configuration.WpfClient
         private void Application_DispatcherUnhandledException(object sender, System.Windows.Threading.DispatcherUnhandledExceptionEventArgs e)
         {
             e.Handled = true;
-            MessageBox.Show(e.Exception.Message);
+
+            MessageBox.Show(GetDeepException(e.Exception).Message);
+        }
+
+        private Exception GetDeepException(Exception ex)
+        {
+            if (ex.InnerException == null)
+                return ex;
+            else
+                return GetDeepException(ex.InnerException);
         }
     }
 }

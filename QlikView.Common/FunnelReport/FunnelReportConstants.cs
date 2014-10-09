@@ -11,6 +11,7 @@ namespace QlikView.Common
         public static readonly bool KFR1 = ParameterConfig.GetBoolValue("General", "KFR1");
         public static readonly bool KFR2 = ParameterConfig.GetBoolValue("General", "KFR2");
         public static readonly bool KFR3 = ParameterConfig.GetBoolValue("General", "KFR3");
+        public static readonly string DueDate = ParameterConfig.GetStringValue("General", "DueDate");
     }
 
     public static class FunnelWeeklyReportParameters
