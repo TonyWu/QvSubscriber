@@ -1,0 +1,65 @@
+<ReportConfig>
+  <Tasks>
+    <Task Name="EFECMKTDash_CSV" Description="EFECMKTDash_CSV">
+      <OutputFolder>D:\ReportExport\EFECMKTDash</OutputFolder>
+      <SendInSingleMail>True</SendInSingleMail>
+      <MergeInSingleExcel>False</MergeInSingleExcel>
+      <Reports>
+        <Report>EFECMKTDash_CSV</Report>
+      </Reports>
+      <Recipients>
+        <Recipient>ef@agrant.cn</Recipient>
+      </Recipients>
+      <RecipientGroup>
+      </RecipientGroup>
+      <Message>
+        <From>QlikViewAdmin@ef.com</From>
+        <CC>hans.wang@ef.com;rysh.hsu@ef.com;lin.nan@ef.com;cherry.liuling@ef.com</CC>
+        <BCC>
+        </BCC>
+        <Subject>EFEC data feed – as of [@Date]</Subject>
+        <Body><![CDATA[Hi,
+<br>
+
+Pls find the  EFEC data feed Report from the attachment!
+<br>
+<br>
+Thanks,]]></Body>
+      </Message>
+      <FtpServer>
+        <Host>ftp://integration.marinsoftware.com</Host>
+        <Username>ftp.revenueupload@nim-ef.marinsoftware.com</Username>
+        <Password>{R:pnUSN</Password>
+        <Folder>21737zme37800/revenueupload</Folder>
+        <Port>
+        </Port>
+      </FtpServer>
+    </Task>
+  </Tasks>
+  <Reports>
+    <Report Name="EFECMKTDash_CSV" Description="EFECMKTDash_CSV">
+      <Connection>EFECMKTDash</Connection>
+      <OutputFileName>EFECMKTDash_CSV.csv</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH41</QlikViewExportObjectId>
+      <Filter>EFECMKTDash_CSV</Filter>
+      <ReportType>3</ReportType>
+    </Report>
+  </Reports>
+  <Filters>
+    <Filter Name="EFECMKTDash_CSV" Description="EFECMKTDash_CSV">
+      <Connection>EFECMKTDash</Connection>
+      <Fields>
+        <Field Name="YearMonth" Description="" Expression="CurrentYearMonthNumeric" />
+        <Field Name="PAC" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">CNPPC</Value>
+          <Value Number="1E+300" IsNumeric="False">cnbd</Value>
+          <Value Number="1E+300" IsNumeric="False">Search Engine</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+  </Filters>
+</ReportConfig>

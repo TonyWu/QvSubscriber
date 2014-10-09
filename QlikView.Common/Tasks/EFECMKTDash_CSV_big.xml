@@ -1,0 +1,65 @@
+<ReportConfig>
+  <Tasks>
+    <Task Name="EFECMKTDash_CSV_big" Description="EFECMKTDash_CSV">
+      <OutputFolder>D:\ReportExport\EFECMKTDash</OutputFolder>
+      <SendInSingleMail>True</SendInSingleMail>
+      <MergeInSingleExcel>False</MergeInSingleExcel>
+      <Reports>
+        <Report>EFECMKTDash_CSV</Report>
+      </Reports>
+      <Recipients>
+      </Recipients>
+      <RecipientGroup>
+      </RecipientGroup>
+      <Message>
+        <From>QlikViewAdmin@ef.com</From>
+        <CC>
+        </CC>
+        <BCC>
+        </BCC>
+        <Subject>EFEC data feed – as of [@Date]</Subject>
+        <Body><![CDATA[Hi,
+<br>
+
+Pls find the  EFEC data feed Report from the attachment!
+<br>
+<br>
+Thanks,]]></Body>
+      </Message>
+      <FtpServer>
+        <Host>ftp://ftp.big.pzoom.com</Host>
+        <Username>EF2014</Username>
+        <Password>i&lt;Vu`Ws,O+9</Password>
+        <Folder>
+        </Folder>
+        <Port>21</Port>
+      </FtpServer>
+    </Task>
+  </Tasks>
+  <Reports>
+    <Report Name="EFECMKTDash_CSV" Description="EFECMKTDash_CSV">
+      <Connection>EFECMKTDash</Connection>
+      <OutputFileName>EFECMKTDash_CSV.csv</OutputFileName>
+      <EnableDynamicNaming>True</EnableDynamicNaming>
+      <EmbeddedInMail>False</EmbeddedInMail>
+      <QlikViewExportObjectId>Document\CH41</QlikViewExportObjectId>
+      <Filter>EFECMKTDash_CSV</Filter>
+      <ReportType>3</ReportType>
+    </Report>
+  </Reports>
+  <Filters>
+    <Filter Name="EFECMKTDash_CSV" Description="EFECMKTDash_CSV">
+      <Connection>EFECMKTDash</Connection>
+      <Fields>
+        <Field Name="YearMonth" Description="" Expression="CurrentYearMonthNumeric" />
+        <Field Name="PAC" Description="" Expression="">
+          <Value Number="1E+300" IsNumeric="False">CNPPC</Value>
+          <Value Number="1E+300" IsNumeric="False">cnbd</Value>
+          <Value Number="1E+300" IsNumeric="False">Search Engine</Value>
+        </Field>
+      </Fields>
+      <Variables>
+      </Variables>
+    </Filter>
+  </Filters>
+</ReportConfig>
